@@ -1,0 +1,15 @@
+{
+  "short_name": "Zalicz gminę OSM",
+  "name": "Zalicz gminę OSM",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "54x54",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
