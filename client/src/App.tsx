@@ -1,5 +1,6 @@
 import React from "react";
+import { Map } from "./Map";
 
 export const App: React.FC = () => {
-  return <div>TODO</div>;
+  return <Map />;
 };
