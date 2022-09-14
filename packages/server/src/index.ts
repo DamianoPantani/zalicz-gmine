@@ -2,7 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import dotenv from "dotenv";
-import { api, loginUser } from "./api";
+import { loginUser } from "./api";
 import { decodeSession } from "./session";
 import { acceptGuestsOnly } from "./acl";
 
@@ -21,7 +21,10 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cors());
 app.all("*", decodeSession);
-api.post("/api/session", acceptGuestsOnly, loginUser);
+app.use(
+  "/api/session",
+  express.Router().post("/", acceptGuestsOnly, loginUser)
+);
 
 // app.get("*", (req, res) => {
 //   res.sendFile(path.join(__dirname + "/client/build/index.html"));

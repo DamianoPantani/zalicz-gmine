@@ -3,6 +3,7 @@
 /packages/server/dist
 /packages/server/node_modules
 /packages/client/dist
+/packages/client/node_modules
 tsconfig.tsbuildinfo
 /packages/client/tsconfig.tsbuildinfo
 /packages/server/tsconfig.tsbuildinfo

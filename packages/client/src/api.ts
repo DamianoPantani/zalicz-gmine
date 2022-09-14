@@ -9,7 +9,7 @@ const Api = axios.create({
 });
 
 export const getAllGminas = () => {
-  return Api.get<GminaBounds[]>("/gminas.json");
+  return axios.get<GminaBounds[]>("/gminas.json");
 };
 
 export const loginUser = (loginForm: LoginRequest) => {

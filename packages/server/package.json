@@ -3,11 +3,9 @@
   "name": "@damianopantani/zaliczgmine-server",
   "main": "src/types/request",
   "scripts": {
-    "compile": "tsc -b",
-    "build": "swc src -d dist",
     "buildAndStart": "npm run build && npm run start",
-    "start:legacy": "node --experimental-modules --es-module-specifier-resolution=node dist/index.js",
-    "start": "tsdx watch"
+    "start": "node --experimental-modules --es-module-specifier-resolution=node dist/index.js",
+    "start:TODO_FIXME": "tsdx watch"
   },
   "devDependencies": {
     "@swc/cli": "^0.1.57",
