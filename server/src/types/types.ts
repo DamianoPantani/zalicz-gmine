@@ -8,9 +8,3 @@ export type CheckedGmina = {
   id: number;
   date: string;
 };
-
-export type Session = {
-  authToken: string;
-  user: User;
-  checkedGminas: CheckedGmina[];
-};

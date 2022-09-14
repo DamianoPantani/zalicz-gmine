@@ -1,6 +1,15 @@
 {
+  "type": "module",
+  "scripts": {
+    "build": "swc src -d dist",
+    "buildAndStart": "npm run build && npm run start",
+    "start": "node --experimental-modules --es-module-specifier-resolution=node dist/index.js"
+  },
   "devDependencies": {
-    "@types/node": "^18.7.16"
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.3.1",
+    "@types/node": "^18.7.16",
+    "@types/pg": "^8.6.5"
   },
   "dependencies": {
     "@types/body-parser": "^1.19.2",
@@ -9,6 +18,7 @@
     "@types/jsonwebtoken": "^8.5.9",
     "body-parser": "^1.20.0",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
     "express": "^4.18.1",
     "jsonwebtoken": "^8.5.1",
     "pg": "^8.8.0"
