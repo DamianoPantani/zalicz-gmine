@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["./src/**/*.ts"],
+
+  "noEmit": true,
+  "compilerOptions": {
+    "jsx": "react",
+    "esModuleInterop": true,
+    "composite": true,
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "es6"
+  },
+  "references": [
+    {
+      "path": "../server"
+    }
+  ]
+}

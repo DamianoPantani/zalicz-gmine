@@ -1,10 +1,9 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-*/node_modules
-/server/dist
-/server/.env
-
-# production
-/build
+/node_modules
+/packages/server/.env
+/packages/server/dist
+/packages/server/node_modules
+/packages/client/dist
+tsconfig.tsbuildinfo
+/packages/client/tsconfig.tsbuildinfo
+/packages/server/tsconfig.tsbuildinfo
 
