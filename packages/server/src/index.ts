@@ -2,9 +2,9 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import dotenv from "dotenv";
-import { loginUser } from "./api";
+import { continueSession, loginUser } from "./api";
 import { decodeSession } from "./session";
-import { acceptGuestsOnly } from "./acl";
+import { acceptGuestsOnly, acceptLoggedUsersOnly } from "./acl";
 
 dotenv.config();
 
@@ -23,7 +23,10 @@ app.use(cors());
 app.all("*", decodeSession);
 app.use(
   "/api/session",
-  express.Router().post("/", acceptGuestsOnly, loginUser)
+  express
+    .Router()
+    .get("/", acceptLoggedUsersOnly, continueSession)
+    .post("/", acceptGuestsOnly, loginUser)
 );
 
 // app.get("*", (req, res) => {

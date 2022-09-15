@@ -1,13 +1,7 @@
 import type { RequestHandler } from "express";
-import { CheckedGmina, User } from "./types";
+import { User } from "./shared";
 
-export type JWTSession = {
-  authToken: string;
-  user: User;
-  checkedGminas: CheckedGmina[];
-};
-
-export type Session =
+export type JWTSession =
   | {
       isInitialized: true;
       user: User;
@@ -21,5 +15,5 @@ export type ZGRequestHandler<P = unknown, R = unknown> = RequestHandler<
   R,
   P,
   unknown,
-  Session
+  JWTSession
 >;

@@ -4,7 +4,7 @@
 
   "noEmit": true,
   "compilerOptions": {
-    "jsx": "react",
+    "jsx": "react-jsx",
     "esModuleInterop": true,
     "composite": true,
     "rootDir": "./src",

@@ -1,5 +1,5 @@
-import { ErrorCode } from "./types/enums";
-import { ZGRequestHandler } from "./types/session";
+import { ErrorCode } from "./types/shared";
+import { ZGRequestHandler } from "./types/express";
 
 export const acceptLoggedUsersOnly: ZGRequestHandler = (_req, res, next) => {
   return res.locals.isInitialized

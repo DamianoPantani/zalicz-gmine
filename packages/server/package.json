@@ -1,8 +1,9 @@
 {
   "type": "module",
   "name": "@damianopantani/zaliczgmine-server",
-  "main": "src/types/request",
+  "main": "src/types/shared",
   "scripts": {
+    "build": "tsc -b",
     "buildAndStart": "npm run build && npm run start",
     "start": "node --experimental-modules --es-module-specifier-resolution=node dist/index.js",
     "start:TODO_FIXME": "tsdx watch"

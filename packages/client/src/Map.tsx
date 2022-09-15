@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FeatureGroup, MapContainer, Polygon, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { GminaBounds } from "./types";
-import { getAllGminas, loginUser } from "./api";
+import { getAllGminas } from "./api";
 
 export const Map: React.FC = () => {
   const [gminas, setGminas] = useState<GminaBounds[]>([]);
@@ -14,10 +14,6 @@ export const Map: React.FC = () => {
     getAllGminas()
       .then((res) => setGminas(res.data))
       .finally(() => setLoading(false));
-
-    loginUser({ email: "one", password: "two" }).then((res) => {
-      console.log("LOGIN TEST", res);
-    });
   }, []);
 
   return (

@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
-import { JWTSession, ZGRequestHandler } from "./types/session";
-import { User } from "./types/types";
+import { ZGRequestHandler } from "./types/express";
+import { UISession, User } from "./types/shared";
 import { getCheckedGminas } from "./dao";
 
 const getSecret = () => {
@@ -26,9 +26,8 @@ export const decodeSession: ZGRequestHandler = (req, res, next) => {
 const createSession = (user: User) =>
   jwt.sign(user, getSecret(), { expiresIn: "5d" });
 
-export const initializeSession = async (user: User): Promise<JWTSession> => {
+export const initializeSession = async (user: User): Promise<UISession> => {
   const authToken = createSession(user); // recreates token every time, to extend expiration time
-
   const checkedGminas = await getCheckedGminas();
 
   return {
