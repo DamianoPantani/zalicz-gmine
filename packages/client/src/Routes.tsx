@@ -4,38 +4,28 @@ import {
   redirect,
   RouterProvider,
 } from "react-router-dom";
-import { useSessionStore } from "./SessionProvider";
 import { Map } from "./Map";
+import { Login } from "./Login";
 
 export const Routes: React.FC = () => {
-  const isLoggedIn = useSessionStore((s) => s.isLoggedIn);
-
   const router = useMemo(
     () =>
-      createBrowserRouter(
-        isLoggedIn
-          ? [
-              {
-                path: "/",
-                element: <Map />,
-              },
-              {
-                path: "/*",
-                loader: () => redirect("/"),
-              },
-            ]
-          : [
-              {
-                path: "/login",
-                element: <h1>TODO - Login</h1>,
-              },
-              {
-                path: "/*",
-                loader: () => redirect("/login"),
-              },
-            ]
-      ),
-    [isLoggedIn]
+      createBrowserRouter([
+        {
+          path: "/",
+          element: <Map />,
+        },
+
+        {
+          path: "/login",
+          element: <Login />,
+        },
+        {
+          path: "/*",
+          loader: () => redirect("/login"),
+        },
+      ]),
+    []
   );
 
   return <RouterProvider router={router} />;
