@@ -3,10 +3,8 @@
   "name": "@damianopantani/zaliczgmine-server",
   "main": "src/types/shared",
   "scripts": {
-    "build": "tsc --build --force",
-    "buildAndStart": "npm run build && npm run start",
-    "start": "node --experimental-modules --es-module-specifier-resolution=node dist/index.js",
-    "start:TODO_FIXME": "tsdx watch"
+    "start": "tsc --build --force",
+    "start:watch": "nodemon -e ts --exec \"tsc && node --experimental-modules --es-module-specifier-resolution=node dist/index.js\""
   },
   "devDependencies": {
     "@swc/cli": "^0.1.57",
@@ -22,7 +20,6 @@
     "axios": "^0.27.2",
     "body-parser": "^1.20.0",
     "cors": "^2.8.5",
-    "dotenv": "^16.0.2",
     "express": "^4.18.1"
   }
 }
