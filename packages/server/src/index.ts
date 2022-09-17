@@ -1,7 +1,8 @@
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-import { loginUser } from "./api";
+import { loginUser, createSession, isSessionValid } from "./api";
+import { rejectIfNoAuthTokenSet } from "./acl";
 
 const port = process.env.PORT || 5000;
 const app = express();
@@ -12,7 +13,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cors());
-app.use("/api/session", express.Router().post("/", loginUser));
+
+app.use(
+  "/api/session",
+  express
+    .Router()
+    .get("/", createSession)
+    .put("/", rejectIfNoAuthTokenSet, isSessionValid)
+    .post("/", rejectIfNoAuthTokenSet, loginUser)
+);
 
 app.listen(port);
 console.log(`Listening on ${port}`);
