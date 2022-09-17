@@ -79,8 +79,8 @@ export const loginToZG = async (
 //   );
 // };
 
-export const zgDataString = (data: ParsedObject) =>
-  encodeURI(`${flatten({ data }).join("&")}`);
+export const zgDataString = (object: ParsedObject) =>
+  encodeURI(`${flatten(object, "data").join("&")}`);
 
 const requestOptions = (cookie = ""): AxiosRequestConfig => {
   return {

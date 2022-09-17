@@ -13,6 +13,6 @@ export class ZGApiError extends Error {
       detailsString,
     };
 
-    Object.setPrototypeOf(this, ZGApiError.prototype); // fix `isntanceof`
+    Object.setPrototypeOf(this, ZGApiError.prototype); // fixes `isntanceof`
   }
 }
