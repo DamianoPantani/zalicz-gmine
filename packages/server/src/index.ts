@@ -21,7 +21,7 @@ app.use(
     .put("/", createSession)
     .get("/", rejectIfNoAuthTokenSet, getLoggedInUser)
     .post("/", rejectIfNoAuthTokenSet, loginUser)
-    .delete("/", logoutUser)
+    .delete("/", rejectIfNoAuthTokenSet, logoutUser)
 );
 
 app.listen(port);

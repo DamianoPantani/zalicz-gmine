@@ -1,6 +1,5 @@
-import { RequestHandler } from "express";
-import { getAuthToken } from "./auth";
 import { toUIError } from "./error";
+import { ZGRequestHandler } from "./types/express";
 import {
   LoginRequest,
   SessionResponse,
@@ -14,7 +13,7 @@ import {
   logoutFromZG,
 } from "./zgBroker";
 
-export const createSession: RequestHandler<
+export const createSession: ZGRequestHandler<
   unknown,
   SessionResponse | UIError
 > = async (_, res) => {
@@ -26,13 +25,12 @@ export const createSession: RequestHandler<
   }
 };
 
-export const getLoggedInUser: RequestHandler<
+export const getLoggedInUser: ZGRequestHandler<
   unknown,
   LoggedUserResponse | UIError
-> = async (req, res) => {
+> = async (_req, res) => {
   try {
-    // TODO: save authToken to local directory !
-    const authToken = getAuthToken(req.headers); // throws if auth token is not set
+    const { authToken } = res.locals;
     const user = await getUserFromSession(authToken); // throws if session is expired
     res.json(user);
   } catch (error) {
@@ -40,13 +38,12 @@ export const getLoggedInUser: RequestHandler<
   }
 };
 
-export const loginUser: RequestHandler<
-  unknown,
-  LoggedUserResponse | UIError,
-  LoginRequest
+export const loginUser: ZGRequestHandler<
+  LoginRequest,
+  LoggedUserResponse | UIError
 > = async (req, res) => {
   try {
-    const authToken = getAuthToken(req.headers);
+    const { authToken } = res.locals;
     const user = await loginToZG(req.body, authToken);
 
     res.json(user);
@@ -55,9 +52,9 @@ export const loginUser: RequestHandler<
   }
 };
 
-export const logoutUser: RequestHandler = async (req, res) => {
+export const logoutUser: ZGRequestHandler = async (_req, res) => {
   try {
-    const authToken = getAuthToken(req.headers);
+    const { authToken } = res.locals;
     await logoutFromZG(authToken);
 
     res.send();
