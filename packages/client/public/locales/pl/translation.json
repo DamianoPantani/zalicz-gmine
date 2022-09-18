@@ -1,0 +1,9 @@
+{
+  "form": {
+    "login": {
+      "login": "Zaloguj",
+      "password": "Hasło",
+      "username": "Nazwa użytkownika"
+    }
+  }
+}

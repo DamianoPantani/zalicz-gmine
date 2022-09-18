@@ -1,17 +1,10 @@
 .inputBox {
-  border: 1px solid;
+  border: 1px solid var(--color-gray-400);
   border-radius: var(--radius-base);
-  border-color: var(--color-gray-400);
   padding: 0 var(--space-md);
-  width: 100%;
   height: var(--size-3xl);
   overflow: hidden;
   color: var(--colors-gray-900);
-
-  padding: 0 var(--space-md);
-  width: 100%;
-  height: var(--size-3xl);
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 

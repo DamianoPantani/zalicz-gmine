@@ -1,5 +1,8 @@
 import React, { PropsWithChildren, useEffect } from "react";
 import { useSessionStore } from "./SessionContext";
+import { LoadingSpinner } from "./components/LoadingSpinner";
+
+import styles from "./SessionInitializer.module.scss";
 
 export const SessionInitializer: React.FC<PropsWithChildren> = ({
   children,
@@ -11,5 +14,11 @@ export const SessionInitializer: React.FC<PropsWithChildren> = ({
     initializeSession();
   }, [initializeSession]);
 
-  return isInitializing ? null : <>{children}</>; // TODO: loading spiner
+  return isInitializing ? (
+    <div className={styles.fullPage}>
+      <LoadingSpinner size="lg" />
+    </div>
+  ) : (
+    <div className={styles.pageLayout}>{children}</div>
+  );
 };

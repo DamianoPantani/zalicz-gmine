@@ -1,22 +1,30 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Formik, Form } from "formik";
 import { LoginRequest } from "@damianopantani/zaliczgmine-server";
 import { useFormikField } from "../forms/useFormikField";
 import { Input } from "../forms/Input";
 import { Button } from "../forms/Button";
+import { LoadingSpinner } from "../LoadingSpinner";
 import { useSessionStore } from "../../SessionContext";
+
+type Props = {
+  isLoading: boolean;
+};
 
 const initialLoginValues: LoginRequest = { password: "", username: "" };
 
-// TODO: locales
-// Todo: loading spinner
-
 export const Login: React.FC = () => {
   const loginUser = useSessionStore((s) => s.login);
+  const [isLoading, setLoading] = useState(false);
+
   const handleSubmit = useCallback(
     (form: LoginRequest) => {
+      setLoading(true);
       loginUser(form).catch((e) => {
+        // TODO: handle errors
         console.log(e);
+        setLoading(false);
       });
     },
     [loginUser]
@@ -24,12 +32,13 @@ export const Login: React.FC = () => {
 
   return (
     <Formik initialValues={initialLoginValues} onSubmit={handleSubmit}>
-      <LoginForm />
+      <LoginForm isLoading={isLoading} />
     </Formik>
   );
 };
 
-const LoginForm = () => {
+const LoginForm = ({ isLoading }: Props) => {
+  const { t } = useTranslation();
   const [username, setUsername] = useFormikField<string>("username");
   const [password, setPassword] = useFormikField<string>("password");
 
@@ -38,15 +47,18 @@ const LoginForm = () => {
       <Input
         value={username}
         onChange={setUsername}
-        placeholder="Nazwa użytkownika"
+        placeholder={t("form.login.username")}
       />
       <Input
         value={password}
         onChange={setPassword}
         type="password"
-        placeholder="Hasło"
+        placeholder={t("form.login.password")}
       />
-      <Button type="submit" >Zaloguj</Button>
+      <Button type="submit" disabled={isLoading}>
+        {isLoading && <LoadingSpinner size="xs" />}
+        {t("form.login.login")}
+      </Button>
     </Form>
   );
 };

@@ -10,7 +10,7 @@ export const useFormikField = <T>(path: string): FormikField<T> => {
 
   const patchedSetValue = useCallback(
     (newValue: T | undefined) => {
-      newValue && value !== newValue && setValue(newValue);
+      newValue !== undefined && value !== newValue && setValue(newValue);
     },
     [setValue, value]
   );
