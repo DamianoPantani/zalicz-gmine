@@ -1,6 +1,15 @@
+.navbarContainer {
+  padding: var(--space-3xl);
+
+  background-color: var(--color-main-900);
+  color: var(--color-white);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  max-width: var(--size-container-xl);
 }
 
 .navMenu {

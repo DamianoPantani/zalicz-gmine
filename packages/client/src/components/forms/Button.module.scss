@@ -1,0 +1,70 @@
+$variants: main, alternative, negative, positive;
+
+.button {
+  display: flex;
+  gap: var(--space-sm);
+  flex-grow: 0;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: var(--space-sm);
+  height: var(--size-3xl);
+  user-select: none;
+  white-space: nowrap;
+  cursor: pointer;
+
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  border-radius: var(--radius-md);
+  font-size: var(--fontSize-md);
+  font-weight: 600;
+
+  transition-property: var(--transition-property-common);
+  transition-duration: var(--transition-duration-normal);
+
+  &:disabled {
+    cursor: default;
+  }
+
+  @each $name in $variants {
+    &.#{$name}.primary {
+      background-color: var(--color-#{$name}-600);
+      color: var(--color-white);
+
+      &:hover,
+      &:focus {
+        background-color: var(--color-#{$name}-800);
+        color: var(--color-white);
+      }
+    }
+
+    &.#{$name}.secondary {
+      background-color: var(--color-white);
+      color: var(--color-#{$name}-600);
+      border-color: var(--color-gray-400);
+
+      &:hover,
+      &:focus {
+        background-color: var(--color-#{$name}-200);
+        border-color: var(--color-#{$name}-800);
+        color: var(--color-#{$name}-800);
+      }
+    }
+  }
+
+  &.primary {
+    &:disabled,
+    &:hover[disabled] {
+      background-color: var(--color-gray-400);
+    }
+  }
+
+  &.secondary {
+    &:disabled,
+    &:hover[disabled] {
+      background-color: var(--color-white);
+      color: var(--color-gray-500);
+      border-color: var(--color-gray-400);
+    }
+  }
+}

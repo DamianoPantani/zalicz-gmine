@@ -3,11 +3,13 @@ import { Formik, Form } from "formik";
 import { LoginRequest } from "@damianopantani/zaliczgmine-server";
 import { useFormikField } from "../forms/useFormikField";
 import { Input } from "../forms/Input";
+import { Button } from "../forms/Button";
 import { useSessionStore } from "../../SessionContext";
 
 const initialLoginValues: LoginRequest = { password: "", username: "" };
 
 // TODO: locales
+// Todo: loading spinner
 
 export const Login: React.FC = () => {
   const loginUser = useSessionStore((s) => s.login);
@@ -44,7 +46,7 @@ const LoginForm = () => {
         type="password"
         placeholder="Hasło"
       />
-      <input type="submit" value="Zaloguj" />
+      <Button type="submit" >Zaloguj</Button>
     </Form>
   );
 };
