@@ -4,8 +4,8 @@ import {
   redirect,
   RouterProvider,
 } from "react-router-dom";
-import { Map } from "./Map";
-import { Login } from "./Login";
+import { Map } from "./components/routes/Map";
+import { Login } from "./components/routes/Login";
 import { Paths } from "./paths";
 import { useSessionStore } from "./SessionContext";
 

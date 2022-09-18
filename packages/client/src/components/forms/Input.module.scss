@@ -1,0 +1,41 @@
+.inputBox {
+  border: 1px solid;
+  border-radius: var(--radius-base);
+  border-color: var(--color-gray-400);
+  padding: 0 var(--space-md);
+  width: 100%;
+  height: var(--size-3xl);
+  overflow: hidden;
+  color: var(--colors-gray-900);
+
+  padding: 0 var(--space-md);
+  width: 100%;
+  height: var(--size-3xl);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &::placeholder {
+    color: var(--colors-gray-600);
+  }
+
+  &:hover {
+    border-color: var(--colors-gray-600);
+    outline: none;
+  }
+
+  &:focus {
+    border-color: var(--colors-gray-600);
+    // outline: none !important; // override dotted outline from _forms.scss
+  }
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  font-size: var(--fontSize-lg);
+  text-overflow: ellipsis;
+  outline: none;
+  border: none;
+  color: var(--color-gray-900);
+}

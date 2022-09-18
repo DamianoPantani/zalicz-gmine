@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { FeatureGroup, MapContainer, Polygon, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import { GminaBounds } from "./types";
-import { getAllGminas } from "./api";
+import { GminaBounds } from "../../types";
+import { getAllGminas } from "../../api";
 
 export const Map: React.FC = () => {
   const [gminas, setGminas] = useState<GminaBounds[]>([]);

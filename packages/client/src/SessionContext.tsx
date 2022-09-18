@@ -1,4 +1,4 @@
-import type { User } from "@damianopantani/zaliczgmine-server";
+import type { LoginRequest, User } from "@damianopantani/zaliczgmine-server";
 import React, { PropsWithChildren } from "react";
 import create, { StoreApi } from "zustand";
 import createContext from "zustand/context";
@@ -17,7 +17,7 @@ type LoginStatus =
 type SessionStore = LoginStatus & {
   isInitializing: boolean;
   initialize(): Promise<void>;
-  login(username: string, password: string): Promise<void>;
+  login(form: LoginRequest): Promise<void>;
   logout(): Promise<void>;
 };
 
@@ -42,8 +42,8 @@ const createSessionStore = () =>
       }
     },
 
-    login: async (username, password) => {
-      const user = await loginUser({ username, password });
+    login: async (form) => {
+      const user = await loginUser(form);
       set({ isLoggedIn: true, user });
     },
 
