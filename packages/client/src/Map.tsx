@@ -12,10 +12,11 @@ export const Map: React.FC = () => {
     setLoading(true);
 
     getAllGminas()
-      .then((res) => setGminas(res.data))
+      .then(setGminas)
       .finally(() => setLoading(false));
   }, []);
 
+  // TODO: different paths when on different zoom level (performance)
   return (
     <MapContainer
       center={[52.0691, 19.4797]}

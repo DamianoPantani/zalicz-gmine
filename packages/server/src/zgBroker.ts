@@ -26,8 +26,10 @@ export const getUserFromSession = async (
   debugger;
 
   return {
-    userId: 0,
-    username: "TODO",
+    user: {
+      userId: 0,
+      username: "TODO",
+    },
   };
 };
 
@@ -54,8 +56,10 @@ export const loginToZG = async (
   if (redirectUrl.startsWith("/users/view/")) {
     const userId = +redirectUrl.split("/users/view/")[1];
     return {
-      userId,
-      username: "TODO",
+      user: {
+        userId,
+        username: "TODO",
+      },
     };
   }
 

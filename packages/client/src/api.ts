@@ -3,6 +3,7 @@ import type {
   LoginRequest,
   SessionResponse,
   LoggedUserResponse,
+  User,
 } from "@damianopantani/zaliczgmine-server";
 import { GminaBounds } from "./types";
 import LocalStorage from "./localStorage";
@@ -25,9 +26,7 @@ Api.interceptors.request.use((request) => {
   return request;
 });
 
-export const getLoggedInUser = async (): Promise<
-  LoggedUserResponse | undefined
-> => {
+export const getLoggedInUser = async (): Promise<User | undefined> => {
   const authToken = authLocalStorage.get();
 
   if (!authToken) {
@@ -36,18 +35,20 @@ export const getLoggedInUser = async (): Promise<
     return undefined;
   } else {
     const { data } = await Api.get<LoggedUserResponse>("/session");
-    return data;
+    return data.user;
   }
 };
 
-export const loginUser = (loginForm: LoginRequest) => {
-  return Api.post("/session", loginForm);
+export const loginUser = async (loginForm: LoginRequest): Promise<User> => {
+  const { data } = await Api.post<LoggedUserResponse>("/session", loginForm);
+  return data.user;
 };
 
-export const logoutUser = () => {
+export const logoutUser = async (): Promise<void> => {
   // TODO: send request (but don't clear localstorage)
 };
 
-export const getAllGminas = () => {
-  return axios.get<GminaBounds[]>("/gminas.json");
+export const getAllGminas = async (): Promise<GminaBounds[]> => {
+  const { data } = await axios.get<GminaBounds[]>("/gminas.json");
+  return data;
 };
