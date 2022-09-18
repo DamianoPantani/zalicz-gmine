@@ -8,6 +8,7 @@ import { ZGApiError } from "./ZGApiError";
 import { ErrorType } from "./types/shared/error";
 import { flatten, ParsedObject } from "./utils";
 import { parseAuthCookie, requestOptions } from "./auth";
+import { parseUser } from "./htmlBodyParser";
 
 const ZGApi = axios.create({
   baseURL: "https://zaliczgmine.pl",
@@ -17,20 +18,13 @@ export const getUserFromSession = async (
   authToken: string
 ): Promise<LoggedUserResponse> => {
   const { data } = await ZGApi.get<string>("/", requestOptions(authToken));
+  const user = parseUser(data);
 
-  // If "Log in" button visible - user is logged out - TODO find a better alternative
-  if (data.includes("Zaloguj")) {
-    throw new ZGApiError(ErrorType.SESSION_EXPIRED);
+  if (user) {
+    return { user };
   }
 
-  debugger;
-
-  return {
-    user: {
-      userId: 0,
-      username: "TODO",
-    },
-  };
+  throw new ZGApiError(ErrorType.SESSION_EXPIRED);
 };
 
 export const createNewSessionCookie = async (): Promise<SessionResponse> => {
@@ -43,27 +37,23 @@ export const loginToZG = async (
   authToken: string
 ): Promise<LoggedUserResponse> => {
   const { password, username } = loginForm;
-  const { request } = await ZGApi.post(
+  const { data } = await ZGApi.post<string>(
     "/users/login",
     zgDataString({ User: { username, password } }),
     requestOptions(authToken)
   );
 
-  const { path: redirectUrl } = request;
+  const user = parseUser(data);
 
-  debugger;
-
-  if (redirectUrl.startsWith("/users/view/")) {
-    const userId = +redirectUrl.split("/users/view/")[1];
-    return {
-      user: {
-        userId,
-        username: "TODO",
-      },
-    };
+  if (user) {
+    return { user };
   }
 
   throw new ZGApiError(ErrorType.INVALID_CREDENTIALS);
+};
+
+export const logoutFromZG = async (authToken: string): Promise<void> => {
+  await ZGApi.get("/users/logout", requestOptions(authToken));
 };
 
 // TODO: implement

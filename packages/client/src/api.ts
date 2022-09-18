@@ -45,7 +45,7 @@ export const loginUser = async (loginForm: LoginRequest): Promise<User> => {
 };
 
 export const logoutUser = async (): Promise<void> => {
-  // TODO: send request (but don't clear localstorage)
+  await Api.delete("/session");
 };
 
 export const getAllGminas = async (): Promise<GminaBounds[]> => {

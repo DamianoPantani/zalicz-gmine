@@ -11,6 +11,7 @@ import {
   createNewSessionCookie,
   loginToZG,
   getUserFromSession,
+  logoutFromZG,
 } from "./zgBroker";
 
 export const createSession: RequestHandler<
@@ -49,6 +50,17 @@ export const loginUser: RequestHandler<
     const user = await loginToZG(req.body, authToken);
 
     res.json(user);
+  } catch (error) {
+    res.status(400).json(toUIError(error));
+  }
+};
+
+export const logoutUser: RequestHandler = async (req, res) => {
+  try {
+    const authToken = getAuthToken(req.headers);
+    await logoutFromZG(authToken);
+
+    res.send();
   } catch (error) {
     res.status(400).json(toUIError(error));
   }

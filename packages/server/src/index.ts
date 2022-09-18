@@ -1,7 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-import { loginUser, createSession, getLoggedInUser } from "./api";
+import { loginUser, logoutUser, createSession, getLoggedInUser } from "./api";
 import { rejectIfNoAuthTokenSet } from "./acl";
 
 const port = process.env.PORT || 5000;
@@ -21,6 +21,7 @@ app.use(
     .put("/", createSession)
     .get("/", rejectIfNoAuthTokenSet, getLoggedInUser)
     .post("/", rejectIfNoAuthTokenSet, loginUser)
+    .delete("/", logoutUser)
 );
 
 app.listen(port);

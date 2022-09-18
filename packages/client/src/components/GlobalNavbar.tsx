@@ -6,6 +6,7 @@ import styles from "./GlobalNavbar.module.scss";
 
 export const GlobalNavbar: React.FC = () => {
   const isLoggedIn = useSessionStore((s) => s.isLoggedIn);
+  const logout = useSessionStore((s) => s.logout);
 
   return (
     <div className={styles.navbarContainer}>
@@ -16,7 +17,7 @@ export const GlobalNavbar: React.FC = () => {
             <>
               <span>username - todo</span>
               <span>map - todo</span>
-              <span>logout - todo</span>
+              <span onClick={logout}>Wyloguj</span>
             </>
           ) : (
             <>
