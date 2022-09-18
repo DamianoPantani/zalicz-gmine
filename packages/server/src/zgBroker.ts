@@ -1,5 +1,9 @@
 import axios from "axios";
-import { LoginRequest, SessionResponse } from "./types/shared";
+import {
+  LoggedUserResponse,
+  LoginRequest,
+  SessionResponse,
+} from "./types/shared";
 import { ZGApiError } from "./ZGApiError";
 import { ErrorType } from "./types/shared/error";
 import { flatten, ParsedObject } from "./utils";
@@ -9,13 +13,22 @@ const ZGApi = axios.create({
   baseURL: "https://zaliczgmine.pl",
 });
 
-export const validateSession = async (authToken: string) => {
+export const getUserFromSession = async (
+  authToken: string
+): Promise<LoggedUserResponse> => {
   const { data } = await ZGApi.get<string>("/", requestOptions(authToken));
 
   // If "Log in" button visible - user is logged out - TODO find a better alternative
   if (data.includes("Zaloguj")) {
     throw new ZGApiError(ErrorType.SESSION_EXPIRED);
   }
+
+  debugger;
+
+  return {
+    userId: 0,
+    username: "TODO",
+  };
 };
 
 export const createNewSessionCookie = async (): Promise<SessionResponse> => {
@@ -26,7 +39,7 @@ export const createNewSessionCookie = async (): Promise<SessionResponse> => {
 export const loginToZG = async (
   loginForm: LoginRequest,
   authToken: string
-): Promise<number> => {
+): Promise<LoggedUserResponse> => {
   const { password, username } = loginForm;
   const { request } = await ZGApi.post(
     "/users/login",
@@ -36,8 +49,14 @@ export const loginToZG = async (
 
   const { path: redirectUrl } = request;
 
+  debugger;
+
   if (redirectUrl.startsWith("/users/view/")) {
-    return +redirectUrl.split("/users/view/")[1];
+    const userId = +redirectUrl.split("/users/view/")[1];
+    return {
+      userId,
+      username: "TODO",
+    };
   }
 
   throw new ZGApiError(ErrorType.INVALID_CREDENTIALS);

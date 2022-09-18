@@ -1,7 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-import { loginUser, createSession, isSessionValid } from "./api";
+import { loginUser, createSession, getLoggedInUser } from "./api";
 import { rejectIfNoAuthTokenSet } from "./acl";
 
 const port = process.env.PORT || 5000;
@@ -18,8 +18,8 @@ app.use(
   "/api/session",
   express
     .Router()
-    .get("/", createSession)
-    .put("/", rejectIfNoAuthTokenSet, isSessionValid)
+    .put("/", createSession)
+    .get("/", rejectIfNoAuthTokenSet, getLoggedInUser)
     .post("/", rejectIfNoAuthTokenSet, loginUser)
 );
 

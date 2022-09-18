@@ -4,10 +4,14 @@ import { toUIError } from "./error";
 import {
   LoginRequest,
   SessionResponse,
-  SessionValidityResponse,
+  LoggedUserResponse,
 } from "./types/shared";
 import { UIError } from "./types/shared/error";
-import { createNewSessionCookie, loginToZG, validateSession } from "./zgBroker";
+import {
+  createNewSessionCookie,
+  loginToZG,
+  getUserFromSession,
+} from "./zgBroker";
 
 export const createSession: RequestHandler<
   unknown,
@@ -21,30 +25,30 @@ export const createSession: RequestHandler<
   }
 };
 
-export const isSessionValid: RequestHandler<
+export const getLoggedInUser: RequestHandler<
   unknown,
-  SessionValidityResponse
+  LoggedUserResponse | UIError
 > = async (req, res) => {
   try {
     // TODO: save authToken to local directory !
     const authToken = getAuthToken(req.headers); // throws if auth token is not set
-    await validateSession(authToken); // throws if session is expired
-    res.json({ isSessionValid: true });
-  } catch {
-    res.json({ isSessionValid: false });
+    const user = await getUserFromSession(authToken); // throws if session is expired
+    res.json(user);
+  } catch (error) {
+    res.status(400).json(toUIError(error));
   }
 };
 
-// TODO: response type
-export const loginUser: RequestHandler<unknown, unknown, LoginRequest> = async (
-  req,
-  res
-) => {
+export const loginUser: RequestHandler<
+  unknown,
+  LoggedUserResponse | UIError,
+  LoginRequest
+> = async (req, res) => {
   try {
     const authToken = getAuthToken(req.headers);
-    const userId = await loginToZG(req.body, authToken);
+    const user = await loginToZG(req.body, authToken);
 
-    res.json({ userId });
+    res.json(user);
   } catch (error) {
     res.status(400).json(toUIError(error));
   }

@@ -2,4 +2,4 @@ export type LoginRequest = { username: string; password: string };
 
 export type SessionResponse = { authToken: string };
 
-export type SessionValidityResponse = { isSessionValid: boolean };
+export type LoggedUserResponse = { userId: number; username: string };
