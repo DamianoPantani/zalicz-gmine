@@ -1,0 +1,817 @@
+{
+  "name": "warmińsko-mazurskie",
+  "gminas": [
+    {
+      "area": "205.02",
+      "county": "gołdapski",
+      "id": "2024",
+      "name": "Banie Mazurskie",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "293.62",
+      "county": "kętrzyński",
+      "id": "2025",
+      "name": "Barciany",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "319.85",
+      "county": "olsztyński",
+      "id": "2026",
+      "name": "Barczewo",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "11.00",
+      "county": "bartoszycki",
+      "id": "2027",
+      "name": "Bartoszyce - gmina miejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "427.82",
+      "county": "bartoszycki",
+      "id": "2028",
+      "name": "Bartoszyce - gmina wiejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "420.14",
+      "county": "piski",
+      "id": "2029",
+      "name": "Biała Piska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "241.25",
+      "county": "nowomiejski",
+      "id": "2030",
+      "name": "Biskupiec (pow. nowomiejski)",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "290.38",
+      "county": "olsztyński",
+      "id": "2031",
+      "name": "Biskupiec (pow. olsztyński)",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "203.55",
+      "county": "bartoszycki",
+      "id": "2032",
+      "name": "Bisztynek",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "12.36",
+      "county": "braniewski",
+      "id": "2033",
+      "name": "Braniewo - gmina miejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "306.93",
+      "county": "braniewski",
+      "id": "2034",
+      "name": "Braniewo - gmina wiejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "175.02",
+      "county": "węgorzewski",
+      "id": "2035",
+      "name": "Budry",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "165.37",
+      "county": "ostródzki",
+      "id": "2036",
+      "name": "Dąbrówno",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "258.67",
+      "county": "olsztyński",
+      "id": "2037",
+      "name": "Dobre Miasto",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "205.18",
+      "county": "gołdapski",
+      "id": "2038",
+      "name": "Dubeninki",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "160.68",
+      "county": "olsztyński",
+      "id": "2039",
+      "name": "Dywity",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "11.13",
+      "county": "działdowski",
+      "id": "2040",
+      "name": "Działdowo - gmina miejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "272.77",
+      "county": "działdowski",
+      "id": "2041",
+      "name": "Działdowo - gmina wiejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "263.35",
+      "county": "szczycieński",
+      "id": "2042",
+      "name": "Dźwierzuty",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "79.52",
+      "county": "elbląski",
+      "id": "2043",
+      "name": "Elbląg - gmina miejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "192.06",
+      "county": "elbląski",
+      "id": "2044",
+      "name": "Elbląg - gmina wiejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "21.07",
+      "county": "ełcki",
+      "id": "2045",
+      "name": "Ełk - gmina miejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "378.61",
+      "county": "ełcki",
+      "id": "2046",
+      "name": "Ełk - gmina wiejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "125.82",
+      "county": "braniewski",
+      "id": "2047",
+      "name": "Frombork",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "174.13",
+      "county": "olsztyński",
+      "id": "2048",
+      "name": "Gietrzwałd",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "13.87",
+      "county": "giżycki",
+      "id": "2049",
+      "name": "Giżycko - gmina miejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "289.76",
+      "county": "giżycki",
+      "id": "2050",
+      "name": "Giżycko - gmina wiejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "166.74",
+      "county": "elbląski",
+      "id": "2051",
+      "name": "Godkowo",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "361.73",
+      "county": "gołdapski",
+      "id": "2052",
+      "name": "Gołdap",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "3.32",
+      "county": "bartoszycki",
+      "id": "2053",
+      "name": "Górowo Iławeckie - gmina miejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "416.27",
+      "county": "bartoszycki",
+      "id": "2054",
+      "name": "Górowo Iławeckie - gmina wiejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "154.27",
+      "county": "nowomiejski",
+      "id": "2055",
+      "name": "Grodziczno",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "89.20",
+      "county": "elbląski",
+      "id": "2056",
+      "name": "Gronowo Elbląskie",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "179.84",
+      "county": "ostródzki",
+      "id": "2057",
+      "name": "Grunwald",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "21.88",
+      "county": "iławski",
+      "id": "2058",
+      "name": "Iława - gmina miejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "423.55",
+      "county": "iławski",
+      "id": "2059",
+      "name": "Iława - gmina wiejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "103.06",
+      "county": "działdowski",
+      "id": "2060",
+      "name": "Iłowo-Osada",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "136.25",
+      "county": "nidzicki",
+      "id": "2061",
+      "name": "Janowiec Kościelny",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "191.56",
+      "county": "nidzicki",
+      "id": "2062",
+      "name": "Janowo",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "311.51",
+      "county": "szczycieński",
+      "id": "2063",
+      "name": "Jedwabno",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "213.51",
+      "county": "olsztyński",
+      "id": "2064",
+      "name": "Jeziorany",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "168.19",
+      "county": "olsztyński",
+      "id": "2065",
+      "name": "Jonkowo",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "285.17",
+      "county": "ełcki",
+      "id": "2066",
+      "name": "Kalinowo",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "10.34",
+      "county": "kętrzyński",
+      "id": "2067",
+      "name": "Kętrzyn - gmina miejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "285.73",
+      "county": "kętrzyński",
+      "id": "2068",
+      "name": "Kętrzyn - gmina wiejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "172.80",
+      "county": "iławski",
+      "id": "2069",
+      "name": "Kisielice",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "145.38",
+      "county": "lidzbarski",
+      "id": "2070",
+      "name": "Kiwity",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "178.34",
+      "county": "olsztyński",
+      "id": "2071",
+      "name": "Kolno",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "249.94",
+      "county": "kętrzyński",
+      "id": "2072",
+      "name": "Korsze",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "251.61",
+      "county": "olecki",
+      "id": "2073",
+      "name": "Kowale Oleckie",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "254.01",
+      "county": "nidzicki",
+      "id": "2074",
+      "name": "Kozłowo",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "201.01",
+      "county": "giżycki",
+      "id": "2075",
+      "name": "Kruklanki",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "149.86",
+      "county": "nowomiejski",
+      "id": "2076",
+      "name": "Kurzętnik",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "197.96",
+      "county": "braniewski",
+      "id": "2077",
+      "name": "Lelkowo",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "255.67",
+      "county": "działdowski",
+      "id": "2078",
+      "name": "Lidzbark",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "14.34",
+      "county": "lidzbarski",
+      "id": "2079",
+      "name": "Lidzbark Warmiński - gmina miejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "371.01",
+      "county": "lidzbarski",
+      "id": "2080",
+      "name": "Lidzbark Warmiński - gmina wiejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "16.84",
+      "county": "iławski",
+      "id": "2081",
+      "name": "Lubawa - gmina miejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "236.64",
+      "county": "iławski",
+      "id": "2082",
+      "name": "Lubawa - gmina wiejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "149.56",
+      "county": "lidzbarski",
+      "id": "2083",
+      "name": "Lubomino",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "184.71",
+      "county": "ostródzki",
+      "id": "2084",
+      "name": "Łukta",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "188.94",
+      "county": "ostródzki",
+      "id": "2085",
+      "name": "Małdyty",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "108.56",
+      "county": "elbląski",
+      "id": "2086",
+      "name": "Markusy",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "256.41",
+      "county": "mrągowski",
+      "id": "2087",
+      "name": "Mikołajki",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "95.55",
+      "county": "elbląski",
+      "id": "2088",
+      "name": "Milejewo",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "159.36",
+      "county": "ostródzki",
+      "id": "2089",
+      "name": "Miłakowo",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "169.43",
+      "county": "giżycki",
+      "id": "2090",
+      "name": "Miłki",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "160.91",
+      "county": "ostródzki",
+      "id": "2091",
+      "name": "Miłomłyn",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "157.09",
+      "county": "elbląski",
+      "id": "2092",
+      "name": "Młynary",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "310.55",
+      "county": "ostródzki",
+      "id": "2093",
+      "name": "Morąg",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "14.80",
+      "county": "mrągowski",
+      "id": "2094",
+      "name": "Mrągowo - gmina miejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "294.87",
+      "county": "mrągowski",
+      "id": "2095",
+      "name": "Mrągowo - gmina wiejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "378.88",
+      "county": "nidzicki",
+      "id": "2096",
+      "name": "Nidzica",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "11.61",
+      "county": "nowomiejski",
+      "id": "2097",
+      "name": "Nowe Miasto Lubawskie - gmina miejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "138.02",
+      "county": "nowomiejski",
+      "id": "2098",
+      "name": "Nowe Miasto Lubawskie - gmina wiejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "266.60",
+      "county": "olecki",
+      "id": "2099",
+      "name": "Olecko",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "87.89",
+      "county": "prawa powiatu",
+      "id": "2100",
+      "name": "Olsztyn",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "372.03",
+      "county": "olsztyński",
+      "id": "2101",
+      "name": "Olsztynek",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "244.13",
+      "county": "lidzbarski",
+      "id": "2102",
+      "name": "Orneta",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "363.49",
+      "county": "piski",
+      "id": "2103",
+      "name": "Orzysz",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "14.15",
+      "county": "ostródzki",
+      "id": "2104",
+      "name": "Ostróda - gmina miejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "401.06",
+      "county": "ostródzki",
+      "id": "2105",
+      "name": "Ostróda - gmina wiejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "264.39",
+      "county": "elbląski",
+      "id": "2106",
+      "name": "Pasłęk",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "149.40",
+      "county": "szczycieński",
+      "id": "2107",
+      "name": "Pasym",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "314.59",
+      "county": "mrągowski",
+      "id": "2108",
+      "name": "Piecki",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "241.43",
+      "county": "braniewski",
+      "id": "2109",
+      "name": "Pieniężno",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "634.80",
+      "county": "piski",
+      "id": "2110",
+      "name": "Pisz",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "172.05",
+      "county": "braniewski",
+      "id": "2111",
+      "name": "Płoskinia",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "163.09",
+      "county": "działdowski",
+      "id": "2112",
+      "name": "Płośnica",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "177.30",
+      "county": "węgorzewski",
+      "id": "2113",
+      "name": "Pozezdrze",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "230.47",
+      "county": "ełcki",
+      "id": "2114",
+      "name": "Prostki",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "318.19",
+      "county": "olsztyński",
+      "id": "2115",
+      "name": "Purda",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "178.71",
+      "county": "kętrzyński",
+      "id": "2116",
+      "name": "Reszel",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "223.95",
+      "county": "szczycieński",
+      "id": "2117",
+      "name": "Rozogi",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "357.74",
+      "county": "piski",
+      "id": "2118",
+      "name": "Ruciane-Nida",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "147.46",
+      "county": "działdowski",
+      "id": "2119",
+      "name": "Rybno",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "131.66",
+      "county": "elbląski",
+      "id": "2120",
+      "name": "Rychliki",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "211.21",
+      "county": "giżycki",
+      "id": "2121",
+      "name": "Ryn",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "246.58",
+      "county": "bartoszycki",
+      "id": "2122",
+      "name": "Sępopol",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "184.56",
+      "county": "mrągowski",
+      "id": "2123",
+      "name": "Sorkwity",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "194.63",
+      "county": "kętrzyński",
+      "id": "2124",
+      "name": "Srokowo",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "196.55",
+      "county": "ełcki",
+      "id": "2125",
+      "name": "Stare Juchy",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "222.52",
+      "county": "olsztyński",
+      "id": "2126",
+      "name": "Stawiguda",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "258.95",
+      "county": "iławski",
+      "id": "2127",
+      "name": "Susz",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "9.96",
+      "county": "szczycieński",
+      "id": "2128",
+      "name": "Szczytno - gmina miejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "347.26",
+      "county": "szczycieński",
+      "id": "2129",
+      "name": "Szczytno - gmina wiejska",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "163.80",
+      "county": "olsztyński",
+      "id": "2130",
+      "name": "Świątki",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "214.91",
+      "county": "olecki",
+      "id": "2131",
+      "name": "Świętajno (pow. olecki)",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "279.78",
+      "county": "szczycieński",
+      "id": "2132",
+      "name": "Świętajno (pow. szczycieński)",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "225.30",
+      "county": "elbląski",
+      "id": "2133",
+      "name": "Tolkmicko",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "341.11",
+      "county": "węgorzewski",
+      "id": "2134",
+      "name": "Węgorzewo",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "347.89",
+      "county": "szczycieński",
+      "id": "2135",
+      "name": "Wielbark",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "140.71",
+      "county": "olecki",
+      "id": "2136",
+      "name": "Wieliczki",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "147.99",
+      "county": "braniewski",
+      "id": "2137",
+      "name": "Wilczęta",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "233.46",
+      "county": "giżycki",
+      "id": "2138",
+      "name": "Wydminy",
+      "voivodeship": "warmińsko-mazurskie"
+    },
+    {
+      "area": "254.34",
+      "county": "iławski",
+      "id": "2139",
+      "name": "Zalewo",
+      "voivodeship": "warmińsko-mazurskie"
+    }
+  ]
+}

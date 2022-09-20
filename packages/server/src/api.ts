@@ -4,21 +4,19 @@ import {
   LoginRequest,
   SessionResponse,
   LoggedUserResponse,
+  UpdateStatusRequest,
+  UserGminasStatus,
+  UserGminasStatusRequest,
 } from "./types/shared";
 import { UIError } from "./types/shared/error";
-import {
-  createNewSessionCookie,
-  loginToZG,
-  getUserFromSession,
-  logoutFromZG,
-} from "./zgBroker";
+import { zgApi } from "./zgBroker";
 
 export const createSession: ZGRequestHandler<
   unknown,
   SessionResponse | UIError
 > = async (_, res) => {
   try {
-    const { authToken } = await createNewSessionCookie();
+    const { authToken } = await zgApi.createNewSessionCookie();
     res.json({ authToken });
   } catch (error) {
     res.status(400).json(toUIError(error));
@@ -31,7 +29,7 @@ export const getLoggedInUser: ZGRequestHandler<
 > = async (_req, res) => {
   try {
     const { authToken } = res.locals;
-    const user = await getUserFromSession(authToken); // throws if session is expired
+    const user = await zgApi.setToken(authToken).getUserFromSession(); // throws if session is expired
     res.json(user);
   } catch (error) {
     res.status(400).json(toUIError(error));
@@ -44,7 +42,7 @@ export const loginUser: ZGRequestHandler<
 > = async (req, res) => {
   try {
     const { authToken } = res.locals;
-    const user = await loginToZG(req.body, authToken);
+    const user = await zgApi.setToken(authToken).loginToZG(req.body);
 
     res.json(user);
   } catch (error) {
@@ -55,9 +53,38 @@ export const loginUser: ZGRequestHandler<
 export const logoutUser: ZGRequestHandler = async (_req, res) => {
   try {
     const { authToken } = res.locals;
-    await logoutFromZG(authToken);
+    await zgApi.setToken(authToken).logoutFromZG();
 
     res.send();
+  } catch (error) {
+    res.status(400).json(toUIError(error));
+  }
+};
+
+export const updateGminasStatus: ZGRequestHandler<UpdateStatusRequest> = async (
+  req,
+  res
+) => {
+  try {
+    const { authToken } = res.locals;
+    await zgApi.setToken(authToken).updateGminasStatus(req.body);
+
+    res.send();
+  } catch (error) {
+    res.status(400).json(toUIError(error));
+  }
+};
+
+export const getCheckedGminas: ZGRequestHandler<
+  unknown,
+  UserGminasStatus | UIError,
+  UserGminasStatusRequest
+> = async (req, res) => {
+  try {
+    const { userId } = req.params;
+    const checkedGminas = await zgApi.getCheckedGminas(userId);
+
+    res.json(checkedGminas);
   } catch (error) {
     res.status(400).json(toUIError(error));
   }

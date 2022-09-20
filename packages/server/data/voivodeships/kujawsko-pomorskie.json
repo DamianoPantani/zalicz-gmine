@@ -1,0 +1,1013 @@
+{
+  "name": "kujawsko-pomorskie",
+  "gminas": [
+    {
+      "area": "7.17",
+      "county": "aleksandrowski",
+      "id": "170",
+      "name": "Aleksandrów Kujawski - gmina miejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "131.64",
+      "county": "aleksandrowski",
+      "id": "171",
+      "name": "Aleksandrów Kujawski - gmina wiejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "121.08",
+      "county": "żniński",
+      "id": "172",
+      "name": "Barcin",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "83.35",
+      "county": "brodnicki",
+      "id": "173",
+      "name": "Bartniczka",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "107.05",
+      "county": "włocławski",
+      "id": "174",
+      "name": "Baruchowo",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "79.70",
+      "county": "aleksandrowski",
+      "id": "175",
+      "name": "Bądkowo",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "121.90",
+      "county": "bydgoski",
+      "id": "176",
+      "name": "Białe Błota",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "95.55",
+      "county": "lipnowski",
+      "id": "177",
+      "name": "Bobrowniki",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "146.28",
+      "county": "brodnicki",
+      "id": "178",
+      "name": "Bobrowo",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "77.72",
+      "county": "włocławski",
+      "id": "179",
+      "name": "Boniewo",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "22.87",
+      "county": "brodnicki",
+      "id": "180",
+      "name": "Brodnica - gmina miejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "126.96",
+      "county": "brodnicki",
+      "id": "181",
+      "name": "Brodnica - gmina wiejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "150.44",
+      "county": "włocławski",
+      "id": "182",
+      "name": "Brześć Kujawski",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "93.74",
+      "county": "brodnicki",
+      "id": "183",
+      "name": "Brzozie",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "86.25",
+      "county": "rypiński",
+      "id": "184",
+      "name": "Brzuze",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "111.00",
+      "county": "świecki",
+      "id": "185",
+      "name": "Bukowiec",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "174.48",
+      "county": "prawa powiatu",
+      "id": "186",
+      "name": "Bydgoszcz",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "73.35",
+      "county": "radziejowski",
+      "id": "187",
+      "name": "Bytoń",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "253.32",
+      "county": "tucholski",
+      "id": "188",
+      "name": "Cekcyn",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "13.86",
+      "county": "chełmiński",
+      "id": "189",
+      "name": "Chełmno - gmina miejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "114.05",
+      "county": "chełmiński",
+      "id": "190",
+      "name": "Chełmno - gmina wiejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "7.83",
+      "county": "toruński",
+      "id": "191",
+      "name": "Chełmża - gmina miejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "178.72",
+      "county": "toruński",
+      "id": "192",
+      "name": "Chełmża - gmina wiejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "99.68",
+      "county": "włocławski",
+      "id": "193",
+      "name": "Choceń",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "122.23",
+      "county": "włocławski",
+      "id": "194",
+      "name": "Chodecz",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "74.08",
+      "county": "lipnowski",
+      "id": "195",
+      "name": "Chrostkowo",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "101.49",
+      "county": "golubsko-dobrzyński",
+      "id": "196",
+      "name": "Ciechocin",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "15.59",
+      "county": "aleksandrowski",
+      "id": "197",
+      "name": "Ciechocinek",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "169.37",
+      "county": "toruński",
+      "id": "198",
+      "name": "Czernikowo",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "110.51",
+      "county": "mogileński",
+      "id": "199",
+      "name": "Dąbrowa",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "147.44",
+      "county": "inowrocławski",
+      "id": "200",
+      "name": "Dąbrowa Biskupia",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "124.62",
+      "county": "bydgoski",
+      "id": "201",
+      "name": "Dąbrowa Chełmińska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "86.13",
+      "county": "wąbrzeski",
+      "id": "202",
+      "name": "Dębowa Łąka",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "130.41",
+      "county": "bydgoski",
+      "id": "203",
+      "name": "Dobrcz",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "70.77",
+      "county": "radziejowski",
+      "id": "204",
+      "name": "Dobre",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "115.44",
+      "county": "lipnowski",
+      "id": "205",
+      "name": "Dobrzyń nad Wisłą",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "111.14",
+      "county": "świecki",
+      "id": "206",
+      "name": "Dragacz",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "107.92",
+      "county": "świecki",
+      "id": "207",
+      "name": "Drzycim",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "76.10",
+      "county": "włocławski",
+      "id": "208",
+      "name": "Fabianki",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "135.70",
+      "county": "żniński",
+      "id": "209",
+      "name": "Gąsawa",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "179.44",
+      "county": "inowrocławski",
+      "id": "210",
+      "name": "Gniewkowo",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "7.50",
+      "county": "golubsko-dobrzyński",
+      "id": "211",
+      "name": "Golub-Dobrzyń - gmina miejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "197.45",
+      "county": "golubsko-dobrzyński",
+      "id": "212",
+      "name": "Golub-Dobrzyń - gmina wiejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "136.15",
+      "county": "tucholski",
+      "id": "213",
+      "name": "Gostycyn",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "119.38",
+      "county": "brodnicki",
+      "id": "214",
+      "name": "Górzno",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "58.74",
+      "county": "grudziądzki",
+      "id": "215",
+      "name": "Grudziądz - gmina miejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "166.93",
+      "county": "grudziądzki",
+      "id": "216",
+      "name": "Grudziądz - gmina wiejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "123.77",
+      "county": "grudziądzki",
+      "id": "217",
+      "name": "Gruta",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "30.42",
+      "county": "inowrocławski",
+      "id": "218",
+      "name": "Inowrocław - gmina miejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "171.05",
+      "county": "inowrocławski",
+      "id": "219",
+      "name": "Inowrocław - gmina wiejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "132.05",
+      "county": "włocławski",
+      "id": "220",
+      "name": "Izbica Kujawska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "134.36",
+      "county": "brodnicki",
+      "id": "221",
+      "name": "Jabłonowo Pomorskie",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "92.30",
+      "county": "inowrocławski",
+      "id": "222",
+      "name": "Janikowo",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "130.74",
+      "county": "żniński",
+      "id": "223",
+      "name": "Janowiec Wielkopolski",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "123.96",
+      "county": "mogileński",
+      "id": "224",
+      "name": "Jeziora Wielkie",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "155.93",
+      "county": "świecki",
+      "id": "225",
+      "name": "Jeżewo",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "163.21",
+      "county": "sępoleński",
+      "id": "226",
+      "name": "Kamień Krajeński",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "297.02",
+      "county": "nakielski",
+      "id": "227",
+      "name": "Kcynia",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "108.82",
+      "county": "tucholski",
+      "id": "228",
+      "name": "Kęsowo",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "72.19",
+      "county": "chełmiński",
+      "id": "229",
+      "name": "Kijewo Królewskie",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "98.20",
+      "county": "lipnowski",
+      "id": "230",
+      "name": "Kikół",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "68.13",
+      "county": "aleksandrowski",
+      "id": "231",
+      "name": "Koneck",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "411.70",
+      "county": "bydgoski",
+      "id": "232",
+      "name": "Koronowo",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "4.71",
+      "county": "włocławski",
+      "id": "233",
+      "name": "Kowal - gmina miejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "114.75",
+      "county": "włocławski",
+      "id": "234",
+      "name": "Kowal - gmina wiejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "141.39",
+      "county": "golubsko-dobrzyński",
+      "id": "235",
+      "name": "Kowalewo Pomorskie",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "262.19",
+      "county": "inowrocławski",
+      "id": "236",
+      "name": "Kruszwica",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "86.54",
+      "county": "wąbrzeski",
+      "id": "237",
+      "name": "Książki",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "10.88",
+      "county": "lipnowski",
+      "id": "238",
+      "name": "Lipno - gmina miejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "209.72",
+      "county": "lipnowski",
+      "id": "239",
+      "name": "Lipno - gmina wiejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "86.20",
+      "county": "chełmiński",
+      "id": "240",
+      "name": "Lisewo",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "88.34",
+      "county": "świecki",
+      "id": "241",
+      "name": "Lniano",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "69.30",
+      "county": "włocławski",
+      "id": "242",
+      "name": "Lubanie",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "106.03",
+      "county": "toruński",
+      "id": "243",
+      "name": "Lubicz",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "150.21",
+      "county": "włocławski",
+      "id": "244",
+      "name": "Lubień Kujawski",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "162.80",
+      "county": "tucholski",
+      "id": "245",
+      "name": "Lubiewo",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "148.18",
+      "county": "włocławski",
+      "id": "246",
+      "name": "Lubraniec",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "166.92",
+      "county": "żniński",
+      "id": "247",
+      "name": "Łabiszyn",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "136.58",
+      "county": "grudziądzki",
+      "id": "248",
+      "name": "Łasin",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "84.64",
+      "county": "toruński",
+      "id": "249",
+      "name": "Łubianka",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "127.34",
+      "county": "toruński",
+      "id": "250",
+      "name": "Łysomice",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "256.11",
+      "county": "mogileński",
+      "id": "251",
+      "name": "Mogilno",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "150.71",
+      "county": "nakielski",
+      "id": "252",
+      "name": "Mrocza",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "186.97",
+      "county": "nakielski",
+      "id": "253",
+      "name": "Nakło nad Notecią",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "9.85",
+      "county": "aleksandrowski",
+      "id": "254",
+      "name": "Nieszawa",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "148.47",
+      "county": "bydgoski",
+      "id": "255",
+      "name": "Nowa Wieś Wielka",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "106.36",
+      "county": "świecki",
+      "id": "256",
+      "name": "Nowe",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "161.97",
+      "county": "toruński",
+      "id": "257",
+      "name": "Obrowo",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "209.61",
+      "county": "świecki",
+      "id": "258",
+      "name": "Osie",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "75.12",
+      "county": "brodnicki",
+      "id": "259",
+      "name": "Osiek",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "102.89",
+      "county": "bydgoski",
+      "id": "260",
+      "name": "Osielsko",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "122.99",
+      "county": "radziejowski",
+      "id": "261",
+      "name": "Osięciny",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "86.29",
+      "county": "inowrocławski",
+      "id": "262",
+      "name": "Pakość",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "70.44",
+      "county": "chełmiński",
+      "id": "263",
+      "name": "Papowo Biskupie",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "138.62",
+      "county": "radziejowski",
+      "id": "264",
+      "name": "Piotrków Kujawski",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "119.33",
+      "county": "wąbrzeski",
+      "id": "265",
+      "name": "Płużnica",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "141.96",
+      "county": "świecki",
+      "id": "266",
+      "name": "Pruszcz",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "32.89",
+      "county": "aleksandrowski",
+      "id": "267",
+      "name": "Raciążek",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "80.77",
+      "county": "golubsko-dobrzyński",
+      "id": "268",
+      "name": "Radomin",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "5.75",
+      "county": "radziejowski",
+      "id": "269",
+      "name": "Radziejów - gmina miejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "92.60",
+      "county": "radziejowski",
+      "id": "270",
+      "name": "Radziejów - gmina wiejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "90.70",
+      "county": "grudziądzki",
+      "id": "271",
+      "name": "Radzyń Chełmiński",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "139.80",
+      "county": "rypiński",
+      "id": "272",
+      "name": "Rogowo (pow. rypiński)",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "178.56",
+      "county": "żniński",
+      "id": "273",
+      "name": "Rogowo (pow. żniński)",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "115.74",
+      "county": "grudziądzki",
+      "id": "274",
+      "name": "Rogóźno",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "120.21",
+      "county": "inowrocławski",
+      "id": "275",
+      "name": "Rojewo",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "200.78",
+      "county": "wąbrzeski",
+      "id": "301",
+      "name": "Ryńsk (Wąbrzeźno) - gmina wiejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "10.96",
+      "county": "rypiński",
+      "id": "276",
+      "name": "Rypin - gmina miejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "131.94",
+      "county": "rypiński",
+      "id": "277",
+      "name": "Rypin - gmina wiejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "153.69",
+      "county": "nakielski",
+      "id": "278",
+      "name": "Sadki",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "229.18",
+      "county": "sępoleński",
+      "id": "279",
+      "name": "Sępólno Krajeńskie",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "179.46",
+      "county": "bydgoski",
+      "id": "280",
+      "name": "Sicienko",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "179.23",
+      "county": "lipnowski",
+      "id": "281",
+      "name": "Skępe",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "124.35",
+      "county": "rypiński",
+      "id": "282",
+      "name": "Skrwilno",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "175.35",
+      "county": "bydgoski",
+      "id": "283",
+      "name": "Solec Kujawski",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "162.76",
+      "county": "sępoleński",
+      "id": "284",
+      "name": "Sośno",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "98.43",
+      "county": "chełmiński",
+      "id": "285",
+      "name": "Stolno",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "185.28",
+      "county": "mogileński",
+      "id": "286",
+      "name": "Strzelno",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "332.09",
+      "county": "nakielski",
+      "id": "287",
+      "name": "Szubin",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "174.75",
+      "county": "tucholski",
+      "id": "288",
+      "name": "Śliwice",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "174.81",
+      "county": "świecki",
+      "id": "289",
+      "name": "Świecie",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "94.67",
+      "county": "grudziądzki",
+      "id": "290",
+      "name": "Świecie nad Osą",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "103.83",
+      "county": "brodnicki",
+      "id": "291",
+      "name": "Świedziebnia",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "64.74",
+      "county": "świecki",
+      "id": "292",
+      "name": "Świekatowo",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "98.67",
+      "county": "lipnowski",
+      "id": "293",
+      "name": "Tłuchowo",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "102.92",
+      "county": "radziejowski",
+      "id": "294",
+      "name": "Topólka",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "115.75",
+      "county": "prawa powiatu",
+      "id": "295",
+      "name": "Toruń",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "239.43",
+      "county": "tucholski",
+      "id": "296",
+      "name": "Tuchola",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "72.45",
+      "county": "chełmiński",
+      "id": "297",
+      "name": "Unisław",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "54.56",
+      "county": "aleksandrowski",
+      "id": "298",
+      "name": "Waganiec",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "200.97",
+      "county": "świecki",
+      "id": "299",
+      "name": "Warlubie",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "8.53",
+      "county": "wąbrzeski",
+      "id": "300",
+      "name": "Wąbrzeźno - gmina miejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "93.78",
+      "county": "rypiński",
+      "id": "302",
+      "name": "Wąpielsk",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "133.83",
+      "county": "lipnowski",
+      "id": "303",
+      "name": "Wielgie",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "216.28",
+      "county": "toruński",
+      "id": "304",
+      "name": "Wielka Nieszawka",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "235.71",
+      "county": "sępoleński",
+      "id": "305",
+      "name": "Więcbork",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "84.78",
+      "county": "prawa powiatu",
+      "id": "306",
+      "name": "Włocławek - gmina miejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "219.92",
+      "county": "prawa powiatu",
+      "id": "307",
+      "name": "Włocławek - gmina wiejska",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "76.08",
+      "county": "aleksandrowski",
+      "id": "308",
+      "name": "Zakrzewo",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "132.90",
+      "county": "brodnicki",
+      "id": "309",
+      "name": "Zbiczno",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "84.38",
+      "county": "golubsko-dobrzyński",
+      "id": "310",
+      "name": "Zbójno",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "177.53",
+      "county": "toruński",
+      "id": "311",
+      "name": "Zławieś Wielka",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "135.60",
+      "county": "inowrocławski",
+      "id": "312",
+      "name": "Złotniki Kujawskie",
+      "voivodeship": "kujawsko-pomorskie"
+    },
+    {
+      "area": "251.55",
+      "county": "żniński",
+      "id": "313",
+      "name": "Żnin",
+      "voivodeship": "kujawsko-pomorskie"
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import type {
   SessionResponse,
   LoggedUserResponse,
   User,
+  UserGminasStatus,
 } from "@damianopantani/zaliczgmine-server";
 import { GminaBounds } from "./types";
 import LocalStorage from "./localStorage";
@@ -50,5 +51,12 @@ export const logoutUser = async (): Promise<void> => {
 
 export const getAllGminas = async (): Promise<GminaBounds[]> => {
   const { data } = await axios.get<GminaBounds[]>("/gminas.json");
+  return data;
+};
+
+export const getCheckedGminas = async (
+  userId: number
+): Promise<UserGminasStatus> => {
+  const { data } = await Api.get<UserGminasStatus>("/map/" + userId);
   return data;
 };

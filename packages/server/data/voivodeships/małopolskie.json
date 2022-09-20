@@ -1,0 +1,1279 @@
+{
+  "name": "małopolskie",
+  "gminas": [
+    {
+      "area": "75.27",
+      "county": "chrzanowski",
+      "id": "787",
+      "name": "Alwernia",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "100.60",
+      "county": "wadowicki",
+      "id": "788",
+      "name": "Andrychów",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "54.47",
+      "county": "chrzanowski",
+      "id": "789",
+      "name": "Babice",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "35.51",
+      "county": "tatrzański",
+      "id": "790",
+      "name": "Biały Dunajec",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "99.28",
+      "county": "gorlicki",
+      "id": "791",
+      "name": "Biecz",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "40.99",
+      "county": "wielicki",
+      "id": "792",
+      "name": "Biskupice",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "49.84",
+      "county": "gorlicki",
+      "id": "793",
+      "name": "Bobowa",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "29.89",
+      "county": "bocheński",
+      "id": "794",
+      "name": "Bochnia - gmina miejska",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "113.69",
+      "county": "bocheński",
+      "id": "795",
+      "name": "Bochnia - gmina wiejska",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "35.41",
+      "county": "dąbrowski",
+      "id": "796",
+      "name": "Bolesław (pow. dąbrowski)",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "41.42",
+      "county": "olkuski",
+      "id": "797",
+      "name": "Bolesław (pow. olkuski)",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "102.73",
+      "county": "brzeski",
+      "id": "798",
+      "name": "Borzęcin",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "102.57",
+      "county": "brzeski",
+      "id": "799",
+      "name": "Brzesko",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "46.13",
+      "county": "oświęcimski",
+      "id": "800",
+      "name": "Brzeszcze",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "65.48",
+      "county": "wadowicki",
+      "id": "801",
+      "name": "Brzeźnica",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "73.41",
+      "county": "suski",
+      "id": "802",
+      "name": "Budzów",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "131.84",
+      "county": "tatrzański",
+      "id": "803",
+      "name": "Bukowina Tatrzańska",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "63.42",
+      "county": "olkuski",
+      "id": "804",
+      "name": "Bukowno",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "80.43",
+      "county": "suski",
+      "id": "805",
+      "name": "Bystra-Sidzina",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "78.28",
+      "county": "miechowski",
+      "id": "806",
+      "name": "Charsznica",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "27.24",
+      "county": "oświęcimski",
+      "id": "807",
+      "name": "Chełmek",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "112.70",
+      "county": "nowosądecki",
+      "id": "808",
+      "name": "Chełmiec",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "79.33",
+      "county": "chrzanowski",
+      "id": "809",
+      "name": "Chrzanów",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "103.22",
+      "county": "tarnowski",
+      "id": "810",
+      "name": "Ciężkowice",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "218.34",
+      "county": "nowotarski",
+      "id": "811",
+      "name": "Czarny Dunajec",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "66.47",
+      "county": "brzeski",
+      "id": "812",
+      "name": "Czchów",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "85.50",
+      "county": "krakowski",
+      "id": "813",
+      "name": "Czernichów",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "61.72",
+      "county": "nowotarski",
+      "id": "814",
+      "name": "Czorsztyn",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "115.89",
+      "county": "dąbrowski",
+      "id": "815",
+      "name": "Dąbrowa Tarnowska",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "81.51",
+      "county": "brzeski",
+      "id": "816",
+      "name": "Dębno",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "66.63",
+      "county": "myślenicki",
+      "id": "817",
+      "name": "Dobczyce",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "109.05",
+      "county": "limanowski",
+      "id": "818",
+      "name": "Dobra",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "108.81",
+      "county": "bocheński",
+      "id": "819",
+      "name": "Drwinia",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "108.54",
+      "county": "wielicki",
+      "id": "820",
+      "name": "Gdów",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "54.89",
+      "county": "brzeski",
+      "id": "821",
+      "name": "Gnojnik",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "90.27",
+      "county": "miechowski",
+      "id": "822",
+      "name": "Gołcza",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "23.56",
+      "county": "gorlicki",
+      "id": "823",
+      "name": "Gorlice - gmina miejska",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "103.43",
+      "county": "gorlicki",
+      "id": "824",
+      "name": "Gorlice - gmina wiejska",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "48.63",
+      "county": "dąbrowski",
+      "id": "825",
+      "name": "Gręboszów",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "69.81",
+      "county": "tarnowski",
+      "id": "826",
+      "name": "Gromnik",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "88.17",
+      "county": "nowosądecki",
+      "id": "827",
+      "name": "Gródek nad Dunajcem",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "17.00",
+      "county": "nowosądecki",
+      "id": "828",
+      "name": "Grybów - gmina miejska",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "153.01",
+      "county": "nowosądecki",
+      "id": "829",
+      "name": "Grybów - gmina wiejska",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "62.59",
+      "county": "krakowski",
+      "id": "830",
+      "name": "Igołomia-Wawrzeńczyce",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "70.62",
+      "county": "krakowski",
+      "id": "831",
+      "name": "Iwanowice",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "47.19",
+      "county": "brzeski",
+      "id": "832",
+      "name": "Iwkowa",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "213.28",
+      "county": "nowotarski",
+      "id": "833",
+      "name": "Jabłonka",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "68.39",
+      "county": "krakowski",
+      "id": "834",
+      "name": "Jerzmanowice-Przeginia",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "72.43",
+      "county": "limanowski",
+      "id": "835",
+      "name": "Jodłownik",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "20.92",
+      "county": "suski",
+      "id": "836",
+      "name": "Jordanów - gmina miejska",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "92.65",
+      "county": "suski",
+      "id": "837",
+      "name": "Jordanów - gmina wiejska",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "75.32",
+      "county": "wadowicki",
+      "id": "838",
+      "name": "Kalwaria Zebrzydowska",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "96.11",
+      "county": "limanowski",
+      "id": "839",
+      "name": "Kamienica",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "63.01",
+      "county": "nowosądecki",
+      "id": "840",
+      "name": "Kamionka Wielka",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "75.79",
+      "county": "oświęcimski",
+      "id": "841",
+      "name": "Kęty",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "119.31",
+      "county": "olkuski",
+      "id": "842",
+      "name": "Klucze",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "83.10",
+      "county": "wielicki",
+      "id": "843",
+      "name": "Kłaj",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "82.53",
+      "county": "krakowski",
+      "id": "844",
+      "name": "Kocmyrzów-Luborzyca",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "88.50",
+      "county": "proszowicki",
+      "id": "845",
+      "name": "Koniusza",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "106.78",
+      "county": "nowosądecki",
+      "id": "846",
+      "name": "Korzenna",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "65.96",
+      "county": "proszowicki",
+      "id": "847",
+      "name": "Koszyce",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "136.37",
+      "county": "tatrzański",
+      "id": "848",
+      "name": "Kościelisko",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "85.84",
+      "county": "miechowski",
+      "id": "849",
+      "name": "Kozłów",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "326.84",
+      "county": "prawa powiatu",
+      "id": "850",
+      "name": "Kraków",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "57.27",
+      "county": "nowotarski",
+      "id": "851",
+      "name": "Krościenko nad Dunajcem",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "145.30",
+      "county": "nowosądecki",
+      "id": "852",
+      "name": "Krynica-Zdrój",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "139.30",
+      "county": "krakowski",
+      "id": "853",
+      "name": "Krzeszowice",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "137.80",
+      "county": "miechowski",
+      "id": "854",
+      "name": "Książ Wielki",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "40.61",
+      "county": "wadowicki",
+      "id": "855",
+      "name": "Lanckorona",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "72.82",
+      "county": "limanowski",
+      "id": "856",
+      "name": "Laskowa",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "57.20",
+      "county": "chrzanowski",
+      "id": "857",
+      "name": "Libiąż",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "18.64",
+      "county": "limanowski",
+      "id": "858",
+      "name": "Limanowa - gmina miejska",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "152.39",
+      "county": "limanowski",
+      "id": "859",
+      "name": "Limanowa - gmina wiejska",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "66.16",
+      "county": "gorlicki",
+      "id": "860",
+      "name": "Lipinki",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "60.62",
+      "county": "bocheński",
+      "id": "861",
+      "name": "Lipnica Murowana",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "67.47",
+      "county": "nowotarski",
+      "id": "862",
+      "name": "Lipnica Wielka",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "105.40",
+      "county": "tarnowski",
+      "id": "863",
+      "name": "Lisia Góra",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "72.03",
+      "county": "krakowski",
+      "id": "864",
+      "name": "Liszki",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "75.01",
+      "county": "myślenicki",
+      "id": "865",
+      "name": "Lubień",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "119.12",
+      "county": "nowosądecki",
+      "id": "866",
+      "name": "Łabowa",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "71.18",
+      "county": "bocheński",
+      "id": "867",
+      "name": "Łapanów",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "124.79",
+      "county": "nowotarski",
+      "id": "868",
+      "name": "Łapsze Niżne",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "132.95",
+      "county": "nowosądecki",
+      "id": "869",
+      "name": "Łącko",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "84.31",
+      "county": "nowosądecki",
+      "id": "870",
+      "name": "Łososina Dolna",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "69.71",
+      "county": "limanowski",
+      "id": "871",
+      "name": "Łukowica",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "56.24",
+      "county": "gorlicki",
+      "id": "872",
+      "name": "Łużna",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "108.94",
+      "county": "suski",
+      "id": "873",
+      "name": "Maków Podhalański",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "43.67",
+      "county": "dąbrowski",
+      "id": "874",
+      "name": "Mędrzechów",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "51.27",
+      "county": "krakowski",
+      "id": "875",
+      "name": "Michałowice",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "148.40",
+      "county": "miechowski",
+      "id": "876",
+      "name": "Miechów",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "43.55",
+      "county": "krakowski",
+      "id": "877",
+      "name": "Mogilany",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "37.60",
+      "county": "gorlicki",
+      "id": "878",
+      "name": "Moszczenica",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "27.10",
+      "county": "limanowski",
+      "id": "879",
+      "name": "Mszana Dolna - gmina miejska",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "169.83",
+      "county": "limanowski",
+      "id": "880",
+      "name": "Mszana Dolna - gmina wiejska",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "37.32",
+      "county": "wadowicki",
+      "id": "881",
+      "name": "Mucharz",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "141.99",
+      "county": "nowosądecki",
+      "id": "882",
+      "name": "Muszyna",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "153.74",
+      "county": "myślenicki",
+      "id": "883",
+      "name": "Myślenice",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "51.13",
+      "county": "nowosądecki",
+      "id": "884",
+      "name": "Nawojowa",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "74.44",
+      "county": "limanowski",
+      "id": "885",
+      "name": "Niedźwiedź",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "95.11",
+      "county": "wielicki",
+      "id": "886",
+      "name": "Niepołomice",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "54.53",
+      "county": "proszowicki",
+      "id": "887",
+      "name": "Nowe Brzesko",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "57.06",
+      "county": "prawa powiatu",
+      "id": "888",
+      "name": "Nowy Sącz",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "50.42",
+      "county": "nowotarski",
+      "id": "889",
+      "name": "Nowy Targ - gmina miejska",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "208.65",
+      "county": "nowotarski",
+      "id": "890",
+      "name": "Nowy Targ - gmina wiejska",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "82.49",
+      "county": "bocheński",
+      "id": "891",
+      "name": "Nowy Wiśnicz",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "141.03",
+      "county": "nowotarski",
+      "id": "892",
+      "name": "Ochotnica Dolna",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "77.77",
+      "county": "dąbrowski",
+      "id": "893",
+      "name": "Olesno",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "150.66",
+      "county": "olkuski",
+      "id": "894",
+      "name": "Olkusz",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "41.18",
+      "county": "oświęcimski",
+      "id": "895",
+      "name": "Osiek",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "30.30",
+      "county": "oświęcimski",
+      "id": "896",
+      "name": "Oświęcim - gmina miejska",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "74.47",
+      "county": "oświęcimski",
+      "id": "897",
+      "name": "Oświęcim - gmina wiejska",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "47.95",
+      "county": "proszowicki",
+      "id": "898",
+      "name": "Pałecznica",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "88.59",
+      "county": "myślenicki",
+      "id": "899",
+      "name": "Pcim",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "126.70",
+      "county": "nowosądecki",
+      "id": "900",
+      "name": "Piwniczna-Zdrój",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "83.65",
+      "county": "tarnowski",
+      "id": "901",
+      "name": "Pleśna",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "63.74",
+      "county": "nowosądecki",
+      "id": "902",
+      "name": "Podegrodzie",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "24.08",
+      "county": "oświęcimski",
+      "id": "903",
+      "name": "Polanka Wielka",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "83.55",
+      "county": "tatrzański",
+      "id": "904",
+      "name": "Poronin",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "99.78",
+      "county": "proszowicki",
+      "id": "905",
+      "name": "Proszowice",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "35.40",
+      "county": "oświęcimski",
+      "id": "906",
+      "name": "Przeciszów",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "88.28",
+      "county": "nowotarski",
+      "id": "907",
+      "name": "Raba Wyżna",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "69.02",
+      "county": "nowotarski",
+      "id": "908",
+      "name": "Rabka-Zdrój",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "60.97",
+      "county": "myślenicki",
+      "id": "909",
+      "name": "Raciechowice",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "59.18",
+      "county": "miechowski",
+      "id": "910",
+      "name": "Racławice",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "88.30",
+      "county": "dąbrowski",
+      "id": "911",
+      "name": "Radgoszcz",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "86.02",
+      "county": "tarnowski",
+      "id": "912",
+      "name": "Radłów",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "57.85",
+      "county": "proszowicki",
+      "id": "913",
+      "name": "Radziemice",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "49.09",
+      "county": "gorlicki",
+      "id": "914",
+      "name": "Ropa",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "116.81",
+      "county": "tarnowski",
+      "id": "915",
+      "name": "Ryglice",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "41.92",
+      "county": "nowosądecki",
+      "id": "916",
+      "name": "Rytro",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "70.23",
+      "county": "tarnowski",
+      "id": "917",
+      "name": "Rzepiennik Strzyżewski",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "85.48",
+      "county": "bocheński",
+      "id": "918",
+      "name": "Rzezawa",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "194.75",
+      "county": "gorlicki",
+      "id": "919",
+      "name": "Sękowa",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "31.92",
+      "county": "myślenicki",
+      "id": "920",
+      "name": "Siepraw",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "74.30",
+      "county": "krakowski",
+      "id": "921",
+      "name": "Skała",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "100.15",
+      "county": "krakowski",
+      "id": "922",
+      "name": "Skawina",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "86.23",
+      "county": "tarnowski",
+      "id": "923",
+      "name": "Skrzyszów",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "76.96",
+      "county": "miechowski",
+      "id": "924",
+      "name": "Słaboszów",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "111.38",
+      "county": "krakowski",
+      "id": "925",
+      "name": "Słomniki",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "56.74",
+      "county": "limanowski",
+      "id": "926",
+      "name": "Słopnice",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "32.19",
+      "county": "nowotarski",
+      "id": "928",
+      "name": "Spytkowice (nowotarski)",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "47.03",
+      "county": "wadowicki",
+      "id": "927",
+      "name": "Spytkowice (wadowicki)",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "102.41",
+      "county": "nowosądecki",
+      "id": "929",
+      "name": "Stary Sącz",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "113.24",
+      "county": "suski",
+      "id": "930",
+      "name": "Stryszawa",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "46.05",
+      "county": "wadowicki",
+      "id": "931",
+      "name": "Stryszów",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "27.46",
+      "county": "suski",
+      "id": "932",
+      "name": "Sucha Beskidzka",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "60.53",
+      "county": "myślenicki",
+      "id": "933",
+      "name": "Sułkowice",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "53.38",
+      "county": "krakowski",
+      "id": "934",
+      "name": "Sułoszowa",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "54.31",
+      "county": "nowotarski",
+      "id": "935",
+      "name": "Szaflary",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "87.89",
+      "county": "nowotarski",
+      "id": "936",
+      "name": "Szczawnica",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "119.83",
+      "county": "dąbrowski",
+      "id": "937",
+      "name": "Szczucin",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "134.64",
+      "county": "brzeski",
+      "id": "938",
+      "name": "Szczurowa",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "82.24",
+      "county": "tarnowski",
+      "id": "939",
+      "name": "Szerzyny",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "20.17",
+      "county": "krakowski",
+      "id": "940",
+      "name": "Świątniki Górne",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "72.38",
+      "county": "tarnowski",
+      "id": "941",
+      "name": "Tarnów - gmina miejska",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "82.81",
+      "county": "tarnowski",
+      "id": "942",
+      "name": "Tarnów - gmina wiejska",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "68.85",
+      "county": "myślenicki",
+      "id": "943",
+      "name": "Tokarnia",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "41.73",
+      "county": "wadowicki",
+      "id": "944",
+      "name": "Tomice",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "44.09",
+      "county": "bocheński",
+      "id": "945",
+      "name": "Trzciana",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "105.29",
+      "county": "chrzanowski",
+      "id": "946",
+      "name": "Trzebinia",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "96.56",
+      "county": "olkuski",
+      "id": "947",
+      "name": "Trzyciąż",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "100.14",
+      "county": "tarnowski",
+      "id": "948",
+      "name": "Tuchów",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "32.70",
+      "county": "limanowski",
+      "id": "949",
+      "name": "Tymbark",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "287.41",
+      "county": "gorlicki",
+      "id": "950",
+      "name": "Uście Gorlickie",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "112.49",
+      "county": "wadowicki",
+      "id": "951",
+      "name": "Wadowice",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "100.04",
+      "county": "wielicki",
+      "id": "952",
+      "name": "Wieliczka",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "48.10",
+      "county": "krakowski",
+      "id": "953",
+      "name": "Wielka Wieś",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "74.51",
+      "county": "wadowicki",
+      "id": "954",
+      "name": "Wieprz",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "74.84",
+      "county": "tarnowski",
+      "id": "955",
+      "name": "Wierzchosławice",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "48.58",
+      "county": "tarnowski",
+      "id": "956",
+      "name": "Wietrzychowice",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "67.06",
+      "county": "myślenicki",
+      "id": "957",
+      "name": "Wiśniowa",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "78.55",
+      "county": "tarnowski",
+      "id": "958",
+      "name": "Wojnicz",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "150.82",
+      "county": "olkuski",
+      "id": "959",
+      "name": "Wolbrom",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "99.59",
+      "county": "krakowski",
+      "id": "960",
+      "name": "Zabierzów",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "122.55",
+      "county": "tarnowski",
+      "id": "961",
+      "name": "Zakliczyn",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "84.35",
+      "county": "tatrzański",
+      "id": "962",
+      "name": "Zakopane",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "51.44",
+      "county": "oświęcimski",
+      "id": "963",
+      "name": "Zator",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "128.80",
+      "county": "suski",
+      "id": "964",
+      "name": "Zawoja",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "39.90",
+      "county": "suski",
+      "id": "965",
+      "name": "Zembrzyce",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "48.40",
+      "county": "krakowski",
+      "id": "966",
+      "name": "Zielonki",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "102.36",
+      "county": "tarnowski",
+      "id": "967",
+      "name": "Żabno",
+      "voivodeship": "małopolskie"
+    },
+    {
+      "area": "35.23",
+      "county": "bocheński",
+      "id": "968",
+      "name": "Żegocina",
+      "voivodeship": "małopolskie"
+    }
+  ]
+}

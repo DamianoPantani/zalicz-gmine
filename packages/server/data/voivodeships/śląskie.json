@@ -1,0 +1,1174 @@
+{
+  "name": "śląskie",
+  "gminas": [
+    {
+      "area": "37.55",
+      "county": "bielski",
+      "id": "1755",
+      "name": "Bestwina",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "37.08",
+      "county": "będziński",
+      "id": "1756",
+      "name": "Będzin",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "124.93",
+      "county": "prawa powiatu",
+      "id": "1757",
+      "name": "Bielsko-Biała",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "40.31",
+      "county": "bieruńsko-lędziński",
+      "id": "1758",
+      "name": "Bieruń",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "67.21",
+      "county": "częstochowski",
+      "id": "1759",
+      "name": "Blachownia",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "51.99",
+      "county": "będziński",
+      "id": "1760",
+      "name": "Bobrowniki",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "34.07",
+      "county": "bieruńsko-lędziński",
+      "id": "1761",
+      "name": "Bojszowy",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "56.34",
+      "county": "lubliniecki",
+      "id": "1762",
+      "name": "Boronów",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "95.54",
+      "county": "cieszyński",
+      "id": "1763",
+      "name": "Brenna",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "19.33",
+      "county": "bielski",
+      "id": "1764",
+      "name": "Buczkowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "69.43",
+      "county": "prawa powiatu",
+      "id": "1765",
+      "name": "Bytom",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "23.22",
+      "county": "bieruńsko-lędziński",
+      "id": "1766",
+      "name": "Chełm Śląski",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "33.60",
+      "county": "prawa powiatu",
+      "id": "1767",
+      "name": "Chorzów",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "31.80",
+      "county": "cieszyński",
+      "id": "1768",
+      "name": "Chybie",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "134.17",
+      "county": "lubliniecki",
+      "id": "1769",
+      "name": "Ciasna",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "28.69",
+      "county": "cieszyński",
+      "id": "1770",
+      "name": "Cieszyn",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "66.28",
+      "county": "bielski",
+      "id": "1771",
+      "name": "Czechowice-Dziedzice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "16.57",
+      "county": "będziński",
+      "id": "1772",
+      "name": "Czeladź",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "56.26",
+      "county": "żywiecki",
+      "id": "1773",
+      "name": "Czernichów",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "115.65",
+      "county": "rybnicki",
+      "id": "1774",
+      "name": "Czerwionka-Leszczyny",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "159.61",
+      "county": "prawa powiatu",
+      "id": "1775",
+      "name": "Częstochowa",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "187.81",
+      "county": "prawa powiatu",
+      "id": "1776",
+      "name": "Dąbrowa Górnicza",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "100.33",
+      "county": "częstochowski",
+      "id": "1777",
+      "name": "Dąbrowa Zielona",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "42.48",
+      "county": "cieszyński",
+      "id": "1778",
+      "name": "Dębowiec",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "19.54",
+      "county": "rybnicki",
+      "id": "1779",
+      "name": "Gaszowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "39.00",
+      "county": "gliwicki",
+      "id": "1780",
+      "name": "Gierałtowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "28.15",
+      "county": "żywiecki",
+      "id": "1781",
+      "name": "Gilowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "133.85",
+      "county": "prawa powiatu",
+      "id": "1782",
+      "name": "Gliwice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "48.64",
+      "county": "pszczyński",
+      "id": "1783",
+      "name": "Goczałkowice-Zdrój",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "37.97",
+      "county": "wodzisławski",
+      "id": "1784",
+      "name": "Godów",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "65.89",
+      "county": "cieszyński",
+      "id": "1785",
+      "name": "Goleszów",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "64.47",
+      "county": "wodzisławski",
+      "id": "1786",
+      "name": "Gorzyce",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "49.02",
+      "county": "cieszyński",
+      "id": "1787",
+      "name": "Hażlach",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "87.47",
+      "county": "lubliniecki",
+      "id": "1788",
+      "name": "Herby",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "28.04",
+      "county": "bieruńsko-lędziński",
+      "id": "1789",
+      "name": "Imielin",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "73.55",
+      "county": "zawierciański",
+      "id": "1790",
+      "name": "Irządze",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "84.25",
+      "county": "cieszyński",
+      "id": "1791",
+      "name": "Istebna",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "146.96",
+      "county": "częstochowski",
+      "id": "1792",
+      "name": "Janów",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "91.57",
+      "county": "bielski",
+      "id": "1793",
+      "name": "Jasienica",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "85.44",
+      "county": "prawa powiatu",
+      "id": "1794",
+      "name": "Jastrzębie-Zdrój",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "21.32",
+      "county": "bielski",
+      "id": "1795",
+      "name": "Jaworze",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "152.20",
+      "county": "prawa powiatu",
+      "id": "1796",
+      "name": "Jaworzno",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "7.59",
+      "county": "rybnicki",
+      "id": "1797",
+      "name": "Jejkowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "170.51",
+      "county": "żywiecki",
+      "id": "1798",
+      "name": "Jeleśnia",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "76.68",
+      "county": "tarnogórski",
+      "id": "1799",
+      "name": "Kalety",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "46.72",
+      "county": "częstochowski",
+      "id": "1800",
+      "name": "Kamienica Polska",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "164.54",
+      "county": "prawa powiatu",
+      "id": "1801",
+      "name": "Katowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "130.40",
+      "county": "kłobucki",
+      "id": "1802",
+      "name": "Kłobuck",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "147.85",
+      "county": "częstochowski",
+      "id": "1803",
+      "name": "Kłomnice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "33.95",
+      "county": "gliwicki",
+      "id": "1804",
+      "name": "Knurów",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "49.50",
+      "county": "pszczyński",
+      "id": "1805",
+      "name": "Kobiór",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "79.71",
+      "county": "lubliniecki",
+      "id": "1806",
+      "name": "Kochanowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "146.75",
+      "county": "częstochowski",
+      "id": "1807",
+      "name": "Koniecpol",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "78.11",
+      "county": "częstochowski",
+      "id": "1808",
+      "name": "Konopiska",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "26.30",
+      "county": "raciborski",
+      "id": "1809",
+      "name": "Kornowac",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "31.24",
+      "county": "żywiecki",
+      "id": "1810",
+      "name": "Koszarawa",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "128.54",
+      "county": "lubliniecki",
+      "id": "1811",
+      "name": "Koszęcin",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "159.16",
+      "county": "myszkowski",
+      "id": "1812",
+      "name": "Koziegłowy",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "26.90",
+      "county": "bielski",
+      "id": "1813",
+      "name": "Kozy",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "110.15",
+      "county": "zawierciański",
+      "id": "1814",
+      "name": "Kroczyce",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "39.42",
+      "county": "tarnogórski",
+      "id": "1815",
+      "name": "Krupski Młyn",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "93.42",
+      "county": "częstochowski",
+      "id": "1816",
+      "name": "Kruszyna",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "47.06",
+      "county": "raciborski",
+      "id": "1817",
+      "name": "Krzanowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "78.81",
+      "county": "kłobucki",
+      "id": "1818",
+      "name": "Krzepice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "69.67",
+      "county": "raciborski",
+      "id": "1819",
+      "name": "Krzyżanowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "126.84",
+      "county": "raciborski",
+      "id": "1820",
+      "name": "Kuźnia Raciborska",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "120.81",
+      "county": "częstochowski",
+      "id": "1821",
+      "name": "Lelów",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "31.04",
+      "county": "bieruńsko-lędziński",
+      "id": "1822",
+      "name": "Lędziny",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "99.07",
+      "county": "kłobucki",
+      "id": "1823",
+      "name": "Lipie",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "58.08",
+      "county": "żywiecki",
+      "id": "1824",
+      "name": "Lipowa",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "89.80",
+      "county": "lubliniecki",
+      "id": "1825",
+      "name": "Lubliniec",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "41.83",
+      "county": "wodzisławski",
+      "id": "1826",
+      "name": "Lubomia",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "57.83",
+      "county": "rybnicki",
+      "id": "1827",
+      "name": "Lyski",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "20.20",
+      "county": "mikołowski",
+      "id": "1828",
+      "name": "Łaziska Górne",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "132.56",
+      "county": "zawierciański",
+      "id": "1829",
+      "name": "Łazy",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "42.23",
+      "county": "żywiecki",
+      "id": "1830",
+      "name": "Łękawica",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "35.20",
+      "county": "żywiecki",
+      "id": "1831",
+      "name": "Łodygowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "13.76",
+      "county": "wodzisławski",
+      "id": "1832",
+      "name": "Marklowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "68.30",
+      "county": "tarnogórski",
+      "id": "1833",
+      "name": "Miasteczko Śląskie",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "49.91",
+      "county": "pszczyński",
+      "id": "1834",
+      "name": "Miedźna",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "113.17",
+      "county": "kłobucki",
+      "id": "1835",
+      "name": "Miedźno",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "51.27",
+      "county": "będziński",
+      "id": "1836",
+      "name": "Mierzęcice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "78.89",
+      "county": "mikołowski",
+      "id": "1837",
+      "name": "Mikołów",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "98.33",
+      "county": "żywiecki",
+      "id": "1838",
+      "name": "Milówka",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "119.84",
+      "county": "częstochowski",
+      "id": "1839",
+      "name": "Mstów",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "31.32",
+      "county": "wodzisławski",
+      "id": "1840",
+      "name": "Mszana",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "140.64",
+      "county": "częstochowski",
+      "id": "1841",
+      "name": "Mykanów",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "66.09",
+      "county": "prawa powiatu",
+      "id": "1842",
+      "name": "Mysłowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "72.69",
+      "county": "myszkowski",
+      "id": "1843",
+      "name": "Myszków",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "57.14",
+      "county": "raciborski",
+      "id": "1844",
+      "name": "Nędza",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "87.57",
+      "county": "myszkowski",
+      "id": "1845",
+      "name": "Niegowa",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "85.69",
+      "county": "zawierciański",
+      "id": "1846",
+      "name": "Ogrodzieniec",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "108.82",
+      "county": "częstochowski",
+      "id": "1847",
+      "name": "Olsztyn",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "73.54",
+      "county": "kłobucki",
+      "id": "1848",
+      "name": "Opatów",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "15.10",
+      "county": "mikołowski",
+      "id": "1849",
+      "name": "Ornontowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "82.89",
+      "county": "mikołowski",
+      "id": "1850",
+      "name": "Orzesze",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "43.72",
+      "county": "tarnogórski",
+      "id": "1851",
+      "name": "Ożarowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "55.03",
+      "county": "kłobucki",
+      "id": "1852",
+      "name": "Panki",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "75.77",
+      "county": "pszczyński",
+      "id": "1853",
+      "name": "Pawłowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "118.74",
+      "county": "lubliniecki",
+      "id": "1854",
+      "name": "Pawonków",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "39.67",
+      "county": "prawa powiatu",
+      "id": "1855",
+      "name": "Piekary Śląskie",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "68.07",
+      "county": "raciborski",
+      "id": "1856",
+      "name": "Pietrowice Wielkie",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "67.51",
+      "county": "gliwicki",
+      "id": "1857",
+      "name": "Pilchowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "138.89",
+      "county": "zawierciański",
+      "id": "1858",
+      "name": "Pilica",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "60.13",
+      "county": "częstochowski",
+      "id": "1859",
+      "name": "Poczesna",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "102.21",
+      "county": "kłobucki",
+      "id": "1860",
+      "name": "Popów",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "58.53",
+      "county": "myszkowski",
+      "id": "1861",
+      "name": "Poraj",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "64.59",
+      "county": "bielski",
+      "id": "1862",
+      "name": "Porąbka",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "40.04",
+      "county": "zawierciański",
+      "id": "1863",
+      "name": "Poręba",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "80.44",
+      "county": "częstochowski",
+      "id": "1864",
+      "name": "Przyrów",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "88.85",
+      "county": "kłobucki",
+      "id": "1865",
+      "name": "Przystajń",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "45.98",
+      "county": "będziński",
+      "id": "1866",
+      "name": "Psary",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "174.01",
+      "county": "pszczyński",
+      "id": "1867",
+      "name": "Pszczyna",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "20.42",
+      "county": "wodzisławski",
+      "id": "1868",
+      "name": "Pszów",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "31.14",
+      "county": "gliwicki",
+      "id": "1869",
+      "name": "Pyskowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "74.96",
+      "county": "raciborski",
+      "id": "1870",
+      "name": "Racibórz",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "12.53",
+      "county": "wodzisławski",
+      "id": "1871",
+      "name": "Radlin",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "65.90",
+      "county": "żywiecki",
+      "id": "1872",
+      "name": "Radziechowy-Wieprz",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "13.15",
+      "county": "tarnogórski",
+      "id": "1873",
+      "name": "Radzionków",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "131.17",
+      "county": "żywiecki",
+      "id": "1874",
+      "name": "Rajcza",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "41.36",
+      "county": "częstochowski",
+      "id": "1875",
+      "name": "Rędziny",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "77.59",
+      "county": "prawa powiatu",
+      "id": "1876",
+      "name": "Ruda Śląska",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "73.94",
+      "county": "raciborski",
+      "id": "1877",
+      "name": "Rudnik",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "160.39",
+      "county": "gliwicki",
+      "id": "1878",
+      "name": "Rudziniec",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "148.26",
+      "county": "prawa powiatu",
+      "id": "1879",
+      "name": "Rybnik",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "15.00",
+      "county": "wodzisławski",
+      "id": "1880",
+      "name": "Rydułtowy",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "25.16",
+      "county": "prawa powiatu",
+      "id": "1881",
+      "name": "Siemianowice Śląskie",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "115.76",
+      "county": "będziński",
+      "id": "1882",
+      "name": "Siewierz",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "63.27",
+      "county": "cieszyński",
+      "id": "1883",
+      "name": "Skoczów",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "36.60",
+      "county": "będziński",
+      "id": "1884",
+      "name": "Sławków",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "91.26",
+      "county": "prawa powiatu",
+      "id": "1885",
+      "name": "Sosnowiec",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "116.24",
+      "county": "gliwicki",
+      "id": "1886",
+      "name": "Sośnicowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "20.10",
+      "county": "częstochowski",
+      "id": "1887",
+      "name": "Starcza",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "58.40",
+      "county": "cieszyński",
+      "id": "1888",
+      "name": "Strumień",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "75.63",
+      "county": "pszczyński",
+      "id": "1889",
+      "name": "Suszec",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "136.09",
+      "county": "zawierciański",
+      "id": "1890",
+      "name": "Szczekociny",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "39.07",
+      "county": "bielski",
+      "id": "1891",
+      "name": "Szczyrk",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "45.87",
+      "county": "żywiecki",
+      "id": "1892",
+      "name": "Ślemień",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "44.26",
+      "county": "tarnogórski",
+      "id": "1893",
+      "name": "Świerklaniec",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "24.02",
+      "county": "rybnicki",
+      "id": "1894",
+      "name": "Świerklany",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "13.22",
+      "county": "prawa powiatu",
+      "id": "1895",
+      "name": "Świętochłowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "39.40",
+      "county": "żywiecki",
+      "id": "1896",
+      "name": "Świnna",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "83.47",
+      "county": "tarnogórski",
+      "id": "1897",
+      "name": "Tarnowskie Góry",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "98.53",
+      "county": "gliwicki",
+      "id": "1898",
+      "name": "Toszek",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "124.92",
+      "county": "tarnogórski",
+      "id": "1899",
+      "name": "Tworóg",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "81.62",
+      "county": "prawa powiatu",
+      "id": "1900",
+      "name": "Tychy",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "109.95",
+      "county": "żywiecki",
+      "id": "1901",
+      "name": "Ujsoły",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "58.92",
+      "county": "cieszyński",
+      "id": "1902",
+      "name": "Ustroń",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "77.10",
+      "county": "żywiecki",
+      "id": "1903",
+      "name": "Węgierska Górka",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "116.59",
+      "county": "gliwicki",
+      "id": "1904",
+      "name": "Wielowieś",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "56.72",
+      "county": "bielski",
+      "id": "1905",
+      "name": "Wilamowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "33.90",
+      "county": "bielski",
+      "id": "1906",
+      "name": "Wilkowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "110.26",
+      "county": "cieszyński",
+      "id": "1907",
+      "name": "Wisła",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "76.29",
+      "county": "zawierciański",
+      "id": "1908",
+      "name": "Włodowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "49.62",
+      "county": "wodzisławski",
+      "id": "1909",
+      "name": "Wodzisław Śląski",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "12.77",
+      "county": "będziński",
+      "id": "1910",
+      "name": "Wojkowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "127.36",
+      "county": "lubliniecki",
+      "id": "1911",
+      "name": "Woźniki",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "148.07",
+      "county": "kłobucki",
+      "id": "1912",
+      "name": "Wręczyca Wielka",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "34.45",
+      "county": "mikołowski",
+      "id": "1913",
+      "name": "Wyry",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "80.47",
+      "county": "prawa powiatu",
+      "id": "1914",
+      "name": "Zabrze",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "85.24",
+      "county": "zawierciański",
+      "id": "1915",
+      "name": "Zawiercie",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "148.71",
+      "county": "tarnogórski",
+      "id": "1916",
+      "name": "Zbrosławice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "41.68",
+      "county": "cieszyński",
+      "id": "1917",
+      "name": "Zebrzydowice",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "100.67",
+      "county": "myszkowski",
+      "id": "1918",
+      "name": "Żarki",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "124.77",
+      "county": "zawierciański",
+      "id": "1919",
+      "name": "Żarnowiec",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "64.64",
+      "county": "prawa powiatu",
+      "id": "1920",
+      "name": "Żory",
+      "voivodeship": "śląskie"
+    },
+    {
+      "area": "50.57",
+      "county": "żywiecki",
+      "id": "1921",
+      "name": "Żywiec",
+      "voivodeship": "śląskie"
+    }
+  ]
+}

@@ -4,7 +4,8 @@
   "main": "src/types/shared",
   "scripts": {
     "start": "tsc --build --force",
-    "start:watch": "nodemon -e ts --exec \"tsc && node --experimental-modules --es-module-specifier-resolution=node dist/index.js || exit 1\""
+    "start:watch": "nodemon -e ts --exec \"tsc && node --experimental-modules --es-module-specifier-resolution=node dist/index.js || exit 1\"",
+    "compileVoivodships": "nodemon -e ts --exec \"tsc && node --experimental-modules --es-module-specifier-resolution=node dist/inputDataGenerators/gminasGenerator.js || exit 1\""
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.2",
@@ -19,6 +20,7 @@
     "cheerio": "^1.0.0-rc.12",
     "cookie": "^0.5.0",
     "cors": "^2.8.5",
+    "csv-string": "^4.1.0",
     "express": "^4.18.1"
   }
 }

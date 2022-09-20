@@ -1,78 +1,104 @@
 import axios from "axios";
+
 import {
   LoggedUserResponse,
   LoginRequest,
   SessionResponse,
+  UpdateStatusRequest,
+  UserGminasStatus,
 } from "./types/shared";
 import { ZGApiError } from "./ZGApiError";
 import { ErrorType } from "./types/shared/error";
 import { flatten, ParsedObject } from "./utils";
 import { parseAuthCookie, requestOptions } from "./auth";
-import { parseUser } from "./htmlBodyParser";
+import { parseGminasCSV, parseUser } from "./htmlBodyParser";
 
 const ZGApi = axios.create({
   baseURL: "https://zaliczgmine.pl",
 });
 
-export const getUserFromSession = async (
-  authToken: string
-): Promise<LoggedUserResponse> => {
-  const { data } = await ZGApi.get<string>("/", requestOptions(authToken));
-  const user = parseUser(data);
+const tokenlessHeaders = requestOptions();
 
-  if (user) {
-    return { user };
-  }
+export const zgApi = {
+  createNewSessionCookie: async (): Promise<SessionResponse> => {
+    const { headers } = await ZGApi.get("/", tokenlessHeaders);
+    return parseAuthCookie(headers);
+  },
 
-  throw new ZGApiError(ErrorType.SESSION_EXPIRED);
+  getCheckedGminas: async (userId: string): Promise<UserGminasStatus> => {
+    const { data: rawCsv } = await ZGApi.get(
+      `/files/users-communes/users-communes-${userId}.csv`,
+      tokenlessHeaders
+    );
+
+    return { checkedGminas: parseGminasCSV(rawCsv) };
+  },
+
+  getVoivodeship: async (id: number): Promise<string> => {
+    const { data } = await ZGApi.get<string>(
+      "/communes/index/" + id,
+      tokenlessHeaders
+    );
+    return data;
+  },
+
+  setToken: (authToken: string) => {
+    const headers = requestOptions(authToken);
+
+    return {
+      getUserFromSession: async (): Promise<LoggedUserResponse> => {
+        const { data } = await ZGApi.get<string>("/", headers);
+        const user = parseUser(data);
+
+        if (user) {
+          return { user };
+        }
+
+        throw new ZGApiError(ErrorType.SESSION_EXPIRED);
+      },
+
+      loginToZG: async (
+        loginForm: LoginRequest
+      ): Promise<LoggedUserResponse> => {
+        const { password, username } = loginForm;
+        const { data } = await ZGApi.post<string>(
+          "/users/login",
+          zgDataString({ User: { username, password } }),
+          headers
+        );
+
+        const user = parseUser(data);
+
+        if (user) {
+          return { user };
+        }
+
+        throw new ZGApiError(ErrorType.INVALID_CREDENTIALS);
+      },
+
+      logoutFromZG: async (): Promise<void> => {
+        await ZGApi.get("/users/logout", headers);
+      },
+
+      updateGminasStatus: async ({
+        date,
+        status,
+      }: UpdateStatusRequest): Promise<void> => {
+        await ZGApi.post(
+          "/users_communes/addmulti",
+          zgDataString({
+            UsersCommune: {
+              sender: "map",
+              updateData: status,
+              commune_add_date: date,
+            },
+          }),
+          headers
+        );
+      },
+    };
+  },
 };
-
-export const createNewSessionCookie = async (): Promise<SessionResponse> => {
-  const { headers } = await ZGApi.get("/", requestOptions());
-  return parseAuthCookie(headers);
-};
-
-export const loginToZG = async (
-  loginForm: LoginRequest,
-  authToken: string
-): Promise<LoggedUserResponse> => {
-  const { password, username } = loginForm;
-  const { data } = await ZGApi.post<string>(
-    "/users/login",
-    zgDataString({ User: { username, password } }),
-    requestOptions(authToken)
-  );
-
-  const user = parseUser(data);
-
-  if (user) {
-    return { user };
-  }
-
-  throw new ZGApiError(ErrorType.INVALID_CREDENTIALS);
-};
-
-export const logoutFromZG = async (authToken: string): Promise<void> => {
-  await ZGApi.get("/users/logout", requestOptions(authToken));
-};
-
-// TODO: implement
-// export const checkGminas = async (): Promise<void> => {
-//   // data[UsersCommune][1512]: 0
-//   // data[UsersCommune][1513]: 0
-//   // data[UsersCommune][commune_add_date][month]: 09
-//   // data[UsersCommune][commune_add_date][day]: 17
-//   // data[UsersCommune][commune_add_date][year]: 2022
-//   // data[UsersCommune][sender]: list
-//   // data[UsersCommune][updateData]: {"1423":"d","1424":"a"}
-//   // data[UsersCommune][voivodeship]: 9
-
-//   await ZGApi.post(
-//     "/users_communes/addmulti",
-//     zgDataString({ User: { username: "test", password: "test2" } }),
-//     requestOptions(authToken)
-//   );
-// };
 
 const zgDataString = (object: ParsedObject) =>
   encodeURI(`${flatten(object, "data").join("&")}`);

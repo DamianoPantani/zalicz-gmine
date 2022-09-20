@@ -1,0 +1,1244 @@
+{
+  "name": "łódzkie",
+  "gminas": [
+    {
+      "area": "144.02",
+      "county": "piotrkowski",
+      "id": "610",
+      "name": "Aleksandrów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "115.58",
+      "county": "zgierski",
+      "id": "611",
+      "name": "Aleksandrów Łódzki",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "23.77",
+      "county": "łódzki wschodni",
+      "id": "612",
+      "name": "Andrespol",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "126.02",
+      "county": "kutnowski",
+      "id": "613",
+      "name": "Bedlno",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "34.63",
+      "county": "bełchatowski",
+      "id": "614",
+      "name": "Bełchatów - gmina miejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "179.89",
+      "county": "bełchatowski",
+      "id": "615",
+      "name": "Bełchatów - gmina wiejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "57.88",
+      "county": "tomaszowski",
+      "id": "616",
+      "name": "Będków",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "74.99",
+      "county": "wieluński",
+      "id": "617",
+      "name": "Biała",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "208.41",
+      "county": "rawski",
+      "id": "618",
+      "name": "Biała Rawska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "114.49",
+      "county": "opoczyński",
+      "id": "619",
+      "name": "Białaczów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "164.01",
+      "county": "łowicki",
+      "id": "620",
+      "name": "Bielawy",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "201.63",
+      "county": "sieradzki",
+      "id": "621",
+      "name": "Błaszki",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "64.58",
+      "county": "wieruszowski",
+      "id": "622",
+      "name": "Bolesławiec",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "112.21",
+      "county": "skierniewicki",
+      "id": "623",
+      "name": "Bolimów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "106.33",
+      "county": "sieradzki",
+      "id": "624",
+      "name": "Brąszewice",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "69.55",
+      "county": "łódzki wschodni",
+      "id": "625",
+      "name": "Brójce",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "21.58",
+      "county": "brzeziński",
+      "id": "626",
+      "name": "Brzeziny - gmina miejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "106.37",
+      "county": "brzeziński",
+      "id": "627",
+      "name": "Brzeziny - gmina wiejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "128.73",
+      "county": "sieradzki",
+      "id": "628",
+      "name": "Brzeźnio",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "90.84",
+      "county": "łaski",
+      "id": "629",
+      "name": "Buczek",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "30.13",
+      "county": "tomaszowski",
+      "id": "630",
+      "name": "Budziszewice",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "118.96",
+      "county": "sieradzki",
+      "id": "631",
+      "name": "Burzenin",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "71.81",
+      "county": "łowicki",
+      "id": "632",
+      "name": "Chąśno",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "93.88",
+      "county": "rawski",
+      "id": "633",
+      "name": "Cielądz",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "72.74",
+      "county": "piotrkowski",
+      "id": "634",
+      "name": "Czarnocin",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "69.90",
+      "county": "wieluński",
+      "id": "635",
+      "name": "Czarnożyły",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "62.67",
+      "county": "wieruszowski",
+      "id": "636",
+      "name": "Czastary",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "127.73",
+      "county": "tomaszowski",
+      "id": "637",
+      "name": "Czerniewice",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "112.70",
+      "county": "poddębicki",
+      "id": "638",
+      "name": "Dalików",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "81.03",
+      "county": "łęczycki",
+      "id": "639",
+      "name": "Daszyna",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "45.94",
+      "county": "kutnowski",
+      "id": "640",
+      "name": "Dąbrowice",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "100.47",
+      "county": "pabianicki",
+      "id": "641",
+      "name": "Dłutów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "100.53",
+      "county": "brzeziński",
+      "id": "642",
+      "name": "Dmosin",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "94.37",
+      "county": "pabianicki",
+      "id": "643",
+      "name": "Dobroń",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "51.10",
+      "county": "radomszczański",
+      "id": "644",
+      "name": "Dobryszyce",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "86.23",
+      "county": "łowicki",
+      "id": "645",
+      "name": "Domaniewice",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "114.52",
+      "county": "bełchatowski",
+      "id": "646",
+      "name": "Drużbice",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "118.42",
+      "county": "opoczyński",
+      "id": "647",
+      "name": "Drzewica",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "120.59",
+      "county": "pajęczański",
+      "id": "648",
+      "name": "Działoszyn",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "135.79",
+      "county": "wieruszowski",
+      "id": "649",
+      "name": "Galewice",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "116.32",
+      "county": "radomszczański",
+      "id": "650",
+      "name": "Gidle",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "19.82",
+      "county": "zgierski",
+      "id": "651",
+      "name": "Głowno - gmina miejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "104.45",
+      "county": "zgierski",
+      "id": "652",
+      "name": "Głowno - gmina wiejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "111.31",
+      "county": "skierniewicki",
+      "id": "653",
+      "name": "Głuchów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "44.06",
+      "county": "skierniewicki",
+      "id": "654",
+      "name": "Godzianów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "62.57",
+      "county": "radomszczański",
+      "id": "655",
+      "name": "Gomunice",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "102.29",
+      "county": "piotrkowski",
+      "id": "656",
+      "name": "Gorzkowice",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "123.01",
+      "county": "sieradzki",
+      "id": "657",
+      "name": "Goszczanów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "90.42",
+      "county": "łęczycki",
+      "id": "658",
+      "name": "Góra Świętej Małgorzaty",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "127.24",
+      "county": "piotrkowski",
+      "id": "659",
+      "name": "Grabica",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "154.84",
+      "county": "łęczycki",
+      "id": "660",
+      "name": "Grabów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "98.04",
+      "county": "tomaszowski",
+      "id": "661",
+      "name": "Inowłódz",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "63.80",
+      "county": "brzeziński",
+      "id": "662",
+      "name": "Jeżów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "95.81",
+      "county": "radomszczański",
+      "id": "663",
+      "name": "Kamieńsk",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "90.01",
+      "county": "pajęczański",
+      "id": "664",
+      "name": "Kiełczygłów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "76.03",
+      "county": "łowicki",
+      "id": "665",
+      "name": "Kiernozia",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "124.82",
+      "county": "bełchatowski",
+      "id": "666",
+      "name": "Kleszczów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "95.37",
+      "county": "sieradzki",
+      "id": "667",
+      "name": "Klonowa",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "118.50",
+      "county": "bełchatowski",
+      "id": "668",
+      "name": "Kluki",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "101.85",
+      "county": "radomszczański",
+      "id": "669",
+      "name": "Kobiele Wielkie",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "93.54",
+      "county": "łowicki",
+      "id": "670",
+      "name": "Kocierzew Południowy",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "105.79",
+      "county": "radomszczański",
+      "id": "671",
+      "name": "Kodrąb",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "157.18",
+      "county": "łódzki wschodni",
+      "id": "672",
+      "name": "Koluszki",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "83.06",
+      "county": "wieluński",
+      "id": "673",
+      "name": "Konopnica",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "26.87",
+      "county": "pabianicki",
+      "id": "674",
+      "name": "Konstantynów Łódzki",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "85.63",
+      "county": "skierniewicki",
+      "id": "675",
+      "name": "Kowiesy",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "94.65",
+      "county": "kutnowski",
+      "id": "676",
+      "name": "Krośniewice",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "102.98",
+      "county": "kutnowski",
+      "id": "677",
+      "name": "Krzyżanów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "13.64",
+      "county": "pabianicki",
+      "id": "678",
+      "name": "Ksawerów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "33.59",
+      "county": "kutnowski",
+      "id": "679",
+      "name": "Kutno - gmina miejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "122.33",
+      "county": "kutnowski",
+      "id": "680",
+      "name": "Kutno - gmina wiejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "63.08",
+      "county": "radomszczański",
+      "id": "681",
+      "name": "Lgota Wielka",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "42.70",
+      "county": "skierniewicki",
+      "id": "682",
+      "name": "Lipce Reymontowskie",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "131.55",
+      "county": "tomaszowski",
+      "id": "683",
+      "name": "Lubochnia",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "133.87",
+      "county": "pabianicki",
+      "id": "684",
+      "name": "Lutomiersk",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "75.13",
+      "county": "wieruszowski",
+      "id": "685",
+      "name": "Lututów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "82.72",
+      "county": "radomszczański",
+      "id": "686",
+      "name": "Ładzice",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "54.76",
+      "county": "kutnowski",
+      "id": "687",
+      "name": "Łanięta",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "146.91",
+      "county": "łaski",
+      "id": "688",
+      "name": "Łask",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "8.95",
+      "county": "łęczycki",
+      "id": "689",
+      "name": "Łęczyca - gmina miejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "150.80",
+      "county": "łęczycki",
+      "id": "690",
+      "name": "Łęczyca - gmina wiejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "108.41",
+      "county": "piotrkowski",
+      "id": "691",
+      "name": "Łęki Szlacheckie",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "23.41",
+      "county": "łowicki",
+      "id": "692",
+      "name": "Łowicz - gmina miejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "133.38",
+      "county": "łowicki",
+      "id": "693",
+      "name": "Łowicz - gmina wiejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "294.39",
+      "county": "prawa powiatu",
+      "id": "694",
+      "name": "Łódź",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "60.90",
+      "county": "wieruszowski",
+      "id": "695",
+      "name": "Łubnice",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "106.90",
+      "county": "łowicki",
+      "id": "696",
+      "name": "Łyszkowice",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "82.97",
+      "county": "skierniewicki",
+      "id": "697",
+      "name": "Maków",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "116.20",
+      "county": "radomszczański",
+      "id": "698",
+      "name": "Masłowice",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "123.83",
+      "county": "opoczyński",
+      "id": "699",
+      "name": "Mniszków",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "77.75",
+      "county": "wieluński",
+      "id": "700",
+      "name": "Mokrsko",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "111.63",
+      "county": "piotrkowski",
+      "id": "701",
+      "name": "Moszczenica",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "103.29",
+      "county": "łowicki",
+      "id": "702",
+      "name": "Nieborów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "135.95",
+      "county": "pajęczański",
+      "id": "703",
+      "name": "Nowa Brzeźnica",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "71.56",
+      "county": "kutnowski",
+      "id": "704",
+      "name": "Nowe Ostrowy",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "53.98",
+      "county": "łódzki wschodni",
+      "id": "705",
+      "name": "Nowosolna",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "104.41",
+      "county": "skierniewicki",
+      "id": "706",
+      "name": "Nowy Kawęczyn",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "190.45",
+      "county": "opoczyński",
+      "id": "707",
+      "name": "Opoczno",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "67.70",
+      "county": "kutnowski",
+      "id": "708",
+      "name": "Oporów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "100.74",
+      "county": "wieluński",
+      "id": "709",
+      "name": "Osjaków",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "101.60",
+      "county": "wieluński",
+      "id": "710",
+      "name": "Ostrówek",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "15.47",
+      "county": "zgierski",
+      "id": "711",
+      "name": "Ozorków - gmina miejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "95.17",
+      "county": "zgierski",
+      "id": "712",
+      "name": "Ozorków - gmina wiejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "32.98",
+      "county": "pabianicki",
+      "id": "713",
+      "name": "Pabianice - gmina miejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "88.57",
+      "county": "pabianicki",
+      "id": "714",
+      "name": "Pabianice - gmina wiejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "113.44",
+      "county": "pajęczański",
+      "id": "715",
+      "name": "Pajęczno",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "81.56",
+      "county": "opoczyński",
+      "id": "716",
+      "name": "Paradyż",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "103.82",
+      "county": "zgierski",
+      "id": "717",
+      "name": "Parzęczew",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "114.30",
+      "county": "wieluński",
+      "id": "718",
+      "name": "Pątnów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "128.38",
+      "county": "poddębicki",
+      "id": "719",
+      "name": "Pęczniew",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "133.47",
+      "county": "łęczycki",
+      "id": "720",
+      "name": "Piątek",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "67.26",
+      "county": "prawa powiatu",
+      "id": "721",
+      "name": "Piotrków Trybunalski",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "224.66",
+      "county": "poddębicki",
+      "id": "722",
+      "name": "Poddębice",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "140.87",
+      "county": "opoczyński",
+      "id": "723",
+      "name": "Poświętne",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "189.94",
+      "county": "radomszczański",
+      "id": "724",
+      "name": "Przedbórz",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "51.45",
+      "county": "radomszczański",
+      "id": "725",
+      "name": "Radomsko - gmina miejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "85.34",
+      "county": "radomszczański",
+      "id": "726",
+      "name": "Radomsko - gmina wiejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "13.67",
+      "county": "rawski",
+      "id": "727",
+      "name": "Rawa Mazowiecka - gmina miejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "163.98",
+      "county": "rawski",
+      "id": "728",
+      "name": "Rawa Mazowiecka - gmina wiejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "45.58",
+      "county": "rawski",
+      "id": "729",
+      "name": "Regnów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "89.21",
+      "county": "piotrkowski",
+      "id": "730",
+      "name": "Ręczno",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "66.23",
+      "county": "brzeziński",
+      "id": "731",
+      "name": "Rogów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "90.51",
+      "county": "tomaszowski",
+      "id": "732",
+      "name": "Rokiciny",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "162.50",
+      "county": "piotrkowski",
+      "id": "733",
+      "name": "Rozprza",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "99.73",
+      "county": "bełchatowski",
+      "id": "734",
+      "name": "Rusiec",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "86.37",
+      "county": "pajęczański",
+      "id": "735",
+      "name": "Rząśnia",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "108.29",
+      "county": "tomaszowski",
+      "id": "736",
+      "name": "Rzeczyca",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "65.97",
+      "county": "łódzki wschodni",
+      "id": "737",
+      "name": "Rzgów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "121.08",
+      "county": "rawski",
+      "id": "738",
+      "name": "Sadkowice",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "120.17",
+      "county": "łaski",
+      "id": "739",
+      "name": "Sędziejowice",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "97.40",
+      "county": "pajęczański",
+      "id": "740",
+      "name": "Siemkowice",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "51.22",
+      "county": "sieradzki",
+      "id": "741",
+      "name": "Sieradz - gmina miejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "181.63",
+      "county": "sieradzki",
+      "id": "742",
+      "name": "Sieradz - gmina wiejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "32.86",
+      "county": "skierniewicki",
+      "id": "743",
+      "name": "Skierniewice - gmina miejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "131.67",
+      "county": "skierniewicki",
+      "id": "744",
+      "name": "Skierniewice - gmina wiejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "54.95",
+      "county": "wieluński",
+      "id": "745",
+      "name": "Skomlin",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "128.45",
+      "county": "opoczyński",
+      "id": "746",
+      "name": "Sławno",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "41.16",
+      "county": "skierniewicki",
+      "id": "747",
+      "name": "Słupia",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "80.02",
+      "county": "wieruszowski",
+      "id": "748",
+      "name": "Sokolniki",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "157.84",
+      "county": "zgierski",
+      "id": "749",
+      "name": "Stryków",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "90.11",
+      "county": "kutnowski",
+      "id": "750",
+      "name": "Strzelce",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "77.66",
+      "county": "pajęczański",
+      "id": "751",
+      "name": "Strzelce Wielkie",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "189.45",
+      "county": "piotrkowski",
+      "id": "752",
+      "name": "Sulejów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "82.72",
+      "county": "pajęczański",
+      "id": "753",
+      "name": "Sulmierzyce",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "151.96",
+      "county": "zduńskowolski",
+      "id": "754",
+      "name": "Szadek",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "128.91",
+      "county": "bełchatowski",
+      "id": "755",
+      "name": "Szczerców",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "93.95",
+      "county": "łęczycki",
+      "id": "756",
+      "name": "Świnice Warckie",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "41.30",
+      "county": "tomaszowski",
+      "id": "757",
+      "name": "Tomaszów Mazowiecki - gmina miejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "151.30",
+      "county": "tomaszowski",
+      "id": "758",
+      "name": "Tomaszów Mazowiecki - gmina wiejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "128.87",
+      "county": "łódzki wschodni",
+      "id": "759",
+      "name": "Tuszyn",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "96.96",
+      "county": "tomaszowski",
+      "id": "760",
+      "name": "Ujazd",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "129.01",
+      "county": "poddębicki",
+      "id": "761",
+      "name": "Uniejów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "252.91",
+      "county": "sieradzki",
+      "id": "762",
+      "name": "Warta",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "141.80",
+      "county": "poddębicki",
+      "id": "763",
+      "name": "Wartkowice",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "178.04",
+      "county": "łaski",
+      "id": "764",
+      "name": "Widawa",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "123.07",
+      "county": "radomszczański",
+      "id": "765",
+      "name": "Wielgomłyny",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "131.20",
+      "county": "wieluński",
+      "id": "766",
+      "name": "Wieluń",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "97.13",
+      "county": "wieruszowski",
+      "id": "767",
+      "name": "Wieruszów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "119.20",
+      "county": "wieluński",
+      "id": "768",
+      "name": "Wierzchlas",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "60.54",
+      "county": "łęczycki",
+      "id": "769",
+      "name": "Witonia",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "81.42",
+      "county": "łaski",
+      "id": "770",
+      "name": "Wodzierady",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "170.41",
+      "county": "piotrkowski",
+      "id": "771",
+      "name": "Wola Krzysztoporska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "151.22",
+      "county": "piotrkowski",
+      "id": "772",
+      "name": "Wolbórz",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "113.23",
+      "county": "sieradzki",
+      "id": "773",
+      "name": "Wróblew",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "144.36",
+      "county": "poddębicki",
+      "id": "774",
+      "name": "Zadzim",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "81.11",
+      "county": "zduńskowolski",
+      "id": "775",
+      "name": "Zapolice",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "128.53",
+      "county": "łowicki",
+      "id": "776",
+      "name": "Zduny",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "24.58",
+      "county": "zduńskowolski",
+      "id": "777",
+      "name": "Zduńska Wola - gmina miejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "111.54",
+      "county": "zduńskowolski",
+      "id": "778",
+      "name": "Zduńska Wola - gmina wiejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "168.21",
+      "county": "bełchatowski",
+      "id": "779",
+      "name": "Zelów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "42.32",
+      "county": "zgierski",
+      "id": "780",
+      "name": "Zgierz - gmina miejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "199.24",
+      "county": "zgierski",
+      "id": "781",
+      "name": "Zgierz - gmina wiejska",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "118.02",
+      "county": "sieradzki",
+      "id": "782",
+      "name": "Złoczew",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "140.70",
+      "county": "opoczyński",
+      "id": "783",
+      "name": "Żarnów",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "92.01",
+      "county": "tomaszowski",
+      "id": "784",
+      "name": "Żelechlinek",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "76.65",
+      "county": "kutnowski",
+      "id": "785",
+      "name": "Żychlin",
+      "voivodeship": "łódzkie"
+    },
+    {
+      "area": "197.54",
+      "county": "radomszczański",
+      "id": "786",
+      "name": "Żytno",
+      "voivodeship": "łódzkie"
+    }
+  ]
+}

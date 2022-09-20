@@ -1,20 +1,33 @@
 import React, { useEffect, useState } from "react";
 import { FeatureGroup, MapContainer, Polygon, TileLayer } from "react-leaflet";
+import { UserGminasStatus } from "@damianopantani/zaliczgmine-server";
 import "leaflet/dist/leaflet.css";
 import { GminaBounds } from "../../types";
-import { getAllGminas } from "../../api";
+import { getAllGminas, getCheckedGminas } from "../../api";
+import { useSessionStore } from "../../SessionContext";
 
 export const Map: React.FC = () => {
+  const user = useSessionStore((s) => s.user);
   const [gminas, setGminas] = useState<GminaBounds[]>([]);
+  const [checkedGminas, setCheckedGminas] = useState<UserGminasStatus>({
+    checkedGminas: [],
+  });
   const [isLoading, setLoading] = useState(false); // TODO: loading spinner
 
-  useEffect(() => {
-    setLoading(true);
+  const userId = user?.userId;
 
-    getAllGminas()
-      .then(setGminas)
-      .finally(() => setLoading(false));
-  }, []);
+  console.log(checkedGminas);
+
+  useEffect(() => {
+    if (userId) {
+      setLoading(true);
+
+      Promise.all([
+        getAllGminas().then(setGminas),
+        getCheckedGminas(userId).then(setCheckedGminas),
+      ]).finally(() => setLoading(false));
+    }
+  }, [userId]);
 
   // TODO: different paths when on different zoom level (performance)
   return (

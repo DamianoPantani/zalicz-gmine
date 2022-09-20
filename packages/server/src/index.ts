@@ -1,7 +1,14 @@
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-import { loginUser, logoutUser, createSession, getLoggedInUser } from "./api";
+import {
+  loginUser,
+  logoutUser,
+  createSession,
+  getLoggedInUser,
+  updateGminasStatus,
+  getCheckedGminas,
+} from "./api";
 import { rejectIfNoAuthTokenSet } from "./acl";
 
 const port = process.env.PORT || 5000;
@@ -22,6 +29,14 @@ app.use(
     .get("/", rejectIfNoAuthTokenSet, getLoggedInUser)
     .post("/", rejectIfNoAuthTokenSet, loginUser)
     .delete("/", rejectIfNoAuthTokenSet, logoutUser)
+);
+
+app.use(
+  "/api/map",
+  express
+    .Router()
+    .get("/:userId", getCheckedGminas)
+    .put("/", rejectIfNoAuthTokenSet, updateGminasStatus)
 );
 
 app.listen(port);

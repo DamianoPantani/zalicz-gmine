@@ -1,0 +1,586 @@
+{
+  "name": "lubuskie",
+  "gminas": [
+    {
+      "area": "92.75",
+      "county": "zielonogórski",
+      "id": "527",
+      "name": "Babimost",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "247.58",
+      "county": "międzyrzecki",
+      "id": "528",
+      "name": "Bledzew",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "185.05",
+      "county": "krośnieński",
+      "id": "529",
+      "name": "Bobrowice",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "112.12",
+      "county": "gorzowski",
+      "id": "530",
+      "name": "Bogdaniec",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "102.55",
+      "county": "zielonogórski",
+      "id": "531",
+      "name": "Bojadła",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "240.36",
+      "county": "żarski",
+      "id": "532",
+      "name": "Brody",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "122.23",
+      "county": "żagański",
+      "id": "533",
+      "name": "Brzeźnica",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "209.33",
+      "county": "krośnieński",
+      "id": "534",
+      "name": "Bytnica",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "52.41",
+      "county": "nowosolski",
+      "id": "535",
+      "name": "Bytom Odrzański",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "279.72",
+      "county": "słubicki",
+      "id": "536",
+      "name": "Cybinka",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "195.93",
+      "county": "zielonogórski",
+      "id": "537",
+      "name": "Czerwieńsk",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "170.04",
+      "county": "krośnieński",
+      "id": "538",
+      "name": "Dąbie",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "168.35",
+      "county": "gorzowski",
+      "id": "539",
+      "name": "Deszczno",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "350.99",
+      "county": "strzelecko-drezdenecki",
+      "id": "540",
+      "name": "Dobiegniew",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "399.90",
+      "county": "strzelecko-drezdenecki",
+      "id": "541",
+      "name": "Drezdenko",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "86.03",
+      "county": "prawa powiatu",
+      "id": "542",
+      "name": "Gorzów Wielkopolski",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "23.97",
+      "county": "żagański",
+      "id": "543",
+      "name": "Gozdnica",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "145.55",
+      "county": "słubicki",
+      "id": "544",
+      "name": "Górzyca",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "20.68",
+      "county": "krośnieński",
+      "id": "545",
+      "name": "Gubin - gmina miejska",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "379.73",
+      "county": "krośnieński",
+      "id": "546",
+      "name": "Gubin - gmina wiejska",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "153.05",
+      "county": "żagański",
+      "id": "547",
+      "name": "Iłowa",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "127.03",
+      "county": "żarski",
+      "id": "548",
+      "name": "Jasień",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "128.47",
+      "county": "zielonogórski",
+      "id": "549",
+      "name": "Kargowa",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "234.83",
+      "county": "gorzowski",
+      "id": "550",
+      "name": "Kłodawa",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "80.57",
+      "county": "nowosolski",
+      "id": "551",
+      "name": "Kolsko",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "46.17",
+      "county": "gorzowski",
+      "id": "552",
+      "name": "Kostrzyn nad Odrą",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "178.82",
+      "county": "nowosolski",
+      "id": "553",
+      "name": "Kożuchów",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "211.52",
+      "county": "krośnieński",
+      "id": "554",
+      "name": "Krosno Odrzańskie",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "194.22",
+      "county": "sulęciński",
+      "id": "555",
+      "name": "Krzeszyce",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "88.55",
+      "county": "żarski",
+      "id": "556",
+      "name": "Lipinki Łużyckie",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "205.30",
+      "county": "gorzowski",
+      "id": "557",
+      "name": "Lubiszyn",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "129.76",
+      "county": "sulęciński",
+      "id": "558",
+      "name": "Lubniewice",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "122.28",
+      "county": "świebodziński",
+      "id": "559",
+      "name": "Lubrza",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "182.69",
+      "county": "żarski",
+      "id": "560",
+      "name": "Lubsko",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "199.08",
+      "county": "świebodziński",
+      "id": "561",
+      "name": "Łagów",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "16.40",
+      "county": "żarski",
+      "id": "562",
+      "name": "Łęknica",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "79.50",
+      "county": "żagański",
+      "id": "563",
+      "name": "Małomice",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "213.56",
+      "county": "krośnieński",
+      "id": "564",
+      "name": "Maszewo",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "315.32",
+      "county": "międzyrzecki",
+      "id": "565",
+      "name": "Międzyrzecz",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "136.11",
+      "county": "żagański",
+      "id": "566",
+      "name": "Niegosławice",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "21.56",
+      "county": "nowosolski",
+      "id": "567",
+      "name": "Nowa Sól - gmina miejska",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "176.21",
+      "county": "nowosolski",
+      "id": "568",
+      "name": "Nowa Sól - gmina wiejska",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "77.18",
+      "county": "nowosolski",
+      "id": "569",
+      "name": "Nowe Miasteczko",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "259.41",
+      "county": "zielonogórski",
+      "id": "570",
+      "name": "Nowogród Bobrzański",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "197.97",
+      "county": "słubicki",
+      "id": "571",
+      "name": "Ośno Lubuskie",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "91.64",
+      "county": "nowosolski",
+      "id": "572",
+      "name": "Otyń",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "178.32",
+      "county": "żarski",
+      "id": "573",
+      "name": "Przewóz",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "184.50",
+      "county": "międzyrzecki",
+      "id": "574",
+      "name": "Przytoczna",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "177.64",
+      "county": "międzyrzecki",
+      "id": "575",
+      "name": "Pszczew",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "191.11",
+      "county": "słubicki",
+      "id": "576",
+      "name": "Rzepin",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "168.30",
+      "county": "gorzowski",
+      "id": "577",
+      "name": "Santok",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "92.19",
+      "county": "nowosolski",
+      "id": "578",
+      "name": "Siedlisko",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "181.28",
+      "county": "świebodziński",
+      "id": "579",
+      "name": "Skąpe",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "285.44",
+      "county": "międzyrzecki",
+      "id": "580",
+      "name": "Skwierzyna",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "326.78",
+      "county": "wschowski",
+      "id": "581",
+      "name": "Sława",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "158.86",
+      "county": "sulęciński",
+      "id": "582",
+      "name": "Słońsk",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "185.42",
+      "county": "słubicki",
+      "id": "583",
+      "name": "Słubice",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "77.88",
+      "county": "strzelecko-drezdenecki",
+      "id": "584",
+      "name": "Stare Kurowo",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "318.57",
+      "county": "strzelecko-drezdenecki",
+      "id": "585",
+      "name": "Strzelce Krajeńskie",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "235.95",
+      "county": "zielonogórski",
+      "id": "586",
+      "name": "Sulechów",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "319.72",
+      "county": "sulęciński",
+      "id": "587",
+      "name": "Sulęcin",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "112.92",
+      "county": "świebodziński",
+      "id": "588",
+      "name": "Szczaniec",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "99.74",
+      "county": "wschowski",
+      "id": "589",
+      "name": "Szlichtyngowa",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "232.31",
+      "county": "żagański",
+      "id": "590",
+      "name": "Szprotawa",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "160.80",
+      "county": "zielonogórski",
+      "id": "591",
+      "name": "Świdnica",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "227.35",
+      "county": "świebodziński",
+      "id": "592",
+      "name": "Świebodzin",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "374.98",
+      "county": "sulęciński",
+      "id": "593",
+      "name": "Torzym",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "177.35",
+      "county": "międzyrzecki",
+      "id": "594",
+      "name": "Trzciel",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "80.99",
+      "county": "zielonogórski",
+      "id": "595",
+      "name": "Trzebiechów",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "166.59",
+      "county": "żarski",
+      "id": "596",
+      "name": "Trzebiel",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "65.89",
+      "county": "żarski",
+      "id": "597",
+      "name": "Tuplice",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "278.25",
+      "county": "gorzowski",
+      "id": "598",
+      "name": "Witnica",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "198.30",
+      "county": "wschowski",
+      "id": "599",
+      "name": "Wschowa",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "63.09",
+      "county": "żagański",
+      "id": "600",
+      "name": "Wymiarki",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "93.34",
+      "county": "zielonogórski",
+      "id": "601",
+      "name": "Zabór",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "94.42",
+      "county": "świebodziński",
+      "id": "602",
+      "name": "Zbąszynek",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "58.32",
+      "county": "zielonogórski",
+      "id": "603",
+      "name": "Zielona Góra - gmina miejska",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "220.45",
+      "county": "zielonogórski",
+      "id": "604",
+      "name": "Zielona Góra - gmina wiejska",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "100.98",
+      "county": "strzelecko-drezdenecki",
+      "id": "605",
+      "name": "Zwierzyn",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "39.92",
+      "county": "żagański",
+      "id": "606",
+      "name": "Żagań - gmina miejska",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "281.11",
+      "county": "żagański",
+      "id": "607",
+      "name": "Żagań - gmina wiejska",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "33.24",
+      "county": "żarski",
+      "id": "608",
+      "name": "Żary - gmina miejska",
+      "voivodeship": "lubuskie"
+    },
+    {
+      "area": "294.43",
+      "county": "żarski",
+      "id": "609",
+      "name": "Żary - gmina wiejska",
+      "voivodeship": "lubuskie"
+    }
+  ]
+}

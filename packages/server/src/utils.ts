@@ -21,3 +21,5 @@ export const flatten = (object: ParsedObject, parent?: string): string[] => {
 const isObject = (obj: ParsedValue): obj is ParsedObject => {
   return !!obj && typeof obj === "object" && !Array.isArray(obj);
 };
+
+export const isDefined = <T>(t: T | undefined | null): t is T => !!t;

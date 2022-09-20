@@ -1,7 +1,7 @@
 import React from "react";
 import { useSessionStore } from "../SessionContext";
 
-// TODO: Scss modules VS Code / TS plugin
+// TODO: typescript-plugin-css-modules doesn't work
 import styles from "./GlobalNavbar.module.scss";
 
 export const GlobalNavbar: React.FC = () => {
