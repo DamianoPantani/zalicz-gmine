@@ -1,4 +1,4 @@
-import { DateForm, GminaStatusChange, User, UserGmina } from "./model";
+import { DateForm, GminaStatusChange, User } from "./model";
 
 export type LoginRequest = { username: string; password: string };
 
@@ -10,4 +10,4 @@ export type UpdateStatusRequest = { status: GminaStatusChange; date: DateForm };
 
 export type UserGminasStatusRequest = { userId: string };
 
-export type UserGminasStatus = { checkedGminas: UserGmina[] };
+export type UserGminasStatus = { checkedGminaIds: string[] };

@@ -25,13 +25,16 @@ export const zgApi = {
     return parseAuthCookie(headers);
   },
 
-  getCheckedGminas: async (userId: string): Promise<UserGminasStatus> => {
+  getCheckedGminaIds: async (userId: string): Promise<UserGminasStatus> => {
     const { data: rawCsv } = await ZGApi.get(
       `/files/users-communes/users-communes-${userId}.csv`,
       tokenlessHeaders
     );
 
-    return { checkedGminas: parseGminasCSV(rawCsv) };
+    const parsedCsv = parseGminasCSV(rawCsv);
+    const checkedGminaIds = parsedCsv.map((g) => g.id);
+
+    return { checkedGminaIds };
   },
 
   getVoivodeship: async (id: number): Promise<string> => {

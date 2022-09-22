@@ -7,7 +7,7 @@ import {
   createSession,
   getLoggedInUser,
   updateGminasStatus,
-  getCheckedGminas,
+  getCheckedGminaIds,
 } from "./api";
 import { rejectIfNoAuthTokenSet } from "./acl";
 
@@ -35,7 +35,7 @@ app.use(
   "/api/map",
   express
     .Router()
-    .get("/:userId", getCheckedGminas)
+    .get("/:userId", getCheckedGminaIds)
     .put("/", rejectIfNoAuthTokenSet, updateGminasStatus)
 );
 

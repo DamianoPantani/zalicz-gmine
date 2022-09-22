@@ -1,0 +1,803 @@
+{
+  "name": "zachodniopomorskie",
+  "gminas": [
+    {
+      "area": "205.81",
+      "county": "gryfiński",
+      "id": "2366",
+      "name": "Banie",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "258.77",
+      "county": "myśliborski",
+      "id": "2367",
+      "name": "Barlinek",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "258.89",
+      "county": "szczecinecki",
+      "id": "2368",
+      "name": "Barwice",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "180.92",
+      "county": "koszaliński",
+      "id": "2369",
+      "name": "Będzino",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "25.72",
+      "county": "białogardzki",
+      "id": "2370",
+      "name": "Białogard - gmina miejska",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "327.93",
+      "county": "białogardzki",
+      "id": "2371",
+      "name": "Białogard - gmina wiejska",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "270.23",
+      "county": "szczecinecki",
+      "id": "2372",
+      "name": "Biały Bór",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "84.12",
+      "county": "pyrzycki",
+      "id": "2373",
+      "name": "Bielice",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "238.92",
+      "county": "choszczeński",
+      "id": "2374",
+      "name": "Bierzwnik",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "116.87",
+      "county": "koszaliński",
+      "id": "2375",
+      "name": "Biesiekierz",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "367.74",
+      "county": "koszaliński",
+      "id": "2376",
+      "name": "Bobolice",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "129.92",
+      "county": "myśliborski",
+      "id": "2377",
+      "name": "Boleszkowice",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "484.24",
+      "county": "szczecinecki",
+      "id": "2378",
+      "name": "Borne Sulinowo",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "118.06",
+      "county": "gryficki",
+      "id": "2379",
+      "name": "Brojce",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "110.84",
+      "county": "świdwiński",
+      "id": "2380",
+      "name": "Brzeżno",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "180.38",
+      "county": "gryfiński",
+      "id": "2381",
+      "name": "Cedynia",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "160.57",
+      "county": "stargardzki",
+      "id": "2382",
+      "name": "Chociwel",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "332.89",
+      "county": "gryfiński",
+      "id": "2383",
+      "name": "Chojna",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "246.53",
+      "county": "choszczeński",
+      "id": "2384",
+      "name": "Choszczno",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "364.72",
+      "county": "drawski",
+      "id": "2385",
+      "name": "Czaplinek",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "348.37",
+      "county": "wałecki",
+      "id": "2386",
+      "name": "Człopa",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "19.93",
+      "county": "sławieński",
+      "id": "2387",
+      "name": "Darłowo - gmina miejska",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "269.84",
+      "county": "sławieński",
+      "id": "2388",
+      "name": "Darłowo - gmina wiejska",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "318.78",
+      "county": "myśliborski",
+      "id": "2389",
+      "name": "Dębno",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "116.10",
+      "county": "łobeski",
+      "id": "2390",
+      "name": "Dobra",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "110.27",
+      "county": "policki",
+      "id": "2391",
+      "name": "Dobra (Szczecińska)",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "135.12",
+      "county": "stargardzki",
+      "id": "2392",
+      "name": "Dobrzany",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "237.13",
+      "county": "stargardzki",
+      "id": "2393",
+      "name": "Dolice",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "321.09",
+      "county": "choszczeński",
+      "id": "2394",
+      "name": "Drawno",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "344.76",
+      "county": "drawski",
+      "id": "2395",
+      "name": "Drawsko Pomorskie",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "128.57",
+      "county": "kołobrzeski",
+      "id": "2396",
+      "name": "Dygowo",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "37.91",
+      "county": "kamieński",
+      "id": "2397",
+      "name": "Dziwnów",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "175.39",
+      "county": "kamieński",
+      "id": "2398",
+      "name": "Golczewo",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "443.06",
+      "county": "goleniowski",
+      "id": "2399",
+      "name": "Goleniów",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "116.04",
+      "county": "kołobrzeski",
+      "id": "2400",
+      "name": "Gościno",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "261.63",
+      "county": "gryficki",
+      "id": "2401",
+      "name": "Gryfice",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "253.62",
+      "county": "gryfiński",
+      "id": "2402",
+      "name": "Gryfino",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "204.49",
+      "county": "szczecinecki",
+      "id": "2403",
+      "name": "Grzmiąca",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "151.01",
+      "county": "stargardzki",
+      "id": "2404",
+      "name": "Ińsko",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "480.53",
+      "county": "drawski",
+      "id": "2405",
+      "name": "Kalisz Pomorski",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "208.57",
+      "county": "kamieński",
+      "id": "2406",
+      "name": "Kamień Pomorski",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "141.02",
+      "county": "białogardzki",
+      "id": "2407",
+      "name": "Karlino",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "133.14",
+      "county": "gryficki",
+      "id": "2408",
+      "name": "Karnice",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "122.05",
+      "county": "stargardzki",
+      "id": "2409",
+      "name": "Kobylanka",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "105.40",
+      "county": "policki",
+      "id": "2410",
+      "name": "Kołbaskowo",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "25.67",
+      "county": "kołobrzeski",
+      "id": "2411",
+      "name": "Kołobrzeg - gmina miejska",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "144.75",
+      "county": "kołobrzeski",
+      "id": "2412",
+      "name": "Kołobrzeg - gmina wiejska",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "83.20",
+      "county": "prawa powiatu",
+      "id": "2413",
+      "name": "Koszalin",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "94.51",
+      "county": "pyrzycki",
+      "id": "2414",
+      "name": "Kozielice",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "140.47",
+      "county": "choszczeński",
+      "id": "2415",
+      "name": "Krzęcin",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "94.62",
+      "county": "pyrzycki",
+      "id": "2416",
+      "name": "Lipiany",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "227.68",
+      "county": "łobeski",
+      "id": "2417",
+      "name": "Łobez",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "226.63",
+      "county": "sławieński",
+      "id": "2418",
+      "name": "Malechowo",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "188.57",
+      "county": "koszaliński",
+      "id": "2419",
+      "name": "Manowo",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "101.75",
+      "county": "stargardzki",
+      "id": "2420",
+      "name": "Marianowo",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "210.51",
+      "county": "goleniowski",
+      "id": "2421",
+      "name": "Maszewo",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "62.54",
+      "county": "koszaliński",
+      "id": "2422",
+      "name": "Mielno",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "238.67",
+      "county": "gryfiński",
+      "id": "2423",
+      "name": "Mieszkowice",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "117.17",
+      "county": "kamieński",
+      "id": "2424",
+      "name": "Międzyzdroje",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "195.87",
+      "county": "wałecki",
+      "id": "2425",
+      "name": "Mirosławiec",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "124.86",
+      "county": "gryfiński",
+      "id": "2426",
+      "name": "Moryń",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "328.33",
+      "county": "myśliborski",
+      "id": "2427",
+      "name": "Myślibórz",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "197.07",
+      "county": "policki",
+      "id": "2428",
+      "name": "Nowe Warpno",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "338.66",
+      "county": "goleniowski",
+      "id": "2429",
+      "name": "Nowogard",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "146.15",
+      "county": "myśliborski",
+      "id": "2430",
+      "name": "Nowogródek Pomorski",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "101.92",
+      "county": "goleniowski",
+      "id": "2431",
+      "name": "Osina",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "150.42",
+      "county": "drawski",
+      "id": "2432",
+      "name": "Ostrowice",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "200.81",
+      "county": "choszczeński",
+      "id": "2433",
+      "name": "Pełczyce",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "238.79",
+      "county": "gryficki",
+      "id": "2434",
+      "name": "Płoty",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "393.08",
+      "county": "koszaliński",
+      "id": "2435",
+      "name": "Polanów",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "251.42",
+      "county": "policki",
+      "id": "2436",
+      "name": "Police",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "343.71",
+      "county": "świdwiński",
+      "id": "2437",
+      "name": "Połczyn-Zdrój",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "227.24",
+      "county": "sławieński",
+      "id": "2438",
+      "name": "Postomino",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "162.20",
+      "county": "pyrzycki",
+      "id": "2439",
+      "name": "Przelewice",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "228.68",
+      "county": "goleniowski",
+      "id": "2440",
+      "name": "Przybiernów",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "204.40",
+      "county": "pyrzycki",
+      "id": "2441",
+      "name": "Pyrzyce",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "180.40",
+      "county": "łobeski",
+      "id": "2442",
+      "name": "Radowo Małe",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "180.00",
+      "county": "świdwiński",
+      "id": "2443",
+      "name": "Rąbino",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "180.13",
+      "county": "choszczeński",
+      "id": "2444",
+      "name": "Recz",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "285.24",
+      "county": "łobeski",
+      "id": "2445",
+      "name": "Resko",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "41.13",
+      "county": "gryficki",
+      "id": "2446",
+      "name": "Rewal",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "146.12",
+      "county": "kołobrzeski",
+      "id": "2447",
+      "name": "Rymań",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "226.78",
+      "county": "koszaliński",
+      "id": "2448",
+      "name": "Sianów",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "107.44",
+      "county": "kołobrzeski",
+      "id": "2449",
+      "name": "Siemyśl",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "15.78",
+      "county": "sławieński",
+      "id": "2450",
+      "name": "Sławno - gmina miejska",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "284.20",
+      "county": "sławieński",
+      "id": "2451",
+      "name": "Sławno - gmina wiejska",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "188.70",
+      "county": "świdwiński",
+      "id": "2452",
+      "name": "Sławoborze",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "112.59",
+      "county": "stargardzki",
+      "id": "2453",
+      "name": "Stara Dąbrowa",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "153.17",
+      "county": "gryfiński",
+      "id": "2454",
+      "name": "Stare Czarnowo",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "48.10",
+      "county": "stargardzki",
+      "id": "2455",
+      "name": "Stargard - gmina miejska",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "318.47",
+      "county": "stargardzki",
+      "id": "2456",
+      "name": "Stargard - gmina wiejska",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "294.16",
+      "county": "goleniowski",
+      "id": "2457",
+      "name": "Stepnica",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "132.80",
+      "county": "stargardzki",
+      "id": "2458",
+      "name": "Suchań",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "300.83",
+      "county": "prawa powiatu",
+      "id": "2459",
+      "name": "Szczecin",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "37.16",
+      "county": "szczecinecki",
+      "id": "2460",
+      "name": "Szczecinek - gmina miejska",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "510.21",
+      "county": "szczecinecki",
+      "id": "2461",
+      "name": "Szczecinek - gmina wiejska",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "22.51",
+      "county": "świdwiński",
+      "id": "2462",
+      "name": "Świdwin - gmina miejska",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "247.34",
+      "county": "świdwiński",
+      "id": "2463",
+      "name": "Świdwin - gmina wiejska",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "140.20",
+      "county": "kamieński",
+      "id": "2464",
+      "name": "Świerzno",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "132.59",
+      "county": "koszaliński",
+      "id": "2465",
+      "name": "Świeszyno",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "195.10",
+      "county": "prawa powiatu",
+      "id": "2466",
+      "name": "Świnoujście",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "170.51",
+      "county": "gryfiński",
+      "id": "2467",
+      "name": "Trzcińsko-Zdrój",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "225.44",
+      "county": "gryficki",
+      "id": "2468",
+      "name": "Trzebiatów",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "249.90",
+      "county": "wałecki",
+      "id": "2469",
+      "name": "Tuczno",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "350.69",
+      "county": "białogardzki",
+      "id": "2470",
+      "name": "Tychowo",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "57.27",
+      "county": "kołobrzeski",
+      "id": "2471",
+      "name": "Ustronie Morskie",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "38.17",
+      "county": "wałecki",
+      "id": "2472",
+      "name": "Wałcz - gmina miejska",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "575.08",
+      "county": "wałecki",
+      "id": "2473",
+      "name": "Wałcz - gmina wiejska",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "85.86",
+      "county": "pyrzycki",
+      "id": "2474",
+      "name": "Warnice",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "256.19",
+      "county": "łobeski",
+      "id": "2475",
+      "name": "Węgorzyno",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "209.63",
+      "county": "gryfiński",
+      "id": "2476",
+      "name": "Widuchowa",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "236.65",
+      "county": "drawski",
+      "id": "2477",
+      "name": "Wierzchowo",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "327.41",
+      "county": "kamieński",
+      "id": "2478",
+      "name": "Wolin",
+      "voivodeship": "zachodniopomorskie"
+    },
+    {
+      "area": "194.53",
+      "county": "drawski",
+      "id": "2479",
+      "name": "Złocieniec",
+      "voivodeship": "zachodniopomorskie"
+    }
+  ]
+}

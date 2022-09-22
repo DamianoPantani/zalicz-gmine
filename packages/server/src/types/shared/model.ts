@@ -22,6 +22,10 @@ export type UserGmina = Gmina & {
   date: string;
 };
 
+export type Coords = [number, number][];
+
+export type GminaCoords = { id: string; name: string; coords: Coords };
+
 export type GminasStatus = Record<number, GminaStatusChange>;
 
 export type DateForm = {

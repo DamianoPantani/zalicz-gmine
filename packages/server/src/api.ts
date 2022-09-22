@@ -75,14 +75,14 @@ export const updateGminasStatus: ZGRequestHandler<UpdateStatusRequest> = async (
   }
 };
 
-export const getCheckedGminas: ZGRequestHandler<
+export const getCheckedGminaIds: ZGRequestHandler<
   unknown,
   UserGminasStatus | UIError,
   UserGminasStatusRequest
 > = async (req, res) => {
   try {
     const { userId } = req.params;
-    const checkedGminas = await zgApi.getCheckedGminas(userId);
+    const checkedGminas = await zgApi.getCheckedGminaIds(userId);
 
     res.json(checkedGminas);
   } catch (error) {

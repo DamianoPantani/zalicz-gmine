@@ -4,6 +4,13 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "start:client": "npm run start --workspace=packages/client",
+    "start:server": "npm run start --workspace=packages/server",
+    "build:server": "npm run build --workspace=packages/server",
+    "build:server:voivodships": "npm run compileVoivodships --workspace=packages/server",
+    "build:server:mapCoords": "npm run compileMapCoords --workspace=packages/server"
+  },
   "dependencies": {
     "autoprefixer": "10.4.5"
   },

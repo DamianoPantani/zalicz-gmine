@@ -5,14 +5,15 @@ import type {
   LoggedUserResponse,
   User,
   UserGminasStatus,
+  GminaCoords,
 } from "@damianopantani/zaliczgmine-server";
-import { GminaBounds } from "./types";
 import LocalStorage from "./localStorage";
 
-const isLocal = process.env.NODE_ENV !== "production";
+const isLocal = window.location.hostname.includes("localhost");
 
 const authLocalStorage = new LocalStorage<string>("authToken");
 
+// TODO: doesn't work on mobile
 const Api = axios.create({
   baseURL: isLocal ? "http://localhost:5000/api" : "/api",
 });
@@ -49,12 +50,12 @@ export const logoutUser = async (): Promise<void> => {
   await Api.delete("/session");
 };
 
-export const getAllGminas = async (): Promise<GminaBounds[]> => {
-  const { data } = await axios.get<GminaBounds[]>("/gminas.json");
+export const getAllGminas = async (): Promise<GminaCoords[]> => {
+  const { data } = await axios.get<GminaCoords[]>("/map/coords_prec_4.json");
   return data;
 };
 
-export const getCheckedGminas = async (
+export const getCheckedGminaIds = async (
   userId: number
 ): Promise<UserGminasStatus> => {
   const { data } = await Api.get<UserGminasStatus>("/map/" + userId);

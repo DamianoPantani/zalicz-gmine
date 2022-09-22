@@ -1,0 +1,866 @@
+{
+  "name": "pomorskie",
+  "gminas": [
+    {
+      "area": "51.67",
+      "county": "starogardzki",
+      "id": "1632",
+      "name": "Bobowo",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "108.57",
+      "county": "bytowski",
+      "id": "1633",
+      "name": "Borzytuchom",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "400.74",
+      "county": "chojnicki",
+      "id": "1634",
+      "name": "Brusy",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "197.44",
+      "county": "bytowski",
+      "id": "1635",
+      "name": "Bytów",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "124.28",
+      "county": "gdański",
+      "id": "1636",
+      "name": "Cedry Wielkie",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "187.86",
+      "county": "lęborski",
+      "id": "1637",
+      "name": "Cewice",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "79.18",
+      "county": "kartuski",
+      "id": "1638",
+      "name": "Chmielno",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "183.23",
+      "county": "wejherowski",
+      "id": "1639",
+      "name": "Choczewo",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "21.05",
+      "county": "chojnicki",
+      "id": "1640",
+      "name": "Chojnice - gmina miejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "458.34",
+      "county": "chojnicki",
+      "id": "1641",
+      "name": "Chojnice - gmina wiejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "298.28",
+      "county": "bytowski",
+      "id": "1642",
+      "name": "Czarna Dąbrówka",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "27.75",
+      "county": "starogardzki",
+      "id": "1643",
+      "name": "Czarna Woda",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "234.90",
+      "county": "człuchowski",
+      "id": "1644",
+      "name": "Czarne",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "379.85",
+      "county": "chojnicki",
+      "id": "1645",
+      "name": "Czersk",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "12.48",
+      "county": "człuchowski",
+      "id": "1646",
+      "name": "Człuchów - gmina miejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "361.65",
+      "county": "człuchowski",
+      "id": "1647",
+      "name": "Człuchów - gmina wiejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "167.81",
+      "county": "słupski",
+      "id": "1648",
+      "name": "Damnica",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "224.17",
+      "county": "człuchowski",
+      "id": "1649",
+      "name": "Debrzno",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "300.02",
+      "county": "słupski",
+      "id": "1650",
+      "name": "Dębnica Kaszubska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "124.97",
+      "county": "kościerski",
+      "id": "1651",
+      "name": "Dziemiany",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "131.40",
+      "county": "sztumski",
+      "id": "1652",
+      "name": "Dzierzgoń",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "192.98",
+      "county": "kwidzyński",
+      "id": "1653",
+      "name": "Gardeja",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "262.03",
+      "county": "prawa powiatu",
+      "id": "1654",
+      "name": "Gdańsk",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "135.49",
+      "county": "prawa powiatu",
+      "id": "1655",
+      "name": "Gdynia",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "323.81",
+      "county": "słupski",
+      "id": "1656",
+      "name": "Główczyce",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "194.78",
+      "county": "tczewski",
+      "id": "1657",
+      "name": "Gniew",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "176.21",
+      "county": "wejherowski",
+      "id": "1658",
+      "name": "Gniewino",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "21.27",
+      "county": "pucki",
+      "id": "1659",
+      "name": "Hel",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "8.00",
+      "county": "pucki",
+      "id": "1660",
+      "name": "Jastarnia",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "110.36",
+      "county": "starogardzki",
+      "id": "1661",
+      "name": "Kaliska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "169.20",
+      "county": "kościerski",
+      "id": "1662",
+      "name": "Karsin",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "205.28",
+      "county": "kartuski",
+      "id": "1663",
+      "name": "Kartuzy",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "293.43",
+      "county": "słupski",
+      "id": "1664",
+      "name": "Kępice",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "244.95",
+      "county": "słupski",
+      "id": "1665",
+      "name": "Kobylnica",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "222.41",
+      "county": "człuchowski",
+      "id": "1666",
+      "name": "Koczała",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "82.80",
+      "county": "gdański",
+      "id": "1667",
+      "name": "Kolbudy",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "173.34",
+      "county": "bytowski",
+      "id": "1668",
+      "name": "Kołczygłowy",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "104.27",
+      "county": "chojnicki",
+      "id": "1669",
+      "name": "Konarzyny",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "50.15",
+      "county": "pucki",
+      "id": "1670",
+      "name": "Kosakowo",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "15.83",
+      "county": "kościerski",
+      "id": "1671",
+      "name": "Kościerzyna - gmina miejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "310.15",
+      "county": "kościerski",
+      "id": "1672",
+      "name": "Kościerzyna - gmina wiejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "211.83",
+      "county": "pucki",
+      "id": "1673",
+      "name": "Krokowa",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "102.04",
+      "county": "nowodworski",
+      "id": "1674",
+      "name": "Krynica Morska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "21.82",
+      "county": "kwidzyński",
+      "id": "1675",
+      "name": "Kwidzyn - gmina miejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "207.25",
+      "county": "kwidzyński",
+      "id": "1676",
+      "name": "Kwidzyn - gmina wiejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "17.86",
+      "county": "lęborski",
+      "id": "1677",
+      "name": "Lębork",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "88.70",
+      "county": "malborski",
+      "id": "1678",
+      "name": "Lichnowy",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "119.82",
+      "county": "wejherowski",
+      "id": "1679",
+      "name": "Linia",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "110.07",
+      "county": "kościerski",
+      "id": "1680",
+      "name": "Liniewo",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "309.57",
+      "county": "bytowski",
+      "id": "1681",
+      "name": "Lipnica",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "109.20",
+      "county": "kościerski",
+      "id": "1682",
+      "name": "Lipusz",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "161.01",
+      "county": "starogardzki",
+      "id": "1683",
+      "name": "Lubichowo",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "111.94",
+      "county": "wejherowski",
+      "id": "1684",
+      "name": "Luzino",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "14.80",
+      "county": "lęborski",
+      "id": "1685",
+      "name": "Łeba",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "232.81",
+      "county": "wejherowski",
+      "id": "1686",
+      "name": "Łęczyce",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "17.15",
+      "county": "malborski",
+      "id": "1687",
+      "name": "Malbork - gmina miejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "100.93",
+      "county": "malborski",
+      "id": "1688",
+      "name": "Malbork - gmina wiejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "466.82",
+      "county": "bytowski",
+      "id": "1689",
+      "name": "Miastko",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "91.75",
+      "county": "sztumski",
+      "id": "1690",
+      "name": "Mikołajki Pomorskie",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "93.75",
+      "county": "malborski",
+      "id": "1691",
+      "name": "Miłoradz",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "91.22",
+      "county": "tczewski",
+      "id": "1692",
+      "name": "Morzeszczyn",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "113.33",
+      "county": "kościerski",
+      "id": "1693",
+      "name": "Nowa Karczma",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "270.39",
+      "county": "lęborski",
+      "id": "1694",
+      "name": "Nowa Wieś Lęborska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "213.00",
+      "county": "nowodworski",
+      "id": "1695",
+      "name": "Nowy Dwór Gdański",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "114.38",
+      "county": "malborski",
+      "id": "1696",
+      "name": "Nowy Staw",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "123.26",
+      "county": "starogardzki",
+      "id": "1697",
+      "name": "Osieczna",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "155.63",
+      "county": "starogardzki",
+      "id": "1698",
+      "name": "Osiek",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "60.65",
+      "county": "nowodworski",
+      "id": "1699",
+      "name": "Ostaszewo",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "130.91",
+      "county": "bytowski",
+      "id": "1700",
+      "name": "Parchowo",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "140.45",
+      "county": "tczewski",
+      "id": "1701",
+      "name": "Pelplin",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "227.92",
+      "county": "słupski",
+      "id": "1702",
+      "name": "Potęgowo",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "197.12",
+      "county": "kwidzyński",
+      "id": "1703",
+      "name": "Prabuty",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "16.47",
+      "county": "gdański",
+      "id": "1704",
+      "name": "Pruszcz Gdański - gmina miejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "142.56",
+      "county": "gdański",
+      "id": "1705",
+      "name": "Pruszcz Gdański - gmina wiejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "243.88",
+      "county": "człuchowski",
+      "id": "1706",
+      "name": "Przechlewo",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "85.39",
+      "county": "kartuski",
+      "id": "1707",
+      "name": "Przodkowo",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "129.62",
+      "county": "gdański",
+      "id": "1708",
+      "name": "Przywidz",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "49.84",
+      "county": "gdański",
+      "id": "1709",
+      "name": "Pszczółki",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "4.90",
+      "county": "pucki",
+      "id": "1710",
+      "name": "Puck - gmina miejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "243.29",
+      "county": "pucki",
+      "id": "1711",
+      "name": "Puck - gmina wiejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "29.45",
+      "county": "wejherowski",
+      "id": "1712",
+      "name": "Reda",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "30.08",
+      "county": "wejherowski",
+      "id": "1713",
+      "name": "Rumia",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "103.28",
+      "county": "kwidzyński",
+      "id": "1714",
+      "name": "Ryjewo",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "274.92",
+      "county": "człuchowski",
+      "id": "1715",
+      "name": "Rzeczenica",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "112.19",
+      "county": "kwidzyński",
+      "id": "1716",
+      "name": "Sadlinki",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "182.36",
+      "county": "kartuski",
+      "id": "1717",
+      "name": "Sierakowice",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "169.79",
+      "county": "starogardzki",
+      "id": "1718",
+      "name": "Skarszewy",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "3.67",
+      "county": "starogardzki",
+      "id": "1719",
+      "name": "Skórcz - gmina miejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "96.63",
+      "county": "starogardzki",
+      "id": "1720",
+      "name": "Skórcz - gmina wiejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "43.15",
+      "county": "słupski",
+      "id": "1721",
+      "name": "Słupsk - gmina miejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "260.58",
+      "county": "słupski",
+      "id": "1722",
+      "name": "Słupsk - gmina wiejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "86.12",
+      "county": "starogardzki",
+      "id": "1723",
+      "name": "Smętowo Graniczne",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "257.24",
+      "county": "słupski",
+      "id": "1724",
+      "name": "Smołdzino",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "112.27",
+      "county": "kartuski",
+      "id": "1725",
+      "name": "Somonino",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "17.31",
+      "county": "prawa powiatu",
+      "id": "1726",
+      "name": "Sopot",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "213.10",
+      "county": "kościerski",
+      "id": "1727",
+      "name": "Stara Kiszewa",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "79.72",
+      "county": "malborski",
+      "id": "1728",
+      "name": "Stare Pole",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "25.27",
+      "county": "starogardzki",
+      "id": "1729",
+      "name": "Starogard Gdański - gmina miejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "196.16",
+      "county": "starogardzki",
+      "id": "1730",
+      "name": "Starogard Gdański - gmina wiejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "185.82",
+      "county": "sztumski",
+      "id": "1731",
+      "name": "Stary Dzierzgoń",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "141.04",
+      "county": "sztumski",
+      "id": "1732",
+      "name": "Stary Targ",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "169.57",
+      "county": "nowodworski",
+      "id": "1733",
+      "name": "Stegna",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "160.30",
+      "county": "kartuski",
+      "id": "1734",
+      "name": "Stężyca",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "175.96",
+      "county": "bytowski",
+      "id": "1735",
+      "name": "Studzienice",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "78.22",
+      "county": "tczewski",
+      "id": "1736",
+      "name": "Subkowy",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "84.98",
+      "county": "gdański",
+      "id": "1737",
+      "name": "Suchy Dąb",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "131.31",
+      "county": "kartuski",
+      "id": "1738",
+      "name": "Sulęczyno",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "176.57",
+      "county": "wejherowski",
+      "id": "1739",
+      "name": "Szemud",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "180.84",
+      "county": "sztumski",
+      "id": "1740",
+      "name": "Sztum",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "107.49",
+      "county": "nowodworski",
+      "id": "1741",
+      "name": "Sztutowo",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "22.26",
+      "county": "tczewski",
+      "id": "1742",
+      "name": "Tczew - gmina miejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "170.61",
+      "county": "tczewski",
+      "id": "1743",
+      "name": "Tczew - gmina wiejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "162.62",
+      "county": "gdański",
+      "id": "1744",
+      "name": "Trąbki Wielkie",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "225.45",
+      "county": "bytowski",
+      "id": "1745",
+      "name": "Trzebielino",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "106.47",
+      "county": "bytowski",
+      "id": "1746",
+      "name": "Tuchomie",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "10.14",
+      "county": "słupski",
+      "id": "1747",
+      "name": "Ustka - gmina miejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "218.10",
+      "county": "słupski",
+      "id": "1748",
+      "name": "Ustka - gmina wiejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "25.65",
+      "county": "wejherowski",
+      "id": "1749",
+      "name": "Wejherowo - gmina miejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "194.08",
+      "county": "wejherowski",
+      "id": "1750",
+      "name": "Wejherowo - gmina wiejska",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "216.08",
+      "county": "lęborski",
+      "id": "1751",
+      "name": "Wicko",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "38.41",
+      "county": "pucki",
+      "id": "1752",
+      "name": "Władysławowo",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "137.96",
+      "county": "starogardzki",
+      "id": "1753",
+      "name": "Zblewo",
+      "voivodeship": "pomorskie"
+    },
+    {
+      "area": "163.95",
+      "county": "kartuski",
+      "id": "1754",
+      "name": "Żukowo",
+      "voivodeship": "pomorskie"
+    }
+  ]
+}

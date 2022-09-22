@@ -11,9 +11,15 @@ const getVoivodeships = async (): Promise<Voivodeship[]> => {
   const voivodshipHtmls = await Promise.all(
     Array(voivodeshipsCount)
       .fill(null)
-      .map((_, i) => zgApi.getVoivodeship(i + 1))
+      .map((_, i) => {
+        const voi = zgApi.getVoivodeship(i + 1);
+        console.log(`Done fetching voivodship ${i}`);
+
+        return voi;
+      })
   );
 
+  console.log("Parsing all");
   const voivodeships = voivodshipHtmls.map(parseVoivodeship).filter(isDefined);
 
   if (voivodeshipsCount !== voivodeships.length) {
@@ -26,9 +32,10 @@ const getVoivodeships = async (): Promise<Voivodeship[]> => {
 const serverRootDir = process.cwd();
 
 getVoivodeships().then((voivodeships) => {
+  const saveDir = `${serverRootDir}\\..\\..\\packages\\client\\public\\map\\`;
+  console.log(`Done, saving to ${saveDir}`);
   voivodeships.forEach((voivodeship) => {
-    const outputFilePath =
-      serverRootDir + "\\data\\voivodeships\\" + voivodeship.name + ".json";
+    const outputFilePath = `${saveDir}${voivodeship.name}.json`;
     if (existsSync(outputFilePath)) {
       rmSync(outputFilePath);
     }
@@ -36,7 +43,5 @@ getVoivodeships().then((voivodeships) => {
     writeFileSync(outputFilePath, JSON.stringify(voivodeship, null, 2), {
       encoding: "utf-8",
     });
-
-    return outputFilePath;
   });
 });

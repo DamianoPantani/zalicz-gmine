@@ -1,0 +1,1188 @@
+{
+  "name": "dolnośląskie",
+  "gminas": [
+    {
+      "area": "73.41",
+      "county": "ząbkowicki",
+      "id": "1",
+      "name": "Bardo",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "36.20",
+      "county": "dzierżoniowski",
+      "id": "2",
+      "name": "Bielawa",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "147.07",
+      "county": "oleśnicki",
+      "id": "3",
+      "name": "Bierutów",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "136.17",
+      "county": "zgorzelecki",
+      "id": "4",
+      "name": "Bogatynia",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "27.01",
+      "county": "wałbrzyski",
+      "id": "5",
+      "name": "Boguszów-Gorce",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "22.81",
+      "county": "bolesławiecki",
+      "id": "6",
+      "name": "Bolesławiec - gmina miejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "288.93",
+      "county": "bolesławiecki",
+      "id": "7",
+      "name": "Bolesławiec - gmina wiejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "152.85",
+      "county": "jaworski",
+      "id": "8",
+      "name": "Bolków",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "98.66",
+      "county": "strzeliński",
+      "id": "9",
+      "name": "Borów",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "94.40",
+      "county": "wołowski",
+      "id": "10",
+      "name": "Brzeg Dolny",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "337.82",
+      "county": "kłodzki",
+      "id": "11",
+      "name": "Bystrzyca Kłodzka",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "230.27",
+      "county": "polkowicki",
+      "id": "12",
+      "name": "Chocianów",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "5.32",
+      "county": "legnicki",
+      "id": "13",
+      "name": "Chojnów - gmina miejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "231.17",
+      "county": "legnicki",
+      "id": "14",
+      "name": "Chojnów - gmina wiejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "77.53",
+      "county": "ząbkowicki",
+      "id": "15",
+      "name": "Ciepłowody",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "100.67",
+      "county": "milicki",
+      "id": "16",
+      "name": "Cieszków",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "66.31",
+      "county": "wałbrzyski",
+      "id": "17",
+      "name": "Czarny Bór",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "84.18",
+      "county": "wrocławski",
+      "id": "18",
+      "name": "Czernica",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "212.41",
+      "county": "wrocławski",
+      "id": "19",
+      "name": "Długołęka",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "86.46",
+      "county": "świdnicki",
+      "id": "20",
+      "name": "Dobromierz",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "131.74",
+      "county": "oleśnicki",
+      "id": "21",
+      "name": "Dobroszyce",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "94.31",
+      "county": "oławski",
+      "id": "22",
+      "name": "Domaniów",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "22.28",
+      "county": "kłodzki",
+      "id": "23",
+      "name": "Duszniki-Zdrój",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "105.14",
+      "county": "oleśnicki",
+      "id": "24",
+      "name": "Dziadowa Kłoda",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "20.07",
+      "county": "dzierżoniowski",
+      "id": "25",
+      "name": "Dzierżoniów - gmina miejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "142.05",
+      "county": "dzierżoniowski",
+      "id": "26",
+      "name": "Dzierżoniów - gmina wiejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "76.99",
+      "county": "polkowicki",
+      "id": "27",
+      "name": "Gaworzyce",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "35.37",
+      "county": "głogowski",
+      "id": "28",
+      "name": "Głogów - gmina miejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "84.28",
+      "county": "głogowski",
+      "id": "29",
+      "name": "Głogów - gmina wiejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "61.92",
+      "county": "wałbrzyski",
+      "id": "30",
+      "name": "Głuszyca",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "268.74",
+      "county": "górowski",
+      "id": "31",
+      "name": "Góra",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "121.89",
+      "county": "polkowicki",
+      "id": "32",
+      "name": "Grębocice",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "267.29",
+      "county": "bolesławiecki",
+      "id": "33",
+      "name": "Gromadka",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "66.61",
+      "county": "lwówecki",
+      "id": "34",
+      "name": "Gryfów Śląski",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "58.09",
+      "county": "jeleniogórski",
+      "id": "35",
+      "name": "Janowice Wielkie",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "18.80",
+      "county": "jaworski",
+      "id": "36",
+      "name": "Jawor",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "67.34",
+      "county": "świdnicki",
+      "id": "37",
+      "name": "Jaworzyna Śląska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "17.47",
+      "county": "wałbrzyski",
+      "id": "38",
+      "name": "Jedlina-Zdrój",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "168.10",
+      "county": "oławski",
+      "id": "39",
+      "name": "Jelcz-Laskowice",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "108.36",
+      "county": "prawa powiatu",
+      "id": "40",
+      "name": "Jelenia Góra",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "123.80",
+      "county": "górowski",
+      "id": "41",
+      "name": "Jemielno",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "63.44",
+      "county": "głogowski",
+      "id": "42",
+      "name": "Jerzmanowa",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "94.38",
+      "county": "jeleniogórski",
+      "id": "43",
+      "name": "Jeżów Sudecki",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "56.62",
+      "county": "wrocławski",
+      "id": "44",
+      "name": "Jordanów Śląski",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "96.24",
+      "county": "ząbkowicki",
+      "id": "45",
+      "name": "Kamieniec Ząbkowicki",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "17.97",
+      "county": "kamiennogórski",
+      "id": "46",
+      "name": "Kamienna Góra - gmina miejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "158.10",
+      "county": "kamiennogórski",
+      "id": "47",
+      "name": "Kamienna Góra - gmina wiejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "37.96",
+      "county": "jeleniogórski",
+      "id": "48",
+      "name": "Karpacz",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "176.50",
+      "county": "wrocławski",
+      "id": "49",
+      "name": "Kąty Wrocławskie",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "25.00",
+      "county": "kłodzki",
+      "id": "50",
+      "name": "Kłodzko - gmina miejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "252.25",
+      "county": "kłodzki",
+      "id": "51",
+      "name": "Kłodzko - gmina wiejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "149.11",
+      "county": "wrocławski",
+      "id": "52",
+      "name": "Kobierzyce",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "98.14",
+      "county": "strzeliński",
+      "id": "53",
+      "name": "Kondratowice",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "146.25",
+      "county": "średzki",
+      "id": "54",
+      "name": "Kostomłoty",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "127.75",
+      "county": "głogowski",
+      "id": "55",
+      "name": "Kotla",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "37.39",
+      "county": "jeleniogórski",
+      "id": "56",
+      "name": "Kowary",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "178.73",
+      "county": "milicki",
+      "id": "57",
+      "name": "Krośnice",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "67.59",
+      "county": "legnicki",
+      "id": "58",
+      "name": "Krotoszyce",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "33.99",
+      "county": "kłodzki",
+      "id": "59",
+      "name": "Kudowa-Zdrój",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "92.79",
+      "county": "legnicki",
+      "id": "60",
+      "name": "Kunice",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "117.40",
+      "county": "kłodzki",
+      "id": "61",
+      "name": "Lądek-Zdrój",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "56.29",
+      "county": "prawa powiatu",
+      "id": "62",
+      "name": "Legnica",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "85.37",
+      "county": "legnicki",
+      "id": "63",
+      "name": "Legnickie Pole",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "104.50",
+      "county": "lubański",
+      "id": "64",
+      "name": "Leśna",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "52.19",
+      "county": "kłodzki",
+      "id": "65",
+      "name": "Lewin Kłodzki",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "16.12",
+      "county": "lubański",
+      "id": "66",
+      "name": "Lubań - gmina miejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "142.15",
+      "county": "lubański",
+      "id": "67",
+      "name": "Lubań - gmina wiejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "138.08",
+      "county": "kamiennogórski",
+      "id": "68",
+      "name": "Lubawka",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "40.68",
+      "county": "lubiński",
+      "id": "69",
+      "name": "Lubin - gmina miejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "290.15",
+      "county": "lubiński",
+      "id": "70",
+      "name": "Lubin - gmina wiejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "130.39",
+      "county": "lwówecki",
+      "id": "71",
+      "name": "Lubomierz",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "240.37",
+      "county": "lwówecki",
+      "id": "72",
+      "name": "Lwówek Śląski",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "124.42",
+      "county": "dzierżoniowski",
+      "id": "73",
+      "name": "Łagiewniki",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "52.55",
+      "county": "średzki",
+      "id": "74",
+      "name": "Malczyce",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "95.91",
+      "county": "świdnicki",
+      "id": "75",
+      "name": "Marcinowice",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "81.98",
+      "county": "kamiennogórski",
+      "id": "76",
+      "name": "Marciszów",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "147.78",
+      "county": "jaworski",
+      "id": "77",
+      "name": "Męcinka",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "76.17",
+      "county": "wałbrzyski",
+      "id": "78",
+      "name": "Mieroszów",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "83.30",
+      "county": "wrocławski",
+      "id": "79",
+      "name": "Mietków",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "88.62",
+      "county": "oleśnicki",
+      "id": "80",
+      "name": "Międzybórz",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "189.03",
+      "county": "kłodzki",
+      "id": "81",
+      "name": "Międzylesie",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "179.24",
+      "county": "średzki",
+      "id": "82",
+      "name": "Miękinia",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "435.61",
+      "county": "milicki",
+      "id": "83",
+      "name": "Milicz",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "86.37",
+      "county": "legnicki",
+      "id": "84",
+      "name": "Miłkowice",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "186.57",
+      "county": "lwówecki",
+      "id": "85",
+      "name": "Mirsk",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "71.83",
+      "county": "jaworski",
+      "id": "86",
+      "name": "Mściwojów",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "88.75",
+      "county": "jeleniogórski",
+      "id": "87",
+      "name": "Mysłakowice",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "151.98",
+      "county": "górowski",
+      "id": "88",
+      "name": "Niechlów",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "72.07",
+      "county": "dzierżoniowski",
+      "id": "89",
+      "name": "Niemcza",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "37.04",
+      "county": "kłodzki",
+      "id": "90",
+      "name": "Nowa Ruda - gmina miejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "139.66",
+      "county": "kłodzki",
+      "id": "91",
+      "name": "Nowa Ruda - gmina wiejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "176.26",
+      "county": "bolesławiecki",
+      "id": "92",
+      "name": "Nowogrodziec",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "153.75",
+      "county": "trzebnicki",
+      "id": "93",
+      "name": "Oborniki Śląskie",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "20.95",
+      "county": "oleśnicki",
+      "id": "94",
+      "name": "Oleśnica - gmina miejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "243.44",
+      "county": "oleśnicki",
+      "id": "95",
+      "name": "Oleśnica - gmina wiejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "47.16",
+      "county": "lubański",
+      "id": "96",
+      "name": "Olszyna",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "27.34",
+      "county": "oławski",
+      "id": "97",
+      "name": "Oława - gmina miejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "233.98",
+      "county": "oławski",
+      "id": "98",
+      "name": "Oława - gmina wiejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "437.07",
+      "county": "bolesławiecki",
+      "id": "99",
+      "name": "Osiecznica",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "100.84",
+      "county": "jaworski",
+      "id": "100",
+      "name": "Paszowice",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "64.13",
+      "county": "głogowski",
+      "id": "101",
+      "name": "Pęcław",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "43.29",
+      "county": "jeleniogórski",
+      "id": "102",
+      "name": "Piechowice",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "105.15",
+      "county": "złotoryjski",
+      "id": "103",
+      "name": "Pielgrzymka",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "110.33",
+      "county": "zgorzelecki",
+      "id": "104",
+      "name": "Pieńsk",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "63.60",
+      "county": "dzierżoniowski",
+      "id": "105",
+      "name": "Pieszyce",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "20.31",
+      "county": "dzierżoniowski",
+      "id": "106",
+      "name": "Piława Górna",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "47.94",
+      "county": "lubański",
+      "id": "107",
+      "name": "Platerówka",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "82.47",
+      "county": "jeleniogórski",
+      "id": "108",
+      "name": "Podgórzyn",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "17.22",
+      "county": "kłodzki",
+      "id": "109",
+      "name": "Polanica-Zdrój",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "158.77",
+      "county": "polkowicki",
+      "id": "110",
+      "name": "Polkowice",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "102.62",
+      "county": "legnicki",
+      "id": "111",
+      "name": "Prochowice",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "158.02",
+      "county": "trzebnicki",
+      "id": "112",
+      "name": "Prusice",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "108.04",
+      "county": "polkowicki",
+      "id": "113",
+      "name": "Przemków",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "111.96",
+      "county": "strzeliński",
+      "id": "114",
+      "name": "Przeworno",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "139.91",
+      "county": "kłodzki",
+      "id": "115",
+      "name": "Radków",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "83.97",
+      "county": "polkowicki",
+      "id": "116",
+      "name": "Radwanice",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "216.60",
+      "county": "lubiński",
+      "id": "117",
+      "name": "Rudna",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "73.37",
+      "county": "legnicki",
+      "id": "118",
+      "name": "Ruja",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "98.57",
+      "county": "wrocławski",
+      "id": "119",
+      "name": "Siechnice",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "49.55",
+      "county": "lubański",
+      "id": "120",
+      "name": "Siekierczyn",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "135.35",
+      "county": "wrocławski",
+      "id": "121",
+      "name": "Sobótka",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "110.46",
+      "county": "jeleniogórski",
+      "id": "122",
+      "name": "Stara Kamienica",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "86.89",
+      "county": "wałbrzyski",
+      "id": "123",
+      "name": "Stare Bogaczowice",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "109.82",
+      "county": "ząbkowicki",
+      "id": "124",
+      "name": "Stoszowice",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "146.42",
+      "county": "kłodzki",
+      "id": "125",
+      "name": "Stronie Śląskie",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "144.71",
+      "county": "świdnicki",
+      "id": "126",
+      "name": "Strzegom",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "171.69",
+      "county": "strzeliński",
+      "id": "127",
+      "name": "Strzelin",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "95.22",
+      "county": "zgorzelecki",
+      "id": "128",
+      "name": "Sulików",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "144.79",
+      "county": "oleśnicki",
+      "id": "129",
+      "name": "Syców",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "14.87",
+      "county": "wałbrzyski",
+      "id": "130",
+      "name": "Szczawno-Zdrój",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "133.16",
+      "county": "kłodzki",
+      "id": "131",
+      "name": "Szczytna",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "75.42",
+      "county": "jeleniogórski",
+      "id": "132",
+      "name": "Szklarska Poręba",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "164.56",
+      "county": "lubiński",
+      "id": "133",
+      "name": "Ścinawa",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "214.93",
+      "county": "średzki",
+      "id": "134",
+      "name": "Środa Śląska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "21.76",
+      "county": "świdnicki",
+      "id": "135",
+      "name": "Świdnica - gmina miejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "208.28",
+      "county": "świdnicki",
+      "id": "136",
+      "name": "Świdnica - gmina wiejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "30.45",
+      "county": "świdnicki",
+      "id": "137",
+      "name": "Świebodzice",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "20.77",
+      "county": "lubański",
+      "id": "138",
+      "name": "Świeradów-Zdrój",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "159.48",
+      "county": "złotoryjski",
+      "id": "139",
+      "name": "Świerzawa",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "200.19",
+      "county": "trzebnicki",
+      "id": "140",
+      "name": "Trzebnica",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "167.99",
+      "county": "oleśnicki",
+      "id": "141",
+      "name": "Twardogóra",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "110.71",
+      "county": "średzki",
+      "id": "142",
+      "name": "Udanin",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "78.75",
+      "county": "wałbrzyski",
+      "id": "143",
+      "name": "Walim",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "84.79",
+      "county": "prawa powiatu",
+      "id": "144",
+      "name": "Wałbrzych",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "110.90",
+      "county": "bolesławiecki",
+      "id": "145",
+      "name": "Warta Bolesławiecka",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "89.15",
+      "county": "jaworski",
+      "id": "146",
+      "name": "Wądroże Wielkie",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "193.59",
+      "county": "górowski",
+      "id": "147",
+      "name": "Wąsosz",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "338.44",
+      "county": "zgorzelecki",
+      "id": "148",
+      "name": "Węgliniec",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "141.82",
+      "county": "strzeliński",
+      "id": "149",
+      "name": "Wiązów",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "249.54",
+      "county": "wołowski",
+      "id": "150",
+      "name": "Wińsko",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "103.33",
+      "county": "trzebnicki",
+      "id": "151",
+      "name": "Wisznia Mała",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "86.00",
+      "county": "lwówecki",
+      "id": "152",
+      "name": "Wleń",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "32.16",
+      "county": "złotoryjski",
+      "id": "153",
+      "name": "Wojcieszów",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "331.06",
+      "county": "wołowski",
+      "id": "154",
+      "name": "Wołów",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "292.84",
+      "county": "prawa powiatu",
+      "id": "155",
+      "name": "Wrocław",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "122.09",
+      "county": "złotoryjski",
+      "id": "156",
+      "name": "Zagrodno",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "6.07",
+      "county": "zgorzelecki",
+      "id": "157",
+      "name": "Zawidów",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "118.12",
+      "county": "trzebnicki",
+      "id": "158",
+      "name": "Zawonia",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "146.88",
+      "county": "ząbkowicki",
+      "id": "159",
+      "name": "Ząbkowice Śląskie",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "15.86",
+      "county": "zgorzelecki",
+      "id": "160",
+      "name": "Zgorzelec - gmina miejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "136.02",
+      "county": "zgorzelecki",
+      "id": "161",
+      "name": "Zgorzelec - gmina wiejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "222.24",
+      "county": "ząbkowicki",
+      "id": "162",
+      "name": "Ziębice",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "11.50",
+      "county": "złotoryjski",
+      "id": "163",
+      "name": "Złotoryja - gmina miejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "145.07",
+      "county": "złotoryjski",
+      "id": "164",
+      "name": "Złotoryja - gmina wiejska",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "75.63",
+      "county": "ząbkowicki",
+      "id": "165",
+      "name": "Złoty Stok",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "87.98",
+      "county": "świdnicki",
+      "id": "166",
+      "name": "Żarów",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "292.14",
+      "county": "trzebnicki",
+      "id": "167",
+      "name": "Żmigród",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "120.11",
+      "county": "wrocławski",
+      "id": "168",
+      "name": "Żórawina",
+      "voivodeship": "dolnośląskie"
+    },
+    {
+      "area": "68.09",
+      "county": "głogowski",
+      "id": "169",
+      "name": "Żukowice",
+      "voivodeship": "dolnośląskie"
+    }
+  ]
+}
