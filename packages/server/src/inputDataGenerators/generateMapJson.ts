@@ -9,8 +9,6 @@ const saveDir = `${serverRootDir}\\..\\..\\packages\\client\\public\\map\\`;
 const outputFilePath = `${saveDir}\\coords_prec_${OUTPUT_COORDS_PRECISION}.json`;
 const inputGminasFile = readFileSync(inputFilePath, "utf8");
 const inputGminasJson = JSON.parse(inputGminasFile) as GminaCoords[];
-
-// TODO: attach capital city center , gunna be WOAH @@
 const transformedCoords = inputGminasJson.map<GminaCoords>((rawGmina) => ({
   id: rawGmina.id,
   name: rawGmina.name,

@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import {
+  Circle,
   FeatureGroup,
   MapContainer,
   Polygon,
@@ -7,11 +8,16 @@ import {
   useMapEvents,
 } from "react-leaflet";
 import {
+  Coords,
   GminaCoords,
   UserGminasStatus,
 } from "@damianopantani/zaliczgmine-server";
 import "leaflet/dist/leaflet.css";
-import { getAllGminas, getCheckedGminaIds } from "../../api";
+import {
+  getAllGminas,
+  getCapitalCitiesCoords,
+  getCheckedGminaIds,
+} from "../../api";
 import { useSessionStore } from "../../SessionContext";
 
 const DEFAULT_ZOOM_LEVEL = 7;
@@ -32,6 +38,9 @@ export const Map: React.FC = () => {
 const GminasMap: React.FC = () => {
   const user = useSessionStore((s) => s.user);
   const [gminas, setGminas] = useState<GminaCoords[]>([]);
+  const [capitalCitiesCoords, setCapitalCitiesCoords] = useState<Coords>();
+  const [isLoadingCapitalCitiesCoords, setLoadingCapitalCitiesCoords] = // todo: loading spinner
+    useState(false);
   const [{ checkedGminaIds }, setCheckedGminaIds] = useState<UserGminasStatus>({
     checkedGminaIds: [],
   });
@@ -59,12 +68,27 @@ const GminasMap: React.FC = () => {
     if (userId) {
       setLoading(true);
 
+      // TODO: error handing
       Promise.all([
         getAllGminas().then(setGminas),
         getCheckedGminaIds(userId).then(setCheckedGminaIds),
       ]).finally(() => setLoading(false));
     }
   }, [userId]);
+
+  console.log(capitalCitiesCoords);
+
+  useEffect(() => {
+    if (zoomLevel > 9) {
+      if (!capitalCitiesCoords && !isLoadingCapitalCitiesCoords) {
+        setLoadingCapitalCitiesCoords(true);
+        getCapitalCitiesCoords()
+          .then(setCapitalCitiesCoords)
+          .catch(() => setCapitalCitiesCoords([])) // do not retry in case of errors
+          .finally(() => setLoadingCapitalCitiesCoords(false));
+      }
+    }
+  }, [zoomLevel, capitalCitiesCoords, isLoadingCapitalCitiesCoords]);
 
   return (
     <>
@@ -109,6 +133,18 @@ const GminasMap: React.FC = () => {
                 positions={gmina.coords}
                 stroke
               />
+            ))}
+          </FeatureGroup>
+          <FeatureGroup
+            key="capitals"
+            pathOptions={{
+              fillColor: "#000000",
+              fillOpacity: 0.3,
+              weight: 0,
+            }}
+          >
+            {capitalCitiesCoords?.map((coords, i) => (
+              <Circle key={i} center={coords} radius={250} />
             ))}
           </FeatureGroup>
         </>

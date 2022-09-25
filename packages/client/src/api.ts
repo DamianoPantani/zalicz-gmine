@@ -6,16 +6,17 @@ import type {
   User,
   UserGminasStatus,
   GminaCoords,
+  Coords,
 } from "@damianopantani/zaliczgmine-server";
 import LocalStorage from "./localStorage";
 
-const isLocal = window.location.hostname.includes("localhost");
+const { hostname, port } = window.location;
+const isLocalEnv = !!port;
 
 const authLocalStorage = new LocalStorage<string>("authToken");
 
-// TODO: doesn't work on mobile
 const Api = axios.create({
-  baseURL: isLocal ? "http://localhost:5000/api" : "/api",
+  baseURL: isLocalEnv ? `http://${hostname}:5000/api` : "/api",
 });
 
 Api.interceptors.request.use((request) => {
@@ -27,6 +28,19 @@ Api.interceptors.request.use((request) => {
 
   return request;
 });
+
+// public api - start
+
+export const getAllGminas = async (): Promise<GminaCoords[]> => {
+  const { data } = await axios.get<GminaCoords[]>("/map/coords_prec_4.json");
+  return data;
+};
+export const getCapitalCitiesCoords = async (): Promise<Coords> => {
+  const { data } = await axios.get<Coords>("/map/capitalCoords.json");
+  return data;
+};
+
+// public api - end
 
 export const getLoggedInUser = async (): Promise<User | undefined> => {
   const authToken = authLocalStorage.get();
@@ -48,11 +62,6 @@ export const loginUser = async (loginForm: LoginRequest): Promise<User> => {
 
 export const logoutUser = async (): Promise<void> => {
   await Api.delete("/session");
-};
-
-export const getAllGminas = async (): Promise<GminaCoords[]> => {
-  const { data } = await axios.get<GminaCoords[]>("/map/coords_prec_4.json");
-  return data;
 };
 
 export const getCheckedGminaIds = async (
