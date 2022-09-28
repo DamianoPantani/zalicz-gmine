@@ -8,7 +8,6 @@ import {
   UserGminasStatus,
 } from "./types/shared";
 import { ZGApiError } from "./ZGApiError";
-import { ErrorType } from "./types/shared/error";
 import { flatten, ParsedObject } from "./utils";
 import { parseAuthCookie, requestOptions } from "./auth";
 import { parseGminasCSV, parseUser } from "./htmlBodyParser";
@@ -57,7 +56,7 @@ export const zgApi = {
           return { user };
         }
 
-        throw new ZGApiError(ErrorType.SESSION_EXPIRED);
+        throw new ZGApiError("SESSION_EXPIRED");
       },
 
       loginToZG: async (
@@ -76,7 +75,7 @@ export const zgApi = {
           return { user };
         }
 
-        throw new ZGApiError(ErrorType.INVALID_CREDENTIALS);
+        throw new ZGApiError("INVALID_CREDENTIALS");
       },
 
       logoutFromZG: async (): Promise<void> => {
@@ -92,7 +91,7 @@ export const zgApi = {
           zgDataString({
             UsersCommune: {
               sender: "map",
-              updateData: status,
+              updateData: JSON.stringify(status),
               commune_add_date: date,
             },
           }),

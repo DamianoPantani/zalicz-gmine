@@ -1,9 +1,9 @@
-export type User = { userId: number; username: string };
+export type User = {
+  userId: number;
+  username: string;
+};
 
-export enum GminaStatusChange {
-  remove = "d",
-  add = "a",
-}
+export type GminaStatusChange = "d" | "a";
 
 export type Gmina = {
   id: string;
@@ -26,7 +26,7 @@ export type Coords = [number, number][];
 
 export type GminaCoords = { id: string; name: string; coords: Coords };
 
-export type GminasStatus = Record<number, GminaStatusChange>;
+export type GminasStatus = Record<string, GminaStatusChange>;
 
 export type DateForm = {
   month: number; // TODO: add trailing 0?

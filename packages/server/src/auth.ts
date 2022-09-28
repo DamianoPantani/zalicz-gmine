@@ -1,6 +1,5 @@
 import cookie from "cookie";
 import { AxiosRequestConfig, AxiosResponseHeaders } from "axios";
-import { ErrorType } from "./types/shared/error";
 import { ZGApiError } from "./ZGApiError";
 import { SessionResponse } from "./types/shared";
 import { IncomingHttpHeaders } from "http";
@@ -11,7 +10,7 @@ export const getAuthToken = (headers: IncomingHttpHeaders): string => {
   const token = headers.authorization?.split("Bearer ")[1];
 
   if (!token) {
-    throw new ZGApiError(ErrorType.NO_AUTH_TOKEN_PROVIDED);
+    throw new ZGApiError("NO_AUTH_TOKEN_PROVIDED");
   }
 
   return token;
@@ -24,13 +23,13 @@ export const parseAuthCookie = (
   const authCookie = cookies?.find((c) => c.includes(authCookieKey));
 
   if (!authCookie) {
-    throw new ZGApiError(ErrorType.NO_COOKIE_RETRIEVED);
+    throw new ZGApiError("NO_COOKIE_RETRIEVED");
   }
 
   const { [authCookieKey]: authToken } = cookie.parse(authCookie);
 
   if (!authToken) {
-    throw new ZGApiError(ErrorType.INVALID_COOKIE_RETRIEVED);
+    throw new ZGApiError("INVALID_COOKIE_RETRIEVED");
   }
 
   return { authToken };

@@ -7,6 +7,7 @@ import type {
   UserGminasStatus,
   GminaCoords,
   Coords,
+  UpdateStatusRequest,
 } from "@damianopantani/zaliczgmine-server";
 import LocalStorage from "./localStorage";
 
@@ -69,4 +70,10 @@ export const getCheckedGminaIds = async (
 ): Promise<UserGminasStatus> => {
   const { data } = await Api.get<UserGminasStatus>("/map/" + userId);
   return data;
+};
+
+export const updateGminas = async (
+  status: UpdateStatusRequest
+): Promise<void> => {
+  await Api.put("/map/", status);
 };

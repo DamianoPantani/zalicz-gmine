@@ -1,5 +1,5 @@
 import axios from "axios";
-import { ErrorType, UIError } from "./types/shared/error";
+import { UIError } from "./types/shared/error";
 import { ZGApiError } from "./ZGApiError";
 
 export const toUIError = (details: unknown): UIError => {
@@ -8,7 +8,7 @@ export const toUIError = (details: unknown): UIError => {
   }
 
   return {
-    type: ErrorType.UNKNOWN_ERROR,
+    type: "UNKNOWN_ERROR",
     detailsString: getDetailsString(details),
   };
 };

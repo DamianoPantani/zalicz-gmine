@@ -4,7 +4,7 @@ import {
   redirect,
   RouterProvider,
 } from "react-router-dom";
-import { Map } from "./components/routes/Map";
+import { MapPROTOTYPE } from "./components/routes/Map";
 import { Login } from "./components/routes/Login";
 import { Paths } from "./paths";
 import { useSessionStore } from "./SessionContext";
@@ -19,7 +19,7 @@ export const Routes: React.FC = () => {
           ? [
               {
                 path: Paths.main,
-                element: <Map />,
+                element: <MapPROTOTYPE />,
               },
 
               {

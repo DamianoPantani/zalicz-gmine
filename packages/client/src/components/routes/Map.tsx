@@ -1,10 +1,11 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import {
   Circle,
   FeatureGroup,
   MapContainer,
   Polygon,
   TileLayer,
+  Tooltip,
   useMapEvents,
 } from "react-leaflet";
 import {
@@ -17,21 +18,56 @@ import {
   getAllGminas,
   getCapitalCitiesCoords,
   getCheckedGminaIds,
+  updateGminas,
 } from "../../api";
 import { useSessionStore } from "../../SessionContext";
+import {
+  toggleUnvisitedGmina,
+  toggleVisitedGmina,
+} from "./useGminasStatusReducer";
+import { MapProvider, useMapContext } from "./MapContext";
+import { Button } from "../forms/Button";
 
 const DEFAULT_ZOOM_LEVEL = 7;
+const CAPITALS_ZOOM_LEVEL = 9;
 
-export const Map: React.FC = () => {
+export const MapPROTOTYPE: React.FC = () => {
   // TODO: different paths when on different zoom level (performance)
   return (
-    <MapContainer
-      center={[52.0691, 19.4797]}
-      zoom={DEFAULT_ZOOM_LEVEL}
-      style={{ width: "100%", height: "800px" }}
-    >
-      <GminasMap />
-    </MapContainer>
+    <MapProvider>
+      <Map />
+    </MapProvider>
+  );
+};
+
+const Map: React.FC = () => {
+  const { apiState } = useMapContext();
+  const [isSaving, setSaving] = useState(false);
+
+  const saveChanges = useCallback(() => {
+    setSaving(true);
+    updateGminas({
+      date: { day: 1, month: 1, year: 2022 }, // TODO: inputs
+      status: apiState,
+    })
+      .then() // TODO: commit local map and notify user
+      .finally(() => setSaving(false));
+  }, [apiState]);
+
+  return (
+    <div>
+      <MapContainer
+        center={[52.0691, 19.4797]}
+        zoom={DEFAULT_ZOOM_LEVEL}
+        style={{ width: "100%", height: "800px" }}
+      >
+        <GminasMap />
+      </MapContainer>
+      {/* TODO: translate */}
+      <Button disabled={isSaving} onClick={saveChanges}>
+        Zapisz
+      </Button>
+    </div>
   );
 };
 
@@ -46,6 +82,7 @@ const GminasMap: React.FC = () => {
   });
   const [zoomLevel, setZoomLevel] = useState(DEFAULT_ZOOM_LEVEL);
   const [isLoading, setLoading] = useState(false); // TODO: loading spinner
+  const { gminasToAdd, gminasToRemove, dispatch } = useMapContext();
 
   const mapEvents = useMapEvents({
     zoomend: () => {
@@ -76,10 +113,8 @@ const GminasMap: React.FC = () => {
     }
   }, [userId]);
 
-  console.log(capitalCitiesCoords);
-
   useEffect(() => {
-    if (zoomLevel > 9) {
+    if (zoomLevel > CAPITALS_ZOOM_LEVEL) {
       if (!capitalCitiesCoords && !isLoadingCapitalCitiesCoords) {
         setLoadingCapitalCitiesCoords(true);
         getCapitalCitiesCoords()
@@ -107,14 +142,19 @@ const GminasMap: React.FC = () => {
             {visitedGminas.map((gmina, i) => (
               <Polygon
                 eventHandlers={{
-                  click: () => console.log(gmina.name),
+                  click: () => dispatch(toggleUnvisitedGmina(gmina)),
                 }}
                 key={i}
                 positions={gmina.coords}
                 stroke
-              />
+              >
+                <Tooltip sticky opacity={0.8} direction="top">
+                  <strong>{gmina.name}</strong>
+                </Tooltip>
+              </Polygon>
             ))}
           </FeatureGroup>
+
           <FeatureGroup
             key="unvisited"
             pathOptions={{
@@ -127,44 +167,85 @@ const GminasMap: React.FC = () => {
             {unvisitedGminas.map((gmina, i) => (
               <Polygon
                 eventHandlers={{
-                  click: () => console.log(gmina.name),
+                  click: () => dispatch(toggleVisitedGmina(gmina)),
                 }}
                 key={i}
                 positions={gmina.coords}
                 stroke
-              />
+              >
+                <Tooltip sticky opacity={0.8} direction="top">
+                  <strong>{gmina.name}</strong>
+                </Tooltip>
+              </Polygon>
             ))}
           </FeatureGroup>
+
           <FeatureGroup
-            key="capitals"
+            key="toVisit"
             pathOptions={{
-              fillColor: "#000000",
-              fillOpacity: 0.3,
-              weight: 0,
+              color: "#7d8822",
+              fillColor: "#dcfc26",
+              fillOpacity: 0.5,
+              weight: zoomLevel / 8,
             }}
           >
-            {capitalCitiesCoords?.map((coords, i) => (
-              <Circle key={i} center={coords} radius={250} />
+            {gminasToAdd.map((gmina, i) => (
+              <Polygon
+                eventHandlers={{
+                  click: () => dispatch(toggleVisitedGmina(gmina)),
+                }}
+                key={i}
+                positions={gmina.coords}
+                stroke
+              >
+                <Tooltip sticky opacity={0.8} direction="top">
+                  <strong>{gmina.name}</strong>
+                </Tooltip>
+              </Polygon>
             ))}
           </FeatureGroup>
+
+          <FeatureGroup
+            key="toRemove"
+            pathOptions={{
+              color: "#441212",
+              fillColor: "#771212",
+              fillOpacity: 0.5,
+              weight: zoomLevel / 8,
+            }}
+          >
+            {gminasToRemove.map((gmina, i) => (
+              <Polygon
+                eventHandlers={{
+                  click: () => dispatch(toggleUnvisitedGmina(gmina)),
+                }}
+                key={i}
+                positions={gmina.coords}
+                stroke
+              >
+                <Tooltip sticky opacity={0.8} direction="top">
+                  <strong>{gmina.name}</strong>
+                </Tooltip>
+              </Polygon>
+            ))}
+          </FeatureGroup>
+
+          {zoomLevel >= CAPITALS_ZOOM_LEVEL && (
+            <FeatureGroup
+              key="capitals"
+              pathOptions={{
+                fillColor: "#000000",
+                fillOpacity: 0.3,
+                weight: 0,
+              }}
+            >
+              {capitalCitiesCoords?.map((coords, i) => (
+                <Circle key={i} center={coords} radius={250} />
+              ))}
+            </FeatureGroup>
+          )}
         </>
       )}
     </>
   );
 };
-
-// TODO:
-/*
-
-var deletedStyle = {
-  color: "#441212",
-  fillOpacity: 0.8,
-  fillColor: "#771212",
-};
-
-var addedStyle = {
-  color: "#7d8822",
-  fillOpacity: 0.5,
-  fillColor: "#dcfc26",
-};
-*/
