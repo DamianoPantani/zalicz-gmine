@@ -37,7 +37,7 @@ export const getAllGminas = async (): Promise<GminaCoords[]> => {
   return data;
 };
 export const getCapitalCitiesCoords = async (): Promise<Coords> => {
-  const { data } = await axios.get<Coords>("/map/capitalCoords.json");
+  const { data } = await axios.get<Coords>("/map/capital_coords_prec_3.json");
   return data;
 };
 
