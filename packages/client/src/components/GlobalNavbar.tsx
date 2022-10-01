@@ -1,5 +1,6 @@
 import React from "react";
 import { useSessionStore } from "../SessionContext";
+import logo from "../resources/logo.svg";
 
 // TODO: typescript-plugin-css-modules doesn't work
 import styles from "./GlobalNavbar.module.scss";
@@ -12,7 +13,7 @@ export const GlobalNavbar: React.FC = () => {
   return (
     <div className={styles.navbarContainer}>
       <div className={styles.navbar}>
-        <div>logo - todo</div>
+        <img src={logo} alt="logo" className={styles.logo} />
         <div className={styles.navMenu}>
           {isLoggedIn ? (
             <>

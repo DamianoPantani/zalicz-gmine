@@ -29,7 +29,7 @@ export type GminaCoords = { id: string; name: string; coords: Coords };
 export type GminasStatus = Record<string, GminaStatusChange>;
 
 export type DateForm = {
-  month: number; // TODO: add trailing 0?
+  month: number;
   day: number;
   year: number;
 };

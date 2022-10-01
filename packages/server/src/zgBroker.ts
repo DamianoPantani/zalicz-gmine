@@ -90,7 +90,7 @@ export const zgApi = {
           "/users_communes/addmulti",
           zgDataString({
             UsersCommune: {
-              sender: "map",
+              sender: "list",
               updateData: JSON.stringify(status),
               commune_add_date: date,
             },

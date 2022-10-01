@@ -47,7 +47,7 @@ const Map: React.FC = () => {
   const saveChanges = useCallback(() => {
     setSaving(true);
     updateGminas({
-      date: { day: 1, month: 1, year: 2022 }, // TODO: inputs
+      date: { day: 2, month: 9, year: 2022 }, // TODO: inputs
       status: apiState,
     })
       .then() // TODO: commit local map and notify user
