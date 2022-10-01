@@ -5,7 +5,6 @@ import { LoginRequest } from "@damianopantani/zaliczgmine-server";
 import { useFormikField } from "../forms/useFormikField";
 import { Input } from "../forms/Input";
 import { Button } from "../forms/Button";
-import { LoadingSpinner } from "../LoadingSpinner";
 import { useSessionStore } from "../../SessionContext";
 
 type Props = {
@@ -54,8 +53,7 @@ const LoginForm = ({ isLoading }: Props) => {
         type="password"
         placeholder={t("form.login.password")}
       />
-      <Button type="submit" disabled={isLoading}>
-        {isLoading && <LoadingSpinner size="xs" />}
+      <Button type="submit" isLoading={isLoading}>
         {t("form.login.login")}
       </Button>
     </Form>

@@ -4,6 +4,9 @@
       "login": "Zaloguj",
       "password": "Hasło",
       "username": "Nazwa użytkownika"
+    },
+    "map": {
+      "save": "Zapisz"
     }
   }
 }

@@ -8,6 +8,7 @@ import {
   Tooltip,
   useMapEvents,
 } from "react-leaflet";
+import { useTranslation } from "react-i18next";
 import {
   Coords,
   GminaCoords,
@@ -43,6 +44,7 @@ export const MapPROTOTYPE: React.FC = () => {
 const Map: React.FC = () => {
   const { apiState } = useMapContext();
   const [isSaving, setSaving] = useState(false);
+  const { t } = useTranslation();
 
   const saveChanges = useCallback(() => {
     setSaving(true);
@@ -63,9 +65,8 @@ const Map: React.FC = () => {
       >
         <GminasMap />
       </MapContainer>
-      {/* TODO: translate */}
-      <Button disabled={isSaving} onClick={saveChanges}>
-        Zapisz
+      <Button isLoading={isSaving} onClick={saveChanges}>
+        {t("form.map.save")}
       </Button>
     </div>
   );

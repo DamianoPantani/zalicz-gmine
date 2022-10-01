@@ -1,6 +1,7 @@
 import React, { PropsWithChildren, ReactElement } from "react";
 import cx from "classnames";
 
+import { LoadingSpinner } from "../LoadingSpinner";
 import styles from "./Button.module.scss";
 
 type Props = PropsWithChildren<{
@@ -9,6 +10,7 @@ type Props = PropsWithChildren<{
   variant?: ButtonVariants;
   secondary?: boolean; // not supported by `floating`
   disabled?: boolean;
+  isLoading?: boolean;
 }>;
 
 type ButtonVariants = "main" | "alternative" | "negative" | "positive";
@@ -19,6 +21,7 @@ export const Button = ({
   onClick,
   secondary,
   disabled,
+  isLoading,
   children,
 }: Props): ReactElement => {
   const className = cx(
@@ -30,10 +33,11 @@ export const Button = ({
   return (
     <button
       className={className}
-      disabled={disabled}
+      disabled={disabled || isLoading}
       onClick={onClick}
       type={type}
     >
+      {isLoading && <LoadingSpinner size="xs" />}
       {children}
     </button>
   );

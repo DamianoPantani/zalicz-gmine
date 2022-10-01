@@ -1,6 +1,7 @@
 $variants: main, alternative, negative, positive;
 
 .button {
+  position: relative;
   display: flex;
   gap: var(--space-sm);
   flex-grow: 0;
@@ -22,6 +23,13 @@ $variants: main, alternative, negative, positive;
   transition-property: var(--transition-property-common);
   transition-duration: var(--transition-duration-normal);
 
+  > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   &:disabled {
     cursor: default;
   }
@@ -35,6 +43,10 @@ $variants: main, alternative, negative, positive;
       &:focus {
         background-color: var(--color-#{$name}-800);
         color: var(--color-white);
+      }
+
+      &:disabled {
+        color: rgba(255, 255, 255, 0.2);
       }
     }
 

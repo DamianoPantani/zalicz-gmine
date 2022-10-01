@@ -15,8 +15,8 @@
     height: var(--size-3xl);
   }
   &.lg {
-    width: var(--size-4xl);
-    height: var(--size-4xl);
+    width: var(--size-5xl);
+    height: var(--size-5xl);
   }
 }
 
@@ -35,9 +35,9 @@
   height: 100%;
 
   &.mainBlob {
-    border-right-color: var(--color-gray-200);
-    border-bottom-color: var(--color-gray-200);
-    border-left-color: var(--color-gray-200);
+    border-right-color: var(--color-gray-100);
+    border-bottom-color: var(--color-gray-100);
+    border-left-color: var(--color-gray-100);
   }
 
   &.xs {
