@@ -10,15 +10,33 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
   max-width: var(--size-container-xl);
 }
 
 .navMenu {
   display: flex;
-  gap: var(--space-md);
+  gap: var(--space-6xl);
 }
 
 .logo {
   height: 50px;
+}
+
+.navItem {
+  display: flex;
+  gap: var(--space-sm);
+  cursor: pointer;
+
+  &.noAction {
+    cursor: default;
+
+    &:hover {
+      color: inherit;
+      & svg {
+        color: inherit;
+      }
+    }
+  }
 }

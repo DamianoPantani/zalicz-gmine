@@ -8,5 +8,10 @@
     "map": {
       "save": "Zapisz"
     }
+  },
+  "nav": {
+    "login": "Zaloguj",
+    "logout": "Wyloguj",
+    "map": "Mapa"
   }
 }

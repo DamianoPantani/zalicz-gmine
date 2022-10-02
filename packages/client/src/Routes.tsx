@@ -8,6 +8,7 @@ import { MapPROTOTYPE } from "./components/routes/Map";
 import { Login } from "./components/routes/Login";
 import { Paths } from "./paths";
 import { useSessionStore } from "./SessionContext";
+import styles from "./Routes.module.scss";
 
 export const Routes: React.FC = () => {
   const isLoggedIn = useSessionStore((s) => s.isLoggedIn);
@@ -41,5 +42,9 @@ export const Routes: React.FC = () => {
     [isLoggedIn]
   );
 
-  return <RouterProvider router={router} />;
+  return (
+    <div className={styles.mainContainer}>
+      <RouterProvider router={router} />
+    </div>
+  );
 };

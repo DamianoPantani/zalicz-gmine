@@ -6,6 +6,7 @@ import { useFormikField } from "../forms/useFormikField";
 import { Input } from "../forms/Input";
 import { Button } from "../forms/Button";
 import { useSessionStore } from "../../SessionContext";
+import styles from "./Login.module.scss";
 
 type Props = {
   isLoading: boolean;
@@ -41,18 +42,21 @@ const LoginForm = ({ isLoading }: Props) => {
   const [password, setPassword] = useFormikField<string>("password");
 
   return (
-    <Form>
-      <Input
-        value={username}
-        onChange={setUsername}
-        placeholder={t("form.login.username")}
-      />
-      <Input
-        value={password}
-        onChange={setPassword}
-        type="password"
-        placeholder={t("form.login.password")}
-      />
+    <Form className={styles.form}>
+      <h1>{t("nav.login")}</h1>
+      <div>
+        <Input
+          value={username}
+          onChange={setUsername}
+          placeholder={t("form.login.username")}
+        />
+        <Input
+          value={password}
+          onChange={setPassword}
+          type="password"
+          placeholder={t("form.login.password")}
+        />
+      </div>
       <Button type="submit" isLoading={isLoading}>
         {t("form.login.login")}
       </Button>

@@ -1,7 +1,53 @@
 body {
   font-family: var(--font-body);
+  font-size: var(--chakra-fontSizes-md);
+  color: var(--color-gray-900);
 }
 
-button {
-  font-family: inherit;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  color: var(--color-gray-700);
+}
+
+h1 {
+  font-size: var(--fontSize-4xl);
+}
+
+h2 {
+  font-size: var(--fontSize-3xl);
+}
+
+h3,
+h4 {
+  font-size: var(--fontSize-2xl);
+}
+
+h3 {
+  font-size: var(--fontSize-xl);
+}
+
+h5 {
+  font-size: var(--fontSize-lg);
+  font-weight: bold;
+}
+
+a {
+  color: var(--color-main-50);
+  text-decoration: none;
+
+  svg {
+    color: var(--color-main-50);
+  }
+
+  &:hover {
+    color: var(--color-main-200);
+    svg {
+      color: var(--color-main-200);
+    }
+  }
 }
