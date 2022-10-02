@@ -2,6 +2,7 @@ import React, { PropsWithChildren } from "react";
 import cx from "classnames";
 import { useTranslation } from "react-i18next";
 import { IconType } from "react-icons";
+import { useLocation } from "react-router-dom";
 import {
   FaRegMap,
   FaRegUserCircle,
@@ -35,7 +36,7 @@ export const GlobalNavbar: React.FC = () => {
           {isLoggedIn ? (
             <>
               <NavItem Icon={FaRegUserCircle}>{user?.username}</NavItem>
-              <NavItem Icon={FaRegMap} goTo={Paths.main}>
+              <NavItem Icon={FaRegMap} goTo={Paths.map}>
                 {t("nav.map")}
               </NavItem>
               <NavItem Icon={FaSignOutAlt} onClick={logout}>
@@ -44,7 +45,7 @@ export const GlobalNavbar: React.FC = () => {
             </>
           ) : (
             <>
-              <NavItem Icon={FaSignInAlt} goTo={Paths.main}>
+              <NavItem Icon={FaSignInAlt} goTo={Paths.login}>
                 {t("nav.login")}
               </NavItem>
             </>
@@ -61,12 +62,18 @@ const NavItem: React.FC<PropsWithChildren<NavItemProps>> = ({
   goTo,
   Icon,
 }) => {
-  // TODO: isCurrent = not clickable and another style
+  const { pathname } = useLocation();
+  const isCurrentRoute = pathname === goTo || pathname === `${goTo}/`;
 
   return (
+    // eslint-disable-next-line jsx-a11y/anchor-is-valid
     <a
-      className={cx(styles.navItem, (!goTo && !onClick) && styles.noAction)}
-      href={goTo}
+      className={cx(
+        styles.navItem,
+        isCurrentRoute || (!goTo && !onClick) ? styles.noAction : undefined,
+        isCurrentRoute && styles.current
+      )}
+      href={isCurrentRoute ? undefined : goTo}
       onClick={onClick}
     >
       <Icon /> {children}

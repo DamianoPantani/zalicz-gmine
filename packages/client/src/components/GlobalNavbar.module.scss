@@ -5,6 +5,8 @@
 
   background-color: var(--color-main-900);
   color: var(--color-white);
+
+  z-index: var(--zIndex-docked);
 }
 
 .navbar {
@@ -28,6 +30,17 @@
   display: flex;
   gap: var(--space-sm);
   cursor: pointer;
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+
+  &.current {
+    border-bottom: 3px solid var(--color-main-500);
+  }
+
+  &:hover:not(.noAction) {
+    background-color: var(--color-main-800);
+    box-shadow: var(--shadow-sm);
+  }
 
   &.noAction {
     cursor: default;

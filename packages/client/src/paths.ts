@@ -1,4 +1,4 @@
 export enum Paths {
-  main = "/",
+  map = "/map",
   login = "/login",
 }

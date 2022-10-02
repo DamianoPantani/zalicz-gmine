@@ -39,6 +39,7 @@ h5 {
 a {
   color: var(--color-main-50);
   text-decoration: none;
+  user-select: none;
 
   svg {
     color: var(--color-main-50);

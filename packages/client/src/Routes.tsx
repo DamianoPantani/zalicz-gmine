@@ -8,7 +8,7 @@ import { MapPROTOTYPE } from "./components/routes/Map";
 import { Login } from "./components/routes/Login";
 import { Paths } from "./paths";
 import { useSessionStore } from "./SessionContext";
-import styles from "./Routes.module.scss";
+import { PageLayout } from "./PageLayout";
 
 export const Routes: React.FC = () => {
   const isLoggedIn = useSessionStore((s) => s.isLoggedIn);
@@ -19,19 +19,19 @@ export const Routes: React.FC = () => {
         isLoggedIn
           ? [
               {
-                path: Paths.main,
-                element: <MapPROTOTYPE />,
+                path: Paths.map,
+                element: <PageLayout Component={MapPROTOTYPE} />,
               },
 
               {
                 path: "/*",
-                loader: () => redirect(Paths.main),
+                loader: () => redirect(Paths.map),
               },
             ]
           : [
               {
                 path: Paths.login,
-                element: <Login />,
+                element: <PageLayout Component={Login} />,
               },
               {
                 path: "/*",
@@ -42,9 +42,5 @@ export const Routes: React.FC = () => {
     [isLoggedIn]
   );
 
-  return (
-    <div className={styles.mainContainer}>
-      <RouterProvider router={router} />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 };
