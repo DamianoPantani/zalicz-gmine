@@ -42,24 +42,29 @@ const LoginForm = ({ isLoading }: Props) => {
   const [password, setPassword] = useFormikField<string>("password");
 
   return (
-    <Form className={styles.form}>
+    <Form>
       <h1>{t("nav.login")}</h1>
-      <div>
-        <Input
-          value={username}
-          onChange={setUsername}
-          placeholder={t("form.login.username")}
-        />
-        <Input
-          value={password}
-          onChange={setPassword}
-          type="password"
-          placeholder={t("form.login.password")}
-        />
+      <div className={styles.formContainer}>
+        <div className={styles.form}>
+          <h5>{t("form.login.username")}</h5>
+          <Input
+            value={username}
+            onChange={setUsername}
+            placeholder={t("form.login.username")}
+          />
+          <h5>{t("form.login.password")}</h5>
+          <Input
+            value={password}
+            onChange={setPassword}
+            type="password"
+            placeholder={t("form.login.password")}
+          />
+          <Button type="submit" isLoading={isLoading}>
+            {t("form.login.login")}
+          </Button>
+          <div className={styles.disclaimer}>{t("form.login.disclaimer")}</div>
+        </div>
       </div>
-      <Button type="submit" isLoading={isLoading}>
-        {t("form.login.login")}
-      </Button>
     </Form>
   );
 };
