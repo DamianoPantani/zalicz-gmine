@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from "react";
 import { useTranslation } from "react-i18next";
-import { FaAt, FaBicycle, FaStackOverflow, FaCompass } from "react-icons/fa";
+import { FaAt, FaBicycle, FaStackOverflow, FaRegCompass } from "react-icons/fa";
 import { IconType } from "react-icons/lib";
 import { Container } from "../Container";
 import styles from "./Contact.module.scss";
@@ -32,12 +32,12 @@ export const Contact: React.FC = () => {
           <ContactRow
             Icon={FaBicycle}
             title={t("contact.bikestats")}
-            link="http://damianopantani.bikestats.pl"
+            link="http://damianopantani.bikestats.pl/c,29878,Ze-zdjeciami.html"
           >
             damianopantani
           </ContactRow>
           <ContactRow
-            Icon={FaCompass}
+            Icon={FaRegCompass}
             title={t("contact.zaliczgmine")}
             link="https://zaliczgmine.pl/users/view/5113"
           >
