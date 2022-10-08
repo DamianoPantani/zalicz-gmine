@@ -7,7 +7,12 @@
 
 .footer {
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  max-width: var(--size-container-xl);
+  justify-content: center;
+  gap: var(--space-3xl);
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+  }
 }

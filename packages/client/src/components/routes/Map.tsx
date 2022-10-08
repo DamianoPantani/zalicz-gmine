@@ -42,9 +42,10 @@ export const MapPROTOTYPE: React.FC = () => {
 };
 
 const Map: React.FC = () => {
-  const { apiState } = useMapContext();
+  const { apiState, gminasToAdd, gminasToRemove } = useMapContext();
   const [isSaving, setSaving] = useState(false);
   const { t } = useTranslation();
+  const noChanges = !gminasToAdd.length && !gminasToRemove.length;
 
   const saveChanges = useCallback(() => {
     setSaving(true);
@@ -65,7 +66,7 @@ const Map: React.FC = () => {
       >
         <GminasMap />
       </MapContainer>
-      <Button isLoading={isSaving} onClick={saveChanges}>
+      <Button disabled={noChanges} isLoading={isSaving} onClick={saveChanges}>
         {t("form.map.save")}
       </Button>
     </div>

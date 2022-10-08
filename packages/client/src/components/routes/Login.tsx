@@ -46,19 +46,23 @@ const LoginForm = ({ isLoading }: Props) => {
       <h1>{t("nav.login")}</h1>
       <div className={styles.formContainer}>
         <div className={styles.form}>
-          <h5>{t("form.login.username")}</h5>
-          <Input
-            value={username}
-            onChange={setUsername}
-            placeholder={t("form.login.username")}
-          />
-          <h5>{t("form.login.password")}</h5>
-          <Input
-            value={password}
-            onChange={setPassword}
-            type="password"
-            placeholder={t("form.login.password")}
-          />
+          <div>
+            <h5>{t("form.login.username")}</h5>
+            <Input
+              value={username}
+              onChange={setUsername}
+              placeholder={t("form.login.username")}
+            />
+          </div>
+          <div>
+            <h5>{t("form.login.password")}</h5>
+            <Input
+              value={password}
+              onChange={setPassword}
+              type="password"
+              placeholder={t("form.login.password")}
+            />
+          </div>
           <Button type="submit" isLoading={isLoading}>
             {t("form.login.login")}
           </Button>

@@ -2,7 +2,7 @@ import React, { PropsWithChildren } from "react";
 import cx from "classnames";
 import { useTranslation } from "react-i18next";
 import { IconType } from "react-icons";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import {
   FaRegMap,
   FaRegUserCircle,
@@ -44,11 +44,9 @@ export const GlobalNavbar: React.FC = () => {
               </NavItem>
             </>
           ) : (
-            <>
-              <NavItem Icon={FaSignInAlt} goTo={Paths.login}>
-                {t("nav.login")}
-              </NavItem>
-            </>
+            <NavItem Icon={FaSignInAlt} goTo={Paths.login}>
+              {t("nav.login")}
+            </NavItem>
           )}
         </div>
       </div>
@@ -67,16 +65,16 @@ const NavItem: React.FC<PropsWithChildren<NavItemProps>> = ({
 
   return (
     // eslint-disable-next-line jsx-a11y/anchor-is-valid
-    <a
+    <Link
       className={cx(
         styles.navItem,
         isCurrentRoute || (!goTo && !onClick) ? styles.noAction : undefined,
         isCurrentRoute && styles.current
       )}
-      href={isCurrentRoute ? undefined : goTo}
+      to={{ pathname: isCurrentRoute ? undefined : goTo }}
       onClick={onClick}
     >
       <Icon /> {children}
-    </a>
+    </Link>
   );
 };

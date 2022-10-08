@@ -1,4 +1,9 @@
 {
+  "footer": {
+    "contact": "Kontakt",
+    "contribute": "Repozytorium Github",
+    "originalApp": "Originalna aplikacja"
+  },
   "form": {
     "login": {
       "disclaimer": "Powyższa aplikacja nie zbiera, nie przechowuje i nie przetwarza żadnych danych. Zapytania trafiają bezpośrednio do oryginalnej aplikacji. Zainteresowanych zachęcam do zapoznania się z kodem źródłowym (licencja Open Source) a także do konktrybucji - szczegóły w stopce",

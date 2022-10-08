@@ -9,9 +9,13 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: var(--space-sm);
+  gap: var(--space-lg);
   max-width: var(--size-container-sm);
-  margin: 0 auto;
+  margin: var(--space-xl) auto;
+
+  h5 {
+    margin-bottom: var(--space-sm);
+  }
 
   button {
     width: max-content;
