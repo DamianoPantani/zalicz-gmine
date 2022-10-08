@@ -1,7 +1,7 @@
 .mainContainer {
   margin: 0 auto;
   max-width: var(--size-container-xl);
-  width: 100%;
-  padding: var(--space-6xl);
+  width: -webkit-fill-available;
+  padding: var(--space-6xl) var(--space-md);
   z-index: var(--zIndex-base);
 }

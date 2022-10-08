@@ -1,3 +1,5 @@
+@import "../css/variables";
+
 .navbarContainer {
   position: sticky;
   top: 0;
@@ -15,6 +17,21 @@
   align-items: center;
   margin: 0 auto;
   max-width: var(--size-container-xl);
+
+  @media (max-width: $media-lg) {
+    .navMenu {
+      gap: 0;
+    }
+
+    .logo {
+      width: 47px;
+      overflow: hidden;
+    }
+
+    .navItem span {
+      display: none;
+    }
+  }
 }
 
 .navMenu {
@@ -22,7 +39,7 @@
   gap: var(--space-6xl);
 }
 
-.logo {
+.logo img {
   height: 50px;
 }
 

@@ -20,11 +20,13 @@ export const Login: React.FC = () => {
 
   const handleSubmit = useCallback(
     (form: LoginRequest) => {
-      setLoading(true);
-      loginUser(form).catch(() => {
-        // TODO: handle errors
-        setLoading(false);
-      });
+      if (form.username && form.password) {
+        setLoading(true);
+        loginUser(form).catch(() => {
+          // TODO: handle errors
+          setLoading(false);
+        });
+      }
     },
     [loginUser]
   );

@@ -13,11 +13,11 @@ export const GlobalFooter: React.FC = () => {
       <div className={styles.footer}>
         <Link to={Paths.contact}>
           <FaEnvelope />
-          {t("footer.contact")}
+          <span>{t("footer.contact")}</span>
         </Link>
         <a href="https://TODO_GITHUB" target="_blank" rel="noreferrer">
           <FaGithub />
-          {t("footer.contribute")}
+          <span>{t("footer.contribute")}</span>
         </a>
         <a
           href="https://zaliczgmine.pl/users/login"
@@ -25,7 +25,7 @@ export const GlobalFooter: React.FC = () => {
           rel="noreferrer"
         >
           <FaExternalLinkAlt />
-          {t("footer.originalApp")}
+          <span>{t("footer.originalApp")}</span>
         </a>
       </div>
     </div>

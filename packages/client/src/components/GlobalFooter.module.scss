@@ -1,3 +1,5 @@
+@import "../css/variables";
+
 .footerContainer {
   padding: var(--space-3xl);
 
@@ -9,6 +11,12 @@
   display: flex;
   justify-content: center;
   gap: var(--space-3xl);
+
+  @media (max-width: $media-lg) {
+    a span {
+      display: none;
+    }
+  }
 
   a {
     display: flex;

@@ -31,7 +31,9 @@ export const GlobalNavbar: React.FC = () => {
   return (
     <div className={styles.navbarContainer}>
       <div className={styles.navbar}>
-        <img src={logo} alt="logo" className={styles.logo} />
+        <div className={styles.logo}>
+          <img src={logo} alt="logo" />
+        </div>
         <div className={styles.navMenu}>
           {isLoggedIn ? (
             <>
@@ -74,7 +76,7 @@ const NavItem: React.FC<PropsWithChildren<NavItemProps>> = ({
       to={{ pathname: isCurrentRoute ? undefined : goTo }}
       onClick={onClick}
     >
-      <Icon /> {children}
+      <Icon /> <span>{children}</span>
     </Link>
   );
 };
