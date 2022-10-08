@@ -1,0 +1,13 @@
+.contact {
+  max-width: var(--size-container-sm);
+  margin: var(--space-xl) auto;
+  display: grid;
+  grid-template-columns: max-content max-content 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+  line-height: normal;
+
+  a {
+    color: var(--color-main-500);
+  }
+}

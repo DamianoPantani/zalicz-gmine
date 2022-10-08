@@ -1,4 +1,13 @@
 {
+  "app": {
+    "name": "Zalicz Gminę"
+  },
+  "contact": {
+    "bikestats": "Profil bikestats",
+    "email": "Email",
+    "stackoverflow": "Profil Stack Overflow",
+    "zaliczgmine": "Profil Zalicz Gminę"
+  },
   "footer": {
     "contact": "Kontakt",
     "contribute": "Repozytorium Github",

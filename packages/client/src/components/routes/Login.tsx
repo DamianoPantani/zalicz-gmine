@@ -2,10 +2,11 @@ import React, { useCallback, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Formik, Form } from "formik";
 import { LoginRequest } from "@damianopantani/zaliczgmine-server";
+import { useSessionStore } from "../../SessionContext";
 import { useFormikField } from "../forms/useFormikField";
 import { Input } from "../forms/Input";
 import { Button } from "../forms/Button";
-import { useSessionStore } from "../../SessionContext";
+import { Container } from "../Container";
 import styles from "./Login.module.scss";
 
 type Props = {
@@ -46,7 +47,7 @@ const LoginForm = ({ isLoading }: Props) => {
   return (
     <Form>
       <h1>{t("nav.login")}</h1>
-      <div className={styles.formContainer}>
+      <Container>
         <div className={styles.form}>
           <div>
             <h5>{t("form.login.username")}</h5>
@@ -70,7 +71,7 @@ const LoginForm = ({ isLoading }: Props) => {
           </Button>
           <div className={styles.disclaimer}>{t("form.login.disclaimer")}</div>
         </div>
-      </div>
+      </Container>
     </Form>
   );
 };

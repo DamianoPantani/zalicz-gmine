@@ -1,10 +1,16 @@
 @import "../css/variables";
 
-.footerContainer {
+.topFooter {
   padding: var(--space-3xl);
-
   background-color: var(--color-main-900);
   color: var(--color-white);
+}
+
+.bottomFooter {
+  padding: var(--space-md);
+  background-color: var(--color-gray-900);
+  color: var(--color-gray-500);
+  font-size: var(--fontSize-sm);
 }
 
 .footer {
