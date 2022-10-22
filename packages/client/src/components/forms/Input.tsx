@@ -6,7 +6,7 @@ type Props = {
   type?: React.HTMLInputTypeAttribute;
   placeholder?: string;
   value?: string;
-  onChange?: (value?: string) => void;
+  onChange?: (value: string) => void;
 };
 
 export const Input = ({

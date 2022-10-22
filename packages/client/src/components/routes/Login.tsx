@@ -56,11 +56,7 @@ const LoginForm = ({ isLoading, error }: Props) => {
             />
           </div>
           <div className={styles.formState}>
-            <Button
-              type="submit"
-              isLoading={isLoading}
-              disabled={!username || !password} // TODO: auto-fill
-            >
+            <Button type="submit" isLoading={isLoading}>
               {t("form.login.login")}
             </Button>
             {error && <span className={styles.error}>{error}</span>}

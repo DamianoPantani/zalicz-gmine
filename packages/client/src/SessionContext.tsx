@@ -39,6 +39,10 @@ const createSessionStore = ({ run, runWithParams }: UseRequest) =>
     },
 
     login: async (form) => {
+      if (!form.username || !form.password) {
+        return;
+      }
+
       set({ isLoggingIn: true });
       const {
         data: user,
