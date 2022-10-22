@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import { Formik, Form } from "formik";
 import { LoginRequest } from "@damianopantani/zaliczgmine-server";
@@ -11,35 +11,24 @@ import styles from "./Login.module.scss";
 
 type Props = {
   isLoading: boolean;
+  error?: string;
 };
 
 const initialLoginValues: LoginRequest = { password: "", username: "" };
 
 export const Login: React.FC = () => {
   const loginUser = useSessionStore((s) => s.login);
-  const [isLoading, setLoading] = useState(false);
-
-  const handleSubmit = useCallback(
-    (form: LoginRequest) => {
-      if (form.username && form.password) {
-        setLoading(true);
-        loginUser(form).catch(() => {
-          // TODO: handle errors
-          setLoading(false);
-        });
-      }
-    },
-    [loginUser]
-  );
+  const loginError = useSessionStore((s) => s.loginError);
+  const isLoggingIn = useSessionStore((s) => s.isLoggingIn);
 
   return (
-    <Formik initialValues={initialLoginValues} onSubmit={handleSubmit}>
-      <LoginForm isLoading={isLoading} />
+    <Formik initialValues={initialLoginValues} onSubmit={loginUser}>
+      <LoginForm isLoading={isLoggingIn} error={loginError} />
     </Formik>
   );
 };
 
-const LoginForm = ({ isLoading }: Props) => {
+const LoginForm = ({ isLoading, error }: Props) => {
   const { t } = useTranslation();
   const [username, setUsername] = useFormikField<string>("username");
   const [password, setPassword] = useFormikField<string>("password");
@@ -66,9 +55,16 @@ const LoginForm = ({ isLoading }: Props) => {
               placeholder={t("form.login.password")}
             />
           </div>
-          <Button type="submit" isLoading={isLoading}>
-            {t("form.login.login")}
-          </Button>
+          <div className={styles.formState}>
+            <Button
+              type="submit"
+              isLoading={isLoading}
+              disabled={!username || !password} // TODO: auto-fill
+            >
+              {t("form.login.login")}
+            </Button>
+            {error && <span className={styles.error}>{error}</span>}
+          </div>
           <div className={styles.disclaimer}>{t("form.login.disclaimer")}</div>
         </div>
       </Container>

@@ -1,63 +1,79 @@
 import type { LoginRequest, User } from "@damianopantani/zaliczgmine-server";
-import React, { PropsWithChildren } from "react";
+import React, { PropsWithChildren, useCallback } from "react";
 import create, { StoreApi } from "zustand";
 import createContext from "zustand/context";
-import { loginUser, logoutUser, getLoggedInUser } from "./api";
+import { getLoggedInUser, loginUser, logoutUser } from "./requests";
+import { UseRequest, useRequest } from "./useAsync";
 
-type LoginStatus =
-  | {
-      isLoggedIn: true;
-      user: User;
-    }
-  | {
-      isLoggedIn: false;
-      user: undefined;
-    };
-
-type SessionStore = LoginStatus & {
+type SessionStore = {
   isInitializing: boolean;
-  initialize(): Promise<void>;
-  login(form: LoginRequest): Promise<void>;
-  logout(): Promise<void>;
+  isLoggingIn: boolean;
+  loginError?: string;
+  loginErrorDetails?: string;
+  isLoggedIn: boolean;
+  user?: User;
+  initialize(): void;
+  login(form: LoginRequest): void;
+  logout(): void;
 };
 
 const { Provider, useStore } = createContext<StoreApi<SessionStore>>();
 
-const createSessionStore = () =>
+const createSessionStore = ({ run, runWithParams }: UseRequest) =>
   create<SessionStore>((set) => ({
     isInitializing: true,
+    isLoggingIn: false,
     isLoggedIn: false,
     user: undefined,
+    loginError: undefined,
+    loginErrorDetails: undefined,
 
     initialize: async () => {
-      try {
-        const user = await getLoggedInUser();
-        set(
-          user
-            ? { isInitializing: false, user, isLoggedIn: true }
-            : { isInitializing: false }
-        );
-      } catch {
-        set({ isInitializing: false });
-      }
+      const { data: user } = await run(getLoggedInUser);
+
+      set(
+        user
+          ? { isInitializing: false, user, isLoggedIn: true }
+          : { isInitializing: false }
+      );
     },
 
     login: async (form) => {
-      const user = await loginUser(form);
-      set({ isLoggedIn: true, user });
+      set({ isLoggingIn: true });
+      const {
+        data: user,
+        error: loginError,
+        errorDetails: loginErrorDetails,
+      } = await runWithParams(loginUser, form);
+
+      set({
+        isLoggedIn: !!user,
+        user,
+        loginError,
+        loginErrorDetails,
+        isLoggingIn: false,
+      });
     },
 
     logout: async () => {
-      await logoutUser();
-      set({
-        isLoggedIn: false,
-        user: undefined,
-      });
+      const { error } = await run(logoutUser);
+
+      !error &&
+        set({
+          isLoggedIn: false,
+          user: undefined,
+        });
     },
   }));
 
 export const SessionProvider: React.FC<PropsWithChildren> = ({ children }) => {
-  return <Provider createStore={createSessionStore}>{children}</Provider>;
+  const requestRunner = useRequest();
+
+  const createStore = useCallback(() => {
+    return createSessionStore(requestRunner);
+  }, [requestRunner]);
+
+  return <Provider createStore={createStore}>{children}</Provider>;
 };
 
 export const useSessionStore = useStore;

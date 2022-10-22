@@ -9,18 +9,13 @@ import {
   useMapEvents,
 } from "react-leaflet";
 import { useTranslation } from "react-i18next";
-import {
-  Coords,
-  GminaCoords,
-  UserGminasStatus,
-} from "@damianopantani/zaliczgmine-server";
 import "leaflet/dist/leaflet.css";
 import {
   getAllGminas,
   getCapitalCitiesCoords,
   getCheckedGminaIds,
   updateGminas,
-} from "../../api";
+} from "../../requests";
 import { useSessionStore } from "../../SessionContext";
 import {
   toggleUnvisitedGmina,
@@ -28,6 +23,7 @@ import {
 } from "./useGminasStatusReducer";
 import { MapProvider, useMapContext } from "./MapContext";
 import { Button } from "../forms/Button";
+import { useAsync } from "../../useAsync";
 
 const DEFAULT_ZOOM_LEVEL = 7;
 const CAPITALS_ZOOM_LEVEL = 9;
@@ -43,19 +39,22 @@ export const MapPROTOTYPE: React.FC = () => {
 
 const Map: React.FC = () => {
   const { apiState, gminasToAdd, gminasToRemove } = useMapContext();
-  const [isSaving, setSaving] = useState(false);
   const { t } = useTranslation();
+  const { runWithParams: runUpdateGminas, isLoading: isSaving } =
+    useAsync(updateGminas); // TODO: error handling
   const noChanges = !gminasToAdd.length && !gminasToRemove.length;
 
   const saveChanges = useCallback(() => {
-    setSaving(true);
-    updateGminas({
-      date: { day: 2, month: 9, year: 2022 }, // TODO: inputs
-      status: apiState,
-    })
-      .then() // TODO: commit local map and notify user
-      .finally(() => setSaving(false));
-  }, [apiState]);
+    runUpdateGminas(
+      {
+        date: { day: 2, month: 9, year: 2022 }, // TODO: inputs
+        status: apiState,
+      },
+      (isSuccess) => {
+        // TODO: commit local map and notify user: toast(error ?? successMessage);
+      }
+    );
+  }, [apiState, runUpdateGminas]);
 
   return (
     <div>
@@ -75,15 +74,19 @@ const Map: React.FC = () => {
 
 const GminasMap: React.FC = () => {
   const user = useSessionStore((s) => s.user);
-  const [gminas, setGminas] = useState<GminaCoords[]>([]);
-  const [capitalCitiesCoords, setCapitalCitiesCoords] = useState<Coords>();
-  const [isLoadingCapitalCitiesCoords, setLoadingCapitalCitiesCoords] = // todo: loading spinner
-    useState(false);
-  const [{ checkedGminaIds }, setCheckedGminaIds] = useState<UserGminasStatus>({
-    checkedGminaIds: [],
-  });
+  const {
+    data: gminas = [],
+    isLoading,
+    run: runGetGminas,
+  } = useAsync(getAllGminas); // TODO: loading spinner, error handling
+  const {
+    data: capitalCitiesCoords,
+    run: runGetCapitalCitiesCoords,
+    isLoading: isLoadingCapitalCitiesCoords,
+  } = useAsync(getCapitalCitiesCoords);
+  const { data: userGminasStatus, runWithParams: runGetGminasStatus } =
+    useAsync(getCheckedGminaIds); // TODO: loading spinner, error handling
   const [zoomLevel, setZoomLevel] = useState(DEFAULT_ZOOM_LEVEL);
-  const [isLoading, setLoading] = useState(false); // TODO: loading spinner
   const { gminasToAdd, gminasToRemove, dispatch } = useMapContext();
 
   const mapEvents = useMapEvents({
@@ -95,37 +98,35 @@ const GminasMap: React.FC = () => {
 
   // TODO: `group` (single loop run)
   const visitedGminas = useMemo(
-    () => gminas.filter((g) => checkedGminaIds.includes(g.id)),
-    [gminas, checkedGminaIds]
+    () =>
+      gminas.filter((g) => userGminasStatus?.checkedGminaIds.includes(g.id)),
+    [gminas, userGminasStatus]
   );
   const unvisitedGminas = useMemo(
-    () => gminas.filter((g) => !checkedGminaIds.includes(g.id)),
-    [gminas, checkedGminaIds]
+    () =>
+      gminas.filter((g) => !userGminasStatus?.checkedGminaIds.includes(g.id)),
+    [gminas, userGminasStatus]
   );
 
   useEffect(() => {
     if (userId) {
-      setLoading(true);
-
-      // TODO: error handing
-      Promise.all([
-        getAllGminas().then(setGminas),
-        getCheckedGminaIds(userId).then(setCheckedGminaIds),
-      ]).finally(() => setLoading(false));
+      runGetGminas();
+      runGetGminasStatus(userId);
     }
-  }, [userId]);
+  }, [userId, runGetGminas, runGetGminasStatus]);
 
   useEffect(() => {
     if (zoomLevel > CAPITALS_ZOOM_LEVEL) {
       if (!capitalCitiesCoords && !isLoadingCapitalCitiesCoords) {
-        setLoadingCapitalCitiesCoords(true);
-        getCapitalCitiesCoords()
-          .then(setCapitalCitiesCoords)
-          .catch(() => setCapitalCitiesCoords([])) // do not retry in case of errors
-          .finally(() => setLoadingCapitalCitiesCoords(false));
+        runGetCapitalCitiesCoords();
       }
     }
-  }, [zoomLevel, capitalCitiesCoords, isLoadingCapitalCitiesCoords]);
+  }, [
+    zoomLevel,
+    capitalCitiesCoords,
+    runGetCapitalCitiesCoords,
+    isLoadingCapitalCitiesCoords,
+  ]);
 
   return (
     <>

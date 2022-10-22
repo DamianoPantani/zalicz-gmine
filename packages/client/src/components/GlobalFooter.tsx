@@ -13,9 +13,9 @@ export const GlobalFooter: React.FC = () => {
     const appStartYear = 2023;
     const currentYear = new Date().getFullYear();
 
-    return appStartYear === currentYear
-      ? currentYear
-      : `${appStartYear} - ${currentYear}`;
+    return currentYear > appStartYear
+      ? `${appStartYear} - ${currentYear}`
+      : currentYear;
   }, []);
 
   return (

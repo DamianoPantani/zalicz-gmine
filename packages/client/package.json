@@ -10,8 +10,7 @@
     "@types/react": "^18.0.19",
     "@types/react-dom": "^18.0.6",
     "@types/react-leaflet": "^2.8.2",
-    "@types/react-router-dom": "^5.3.3",
-    "typescript-plugin-css-modules": "^3.4.0"
+    "@types/react-router-dom": "^5.3.3"
   },
   "dependencies": {
     "@damianopantani/zaliczgmine-server": "*",

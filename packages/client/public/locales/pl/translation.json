@@ -8,6 +8,14 @@
     "stackoverflow": "Profil Stack Overflow",
     "zaliczgmine": "Profil Zalicz Gminę"
   },
+  "error": {
+    "INVALID_COOKIE_RETRIEVED": "Otrzymano nieprawidłowe ciasteczko autoryzujące. Prosimy o kontakt",
+    "INVALID_CREDENTIALS": "Nieprawidłowe dane logowania",
+    "NO_AUTH_TOKEN_PROVIDED": "Brak nagłówka autoryzującego. Prosimy o kontakt",
+    "NO_COOKIE_RETRIEVED": "Nie otrzymano ciasteczka autoryzującego. Prosimy o kontakt",
+    "SESSION_EXPIRED": "Sesja wygasła",
+    "UNKNOWN_ERROR": "Nieznany błąd:"
+  },
   "footer": {
     "contact": "Kontakt",
     "contribute": "Repozytorium Github",
