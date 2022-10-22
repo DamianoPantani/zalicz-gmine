@@ -9,8 +9,8 @@ import {
   FaSignInAlt,
   FaSignOutAlt,
 } from "react-icons/fa";
-import { useSessionStore } from "../SessionContext";
-import { Paths } from "../paths";
+import { useSessionStore } from "../components/core/SessionContext";
+import { Paths } from "./core/paths";
 import logo from "../resources/logo.svg";
 
 // TODO: typescript-plugin-css-modules doesn't work

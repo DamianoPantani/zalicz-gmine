@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaEnvelope, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
-import { Paths } from "../paths";
+import { Paths } from "./core/paths";
 import styles from "./GlobalFooter.module.scss";
 
 export const GlobalFooter: React.FC = () => {

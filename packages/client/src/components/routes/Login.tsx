@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Formik, Form } from "formik";
 import { LoginRequest } from "@damianopantani/zaliczgmine-server";
-import { useSessionStore } from "../../SessionContext";
+import { useSessionStore } from "../core/SessionContext";
 import { useFormikField } from "../forms/useFormikField";
 import { Input } from "../forms/Input";
 import { Button } from "../forms/Button";

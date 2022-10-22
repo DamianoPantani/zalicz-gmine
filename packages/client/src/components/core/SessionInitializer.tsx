@@ -1,6 +1,6 @@
 import React, { PropsWithChildren, useEffect } from "react";
 import { useSessionStore } from "./SessionContext";
-import { LoadingSpinner } from "./components/LoadingSpinner";
+import { LoadingSpinner } from "../LoadingSpinner";
 
 import styles from "./SessionInitializer.module.scss";
 

@@ -15,15 +15,15 @@ import {
   getCapitalCitiesCoords,
   getCheckedGminaIds,
   updateGminas,
-} from "../../requests";
-import { useSessionStore } from "../../SessionContext";
+} from "../../api/requests";
+import { useSessionStore } from "../core/SessionContext";
 import {
   toggleUnvisitedGmina,
   toggleVisitedGmina,
 } from "./useGminasStatusReducer";
 import { MapProvider, useMapContext } from "./MapContext";
 import { Button } from "../forms/Button";
-import { useAsync } from "../../useAsync";
+import { useAsync } from "../../api/useAsync";
 
 const DEFAULT_ZOOM_LEVEL = 7;
 const CAPITALS_ZOOM_LEVEL = 9;

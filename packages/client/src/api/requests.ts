@@ -9,7 +9,7 @@ import type {
   Coords,
   UpdateStatusRequest,
 } from "@damianopantani/zaliczgmine-server";
-import LocalStorage from "./localStorage";
+import LocalStorage from "../util/localStorage";
 
 const { hostname, port } = window.location;
 const isLocalEnv = !!port;

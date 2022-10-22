@@ -5,9 +5,9 @@ import {
   RouteObject,
   RouterProvider,
 } from "react-router-dom";
-import { MapPROTOTYPE } from "./components/routes/Map";
-import { Login } from "./components/routes/Login";
-import { Contact } from "./components/routes/Contact";
+import { MapPROTOTYPE } from "../routes/Map";
+import { Login } from "../routes/Login";
+import { Contact } from "../routes/Contact";
 import { Paths } from "./paths";
 import { useSessionStore } from "./SessionContext";
 import { PageLayout } from "./PageLayout";

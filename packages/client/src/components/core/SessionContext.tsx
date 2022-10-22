@@ -2,8 +2,8 @@ import type { LoginRequest, User } from "@damianopantani/zaliczgmine-server";
 import React, { PropsWithChildren, useCallback } from "react";
 import create, { StoreApi } from "zustand";
 import createContext from "zustand/context";
-import { getLoggedInUser, loginUser, logoutUser } from "./requests";
-import { UseRequest, useRequest } from "./useAsync";
+import { getLoggedInUser, loginUser, logoutUser } from "../../api/requests";
+import { UseRequest, useRequest } from "../../api/useAsync";
 
 type SessionStore = {
   isInitializing: boolean;

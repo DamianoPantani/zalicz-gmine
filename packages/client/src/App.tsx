@@ -1,8 +1,8 @@
 import React from "react";
 import "reset-css/reset.css";
-import { Routes } from "./Routes";
-import { SessionProvider } from "./SessionContext";
-import { SessionInitializer } from "./SessionInitializer";
+import { Routes } from "./components/core/Routes";
+import { SessionProvider } from "./components/core/SessionContext";
+import { SessionInitializer } from "./components/core/SessionInitializer";
 
 import "./css/rootVariables.scss";
 import "./css/main.scss";
