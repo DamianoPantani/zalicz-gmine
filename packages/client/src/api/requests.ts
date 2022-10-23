@@ -67,9 +67,9 @@ export const logoutUser = async (): Promise<void> => {
 
 export const getCheckedGminaIds = async (
   userId: number
-): Promise<UserGminasStatus> => {
+): Promise<string[]> => {
   const { data } = await Api.get<UserGminasStatus>("/map/" + userId);
-  return data;
+  return data.checkedGminaIds;
 };
 
 export const updateGminas = async (

@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect } from "react";
 import {
   Circle,
   FeatureGroup,
@@ -6,28 +6,29 @@ import {
   Polygon,
   TileLayer,
   Tooltip,
-  useMapEvents,
 } from "react-leaflet";
+import { LatLngTuple } from "leaflet";
 import { useTranslation } from "react-i18next";
-import "leaflet/dist/leaflet.css";
+import { getCapitalCitiesCoords, updateGminas } from "../../api/requests";
 import {
-  getAllGminas,
-  getCapitalCitiesCoords,
-  getCheckedGminaIds,
-  updateGminas,
-} from "../../api/requests";
-import { useSessionStore } from "../core/SessionContext";
-import {
+  commitMap,
   toggleUnvisitedGmina,
   toggleVisitedGmina,
 } from "./useGminasStatusReducer";
 import { MapProvider, useMapContext } from "./MapContext";
 import { Button } from "../forms/Button";
 import { useAsync } from "../../api/useAsync";
+import { DEFAULT_ZOOM_LEVEL, useZoomLevel } from "./useZoomLevel";
+import styles from "./Map.module.scss";
 
-const DEFAULT_ZOOM_LEVEL = 7;
+import "leaflet/dist/leaflet.css";
+
+// TODO: import order
+
 const CAPITALS_ZOOM_LEVEL = 9;
+const polandGeoCenter: LatLngTuple = [52.0691, 19.4797];
 
+// TODO: rename
 export const MapPROTOTYPE: React.FC = () => {
   // TODO: different paths when on different zoom level (performance)
   return (
@@ -38,11 +39,11 @@ export const MapPROTOTYPE: React.FC = () => {
 };
 
 const Map: React.FC = () => {
-  const { apiState, gminasToAdd, gminasToRemove } = useMapContext();
+  const { apiState, gminasToAdd, gminasToRemove, dispatch } = useMapContext();
   const { t } = useTranslation();
   const { runWithParams: runUpdateGminas, isLoading: isSaving } =
     useAsync(updateGminas); // TODO: error handling
-  const noChanges = !gminasToAdd.length && !gminasToRemove.length;
+  const hasChanges = gminasToAdd.length || gminasToRemove.length;
 
   const saveChanges = useCallback(() => {
     runUpdateGminas(
@@ -51,21 +52,24 @@ const Map: React.FC = () => {
         status: apiState,
       },
       (isSuccess) => {
-        // TODO: commit local map and notify user: toast(error ?? successMessage);
+        if (isSuccess) {
+          dispatch(commitMap());
+        }
+        // TODO: notify user: toast(error ?? successMessage);
       }
     );
-  }, [apiState, runUpdateGminas]);
+  }, [apiState, runUpdateGminas, dispatch]);
 
   return (
     <div>
       <MapContainer
-        center={[52.0691, 19.4797]}
+        center={polandGeoCenter}
         zoom={DEFAULT_ZOOM_LEVEL}
-        style={{ width: "100%", height: "800px" }}
+        className={styles.mapContainer}
       >
         <GminasMap />
       </MapContainer>
-      <Button disabled={noChanges} isLoading={isSaving} onClick={saveChanges}>
+      <Button disabled={!hasChanges} isLoading={isSaving} onClick={saveChanges}>
         {t("form.map.save")}
       </Button>
     </div>
@@ -73,47 +77,22 @@ const Map: React.FC = () => {
 };
 
 const GminasMap: React.FC = () => {
-  const user = useSessionStore((s) => s.user);
-  const {
-    data: gminas = [],
-    isLoading,
-    run: runGetGminas,
-  } = useAsync(getAllGminas); // TODO: loading spinner, error handling
   const {
     data: capitalCitiesCoords,
     run: runGetCapitalCitiesCoords,
     isLoading: isLoadingCapitalCitiesCoords,
   } = useAsync(getCapitalCitiesCoords);
-  const { data: userGminasStatus, runWithParams: runGetGminasStatus } =
-    useAsync(getCheckedGminaIds); // TODO: loading spinner, error handling
-  const [zoomLevel, setZoomLevel] = useState(DEFAULT_ZOOM_LEVEL);
-  const { gminasToAdd, gminasToRemove, dispatch } = useMapContext();
 
-  const mapEvents = useMapEvents({
-    zoomend: () => {
-      setZoomLevel(mapEvents.getZoom());
-    },
-  });
-  const userId = user?.userId;
-
-  // TODO: `group` (single loop run)
-  const visitedGminas = useMemo(
-    () =>
-      gminas.filter((g) => userGminasStatus?.checkedGminaIds.includes(g.id)),
-    [gminas, userGminasStatus]
-  );
-  const unvisitedGminas = useMemo(
-    () =>
-      gminas.filter((g) => !userGminasStatus?.checkedGminaIds.includes(g.id)),
-    [gminas, userGminasStatus]
-  );
-
-  useEffect(() => {
-    if (userId) {
-      runGetGminas();
-      runGetGminasStatus(userId);
-    }
-  }, [userId, runGetGminas, runGetGminasStatus]);
+  const zoomLevel = useZoomLevel();
+  const {
+    isInitialized, // TODO: loading spinner
+    initializingError, // TODO: error handling
+    visitedGminas,
+    unvisitedGminas,
+    gminasToAdd,
+    gminasToRemove,
+    dispatch,
+  } = useMapContext();
 
   useEffect(() => {
     if (zoomLevel > CAPITALS_ZOOM_LEVEL) {
@@ -131,7 +110,7 @@ const GminasMap: React.FC = () => {
   return (
     <>
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-      {!isLoading && (
+      {isInitialized && (
         <>
           <FeatureGroup
             key="visited"

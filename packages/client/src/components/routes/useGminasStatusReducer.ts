@@ -1,54 +1,119 @@
 import { GminaCoords, GminasStatus } from "@damianopantani/zaliczgmine-server";
 import { Reducer } from "react";
+import { splitBy, diff } from "../../util/array";
 
 export type MapState = {
+  isInitialized: boolean;
+  visitedGminas: GminaCoords[];
+  unvisitedGminas: GminaCoords[];
   gminasToAdd: GminaCoords[];
   gminasToRemove: GminaCoords[];
   apiState: GminasStatus;
 };
 
-export type Action = {
-  type: "VISITED" | "UNVISITED";
-  gmina: GminaCoords;
+type ActionCreator<P = void> = (payload: P) => Action<P>;
+
+export type Action<P> = {
+  type: "INITIALIZE_MAP" | "TOGGLE_VISITED" | "TOGGLE_UNVISITED" | "COMMIT_MAP";
+  payload: P;
 };
 
-export const toggleVisitedGmina = (gmina: GminaCoords): Action => ({
-  type: "VISITED",
-  gmina,
+type InitPayload = {
+  allGminas: GminaCoords[];
+  checkedGminaIds: string[];
+};
+
+export const initializeUserGminas: ActionCreator<InitPayload> = (payload) => ({
+  type: "INITIALIZE_MAP",
+  payload,
 });
 
-export const toggleUnvisitedGmina = (gmina: GminaCoords): Action => ({
-  type: "UNVISITED",
-  gmina,
+export const commitMap: ActionCreator = () => ({
+  type: "COMMIT_MAP",
+  payload: undefined,
 });
 
-export const gminasStatusReducer: Reducer<MapState, Action> = (
+export const toggleVisitedGmina: ActionCreator<GminaCoords> = (payload) => ({
+  type: "TOGGLE_VISITED",
+  payload,
+});
+
+export const toggleUnvisitedGmina: ActionCreator<GminaCoords> = (payload) => ({
+  type: "TOGGLE_UNVISITED",
+  payload,
+});
+
+export const gminasStatusReducer: Reducer<MapState, Action<unknown>> = (
   state,
   action
 ) => {
-  const { type, gmina } = action;
-  const { apiState, gminasToAdd, gminasToRemove } = state;
-  const hasChangeState = !!apiState[gmina.id];
+  const { payload } = action;
 
-  if (hasChangeState) {
-    const { [gmina.id]: _unselected, ...newApiState } = apiState;
+  switch (action.type) {
+    case "INITIALIZE_MAP":
+      const { allGminas, checkedGminaIds } = payload as InitPayload;
+      const [initialVisitedGminas, initialUnvisitedGminas] =
+        checkedGminaIds.length
+          ? splitBy(allGminas, (g) => checkedGminaIds.includes(g.id))
+          : [[], allGminas];
 
-    return {
-      apiState: newApiState,
-      gminasToAdd: gminasToAdd.filter((g) => g !== gmina),
-      gminasToRemove: gminasToRemove.filter((g) => g !== gmina),
-    };
-  } else {
-    const isToVisit = type === "VISITED";
-    const newApiState: GminasStatus = {
-      ...apiState,
-      [gmina.id]: isToVisit ? "a" : "d",
-    };
+      return {
+        isInitialized: true,
+        apiState: {},
+        gminasToAdd: [],
+        gminasToRemove: [],
+        unvisitedGminas: initialUnvisitedGminas,
+        visitedGminas: initialVisitedGminas,
+      };
 
-    return {
-      apiState: newApiState,
-      gminasToAdd: isToVisit ? gminasToAdd.concat(gmina) : gminasToAdd,
-      gminasToRemove: isToVisit ? gminasToRemove : gminasToRemove.concat(gmina),
-    };
+    case "TOGGLE_VISITED":
+    case "TOGGLE_UNVISITED":
+      const gmina = payload as GminaCoords;
+      const wasAlreadyMarked = !!state.apiState[gmina.id];
+
+      if (wasAlreadyMarked) {
+        const { [gmina.id]: _unselected, ...newApiState } = state.apiState;
+
+        return {
+          ...state,
+          apiState: newApiState,
+          gminasToAdd: state.gminasToAdd.filter((g) => g !== gmina),
+          gminasToRemove: state.gminasToRemove.filter((g) => g !== gmina),
+        };
+      } else {
+        const markToVisit = action.type === "TOGGLE_VISITED";
+        const newApiState: GminasStatus = {
+          ...state.apiState,
+          [gmina.id]: markToVisit ? "a" : "d",
+        };
+
+        return {
+          ...state,
+          apiState: newApiState,
+          gminasToAdd: markToVisit
+            ? state.gminasToAdd.concat(gmina)
+            : state.gminasToAdd,
+          gminasToRemove: markToVisit
+            ? state.gminasToRemove
+            : state.gminasToRemove.concat(gmina),
+        };
+      }
+
+    case "COMMIT_MAP":
+      const { visitedGminas, unvisitedGminas, gminasToRemove, gminasToAdd } =
+        state;
+
+      return {
+        ...state,
+        apiState: {},
+        gminasToAdd: [],
+        gminasToRemove: [],
+        unvisitedGminas: diff(unvisitedGminas, gminasToAdd).concat(
+          gminasToRemove
+        ),
+        visitedGminas: diff(visitedGminas, gminasToRemove).concat(gminasToAdd),
+      };
+    default:
+      return state;
   }
 };
