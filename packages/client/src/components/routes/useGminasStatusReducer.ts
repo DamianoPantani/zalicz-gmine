@@ -23,22 +23,28 @@ type InitPayload = {
   checkedGminaIds: string[];
 };
 
-export const initializeUserGminas: ActionCreator<InitPayload> = (payload) => ({
+export const initializeUserGminasAction: ActionCreator<InitPayload> = (
+  payload
+) => ({
   type: "INITIALIZE_MAP",
   payload,
 });
 
-export const commitMap: ActionCreator = () => ({
+export const commitMapAction: ActionCreator = () => ({
   type: "COMMIT_MAP",
   payload: undefined,
 });
 
-export const toggleVisitedGmina: ActionCreator<GminaCoords> = (payload) => ({
+export const toggleVisitedGminaAction: ActionCreator<GminaCoords> = (
+  payload
+) => ({
   type: "TOGGLE_VISITED",
   payload,
 });
 
-export const toggleUnvisitedGmina: ActionCreator<GminaCoords> = (payload) => ({
+export const toggleUnvisitedGminaAction: ActionCreator<GminaCoords> = (
+  payload
+) => ({
   type: "TOGGLE_UNVISITED",
   payload,
 });

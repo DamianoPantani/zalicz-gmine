@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect } from "react";
+import React, { useEffect } from "react";
 import {
   Circle,
   FeatureGroup,
@@ -9,12 +9,7 @@ import {
 } from "react-leaflet";
 import { LatLngTuple } from "leaflet";
 import { useTranslation } from "react-i18next";
-import { getCapitalCitiesCoords, updateGminas } from "../../api/requests";
-import {
-  commitMap,
-  toggleUnvisitedGmina,
-  toggleVisitedGmina,
-} from "./useGminasStatusReducer";
+import { getCapitalCitiesCoords } from "../../api/requests";
 import { MapProvider, useMapContext } from "./MapContext";
 import { Button } from "../forms/Button";
 import { useAsync } from "../../api/useAsync";
@@ -39,26 +34,8 @@ export const MapPROTOTYPE: React.FC = () => {
 };
 
 const Map: React.FC = () => {
-  const { apiState, gminasToAdd, gminasToRemove, dispatch } = useMapContext();
+  const { hasChanges, saveChanges, isSaving } = useMapContext();
   const { t } = useTranslation();
-  const { runWithParams: runUpdateGminas, isLoading: isSaving } =
-    useAsync(updateGminas); // TODO: error handling
-  const hasChanges = gminasToAdd.length || gminasToRemove.length;
-
-  const saveChanges = useCallback(() => {
-    runUpdateGminas(
-      {
-        date: { day: 2, month: 9, year: 2022 }, // TODO: inputs
-        status: apiState,
-      },
-      (isSuccess) => {
-        if (isSuccess) {
-          dispatch(commitMap());
-        }
-        // TODO: notify user: toast(error ?? successMessage);
-      }
-    );
-  }, [apiState, runUpdateGminas, dispatch]);
 
   return (
     <div>
@@ -77,13 +54,12 @@ const Map: React.FC = () => {
 };
 
 const GminasMap: React.FC = () => {
+  const zoomLevel = useZoomLevel();
   const {
     data: capitalCitiesCoords,
     run: runGetCapitalCitiesCoords,
     isLoading: isLoadingCapitalCitiesCoords,
   } = useAsync(getCapitalCitiesCoords);
-
-  const zoomLevel = useZoomLevel();
   const {
     isInitialized, // TODO: loading spinner
     initializingError, // TODO: error handling
@@ -91,21 +67,17 @@ const GminasMap: React.FC = () => {
     unvisitedGminas,
     gminasToAdd,
     gminasToRemove,
-    dispatch,
+    toggleVisited,
   } = useMapContext();
 
+  const shouldFetchCapitals =
+    zoomLevel > CAPITALS_ZOOM_LEVEL &&
+    !capitalCitiesCoords &&
+    !isLoadingCapitalCitiesCoords;
+
   useEffect(() => {
-    if (zoomLevel > CAPITALS_ZOOM_LEVEL) {
-      if (!capitalCitiesCoords && !isLoadingCapitalCitiesCoords) {
-        runGetCapitalCitiesCoords();
-      }
-    }
-  }, [
-    zoomLevel,
-    capitalCitiesCoords,
-    runGetCapitalCitiesCoords,
-    isLoadingCapitalCitiesCoords,
-  ]);
+    shouldFetchCapitals && runGetCapitalCitiesCoords();
+  }, [shouldFetchCapitals, runGetCapitalCitiesCoords]);
 
   return (
     <>
@@ -124,7 +96,7 @@ const GminasMap: React.FC = () => {
             {visitedGminas.map((gmina, i) => (
               <Polygon
                 eventHandlers={{
-                  click: () => dispatch(toggleUnvisitedGmina(gmina)),
+                  click: () => toggleVisited(gmina),
                 }}
                 key={i}
                 positions={gmina.coords}
@@ -149,7 +121,7 @@ const GminasMap: React.FC = () => {
             {unvisitedGminas.map((gmina, i) => (
               <Polygon
                 eventHandlers={{
-                  click: () => dispatch(toggleVisitedGmina(gmina)),
+                  click: () => toggleVisited(gmina),
                 }}
                 key={i}
                 positions={gmina.coords}
@@ -174,7 +146,7 @@ const GminasMap: React.FC = () => {
             {gminasToAdd.map((gmina, i) => (
               <Polygon
                 eventHandlers={{
-                  click: () => dispatch(toggleVisitedGmina(gmina)),
+                  click: () => toggleVisited(gmina),
                 }}
                 key={i}
                 positions={gmina.coords}
@@ -199,7 +171,7 @@ const GminasMap: React.FC = () => {
             {gminasToRemove.map((gmina, i) => (
               <Polygon
                 eventHandlers={{
-                  click: () => dispatch(toggleUnvisitedGmina(gmina)),
+                  click: () => toggleVisited(gmina),
                 }}
                 key={i}
                 positions={gmina.coords}

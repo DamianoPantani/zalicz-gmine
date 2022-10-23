@@ -1,6 +1,6 @@
+import { GminaCoords } from "@damianopantani/zaliczgmine-server/src/types/shared";
 import React, {
   createContext,
-  Dispatch,
   PropsWithChildren,
   ReactElement,
   useCallback,
@@ -10,20 +10,29 @@ import React, {
   useState,
 } from "react";
 import { useTranslation } from "react-i18next";
-import { getAllGminas, getCheckedGminaIds } from "../../api/requests";
-import { useRequest } from "../../api/useAsync";
+import {
+  getAllGminas,
+  getCheckedGminaIds,
+  updateGminas,
+} from "../../api/requests";
+import { useAsync, useRequest } from "../../api/useAsync";
 import { useSessionStore } from "../core/SessionContext";
 
 import {
-  Action,
+  commitMapAction,
   gminasStatusReducer,
-  initializeUserGminas,
+  initializeUserGminasAction,
   MapState,
+  toggleUnvisitedGminaAction,
+  toggleVisitedGminaAction,
 } from "./useGminasStatusReducer";
 
 export type MapContextType = MapState & {
   initializingError?: string;
-  dispatch: Dispatch<Action<unknown>>;
+  hasChanges: boolean;
+  isSaving: boolean;
+  saveChanges(): void;
+  toggleVisited(gmina: GminaCoords): void;
 };
 
 export const MapContext = createContext<MapContextType | undefined>(undefined);
@@ -69,11 +78,39 @@ export const MapProvider = ({ children }: PropsWithChildren): ReactElement => {
       if (error || !allGminas || !checkedGminaIds) {
         setInitializingError(error ?? t("error.UNKNOWN_ERROR"));
       } else {
-        dispatch(initializeUserGminas({ allGminas, checkedGminaIds }));
+        dispatch(initializeUserGminasAction({ allGminas, checkedGminaIds }));
       }
     },
     [run, runWithParams, t]
   );
+
+  const { runWithParams: runUpdateGminas, isLoading: isSaving } =
+    useAsync(updateGminas); // TODO: error handling
+
+  const toggleVisited = useCallback(
+    (gmina: GminaCoords) =>
+      dispatch(
+        visitedGminas.includes(gmina)
+          ? toggleUnvisitedGminaAction(gmina)
+          : toggleVisitedGminaAction(gmina)
+      ),
+    [visitedGminas]
+  );
+
+  const saveChanges = useCallback(() => {
+    runUpdateGminas(
+      {
+        date: { day: 2, month: 9, year: 2022 }, // TODO: inputs
+        status: apiState,
+      },
+      (isSuccess) => {
+        if (isSuccess) {
+          dispatch(commitMapAction());
+        }
+        // TODO: notify user: toast(error ?? successMessage);
+      }
+    );
+  }, [runUpdateGminas, apiState]);
 
   useEffect(() => {
     user?.userId && initializeGminasStatus(user.userId);
@@ -84,12 +121,15 @@ export const MapProvider = ({ children }: PropsWithChildren): ReactElement => {
       value={{
         isInitialized,
         initializingError,
-        dispatch,
         apiState,
         gminasToAdd,
         gminasToRemove,
         unvisitedGminas,
         visitedGminas,
+        hasChanges: Boolean(gminasToAdd.length || gminasToRemove.length),
+        isSaving,
+        saveChanges,
+        toggleVisited,
       }}
     >
       {children}
