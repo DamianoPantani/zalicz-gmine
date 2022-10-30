@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@damianopantani/zaliczgmine-server": "*",
+    "@natscale/react-calendar": "^0.0.0-beta.26",
     "axios": "^0.27.2",
     "classnames": "^2.3.2",
     "formik": "^2.2.9",

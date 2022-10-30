@@ -30,11 +30,7 @@ export const GlobalFooter: React.FC = () => {
             <FaGithub />
             <span>{t("footer.contribute")}</span>
           </a>
-          <a
-            href="https://zaliczgmine.pl/users/login"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://zaliczgmine.pl" target="_blank" rel="noreferrer">
             <FaExternalLinkAlt />
             <span>{t("footer.originalApp")}</span>
           </a>

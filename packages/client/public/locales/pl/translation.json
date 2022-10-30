@@ -36,5 +36,16 @@
     "login": "Zaloguj",
     "logout": "Wyloguj",
     "map": "Mapa"
+  },
+  "weekday": {
+    "short": {
+      "0": "Niedz",
+      "1": "Pon",
+      "2": "Wt",
+      "3": "Śr",
+      "4": "Czw",
+      "5": "Pt",
+      "6": "Sob"
+    }
   }
 }

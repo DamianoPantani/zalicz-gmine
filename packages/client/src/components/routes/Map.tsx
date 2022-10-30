@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import { getCapitalCitiesCoords } from "../../api/requests";
 import { useAsync } from "../../api/useAsync";
 import { Button } from "../forms/Button";
+import { DatePicker } from "../forms/DatePicker";
 
 import { MapProvider, useMapContext } from "./MapContext";
 import { CapitalsLayer, GminasLayer } from "./MapLayers";
@@ -26,7 +27,8 @@ export const Map: React.FC = () => {
 };
 
 const MapConsumer: React.FC = () => {
-  const { hasChanges, saveChanges, isSaving } = useMapContext();
+  const { hasChanges, saveChanges, isSaving, setVisitDate, visitDate } =
+    useMapContext();
   const { t } = useTranslation();
 
   return (
@@ -38,6 +40,8 @@ const MapConsumer: React.FC = () => {
       >
         <GminasMap />
       </MapContainer>
+      {/* TODO: style date picker and save button */}
+      <DatePicker onChange={setVisitDate} value={visitDate} />
       <Button disabled={!hasChanges} isLoading={isSaving} onClick={saveChanges}>
         {t("form.map.save")}
       </Button>

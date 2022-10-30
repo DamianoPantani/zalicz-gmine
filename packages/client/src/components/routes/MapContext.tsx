@@ -1,4 +1,4 @@
-import { GminaCoords } from "@damianopantani/zaliczgmine-server/src/types/shared";
+import { DateForm, GminaCoords } from "@damianopantani/zaliczgmine-server";
 import React, {
   createContext,
   PropsWithChildren,
@@ -32,8 +32,10 @@ export type MapContextType = MapState & {
   initializingError?: string;
   hasChanges: boolean;
   isSaving: boolean;
-  saveChanges(): void;
+  visitDate: Date;
   toggleVisited(gmina: GminaCoords): void;
+  setVisitDate(date: Date): void;
+  saveChanges(): void;
 };
 
 export const MapContext = createContext<MapContextType | undefined>(undefined);
@@ -50,8 +52,8 @@ const defaultGminasStatus: MapState = {
 export const MapProvider = ({ children }: PropsWithChildren): ReactElement => {
   const { t } = useTranslation();
   const { run, runWithParams } = useRequest();
-
   const [initializingError, setInitializingError] = useState<string>();
+  const [visitDate, setVisitDate] = useState(() => new Date());
   const user = useSessionStore((s) => s.user);
 
   const [
@@ -99,19 +101,19 @@ export const MapProvider = ({ children }: PropsWithChildren): ReactElement => {
   );
 
   const saveChanges = useCallback(() => {
-    runUpdateGminas(
-      {
-        date: { day: 2, month: 9, year: 2022 }, // TODO: inputs
-        status: apiState,
-      },
-      (isSuccess) => {
-        if (isSuccess) {
-          dispatch(commitMapAction());
-        }
-        // TODO: notify user: toast(error ?? successMessage);
+    const date: DateForm = {
+      day: visitDate.getDate(),
+      month: visitDate.getMonth() + 1,
+      year: visitDate.getFullYear(),
+    };
+
+    runUpdateGminas({ date, status: apiState }, (isSuccess) => {
+      if (isSuccess) {
+        dispatch(commitMapAction());
       }
-    );
-  }, [runUpdateGminas, apiState]);
+      // TODO: notify user: toast(error ?? successMessage);
+    });
+  }, [runUpdateGminas, apiState, visitDate]);
 
   useEffect(() => {
     user?.userId && initializeGminasStatus(user.userId);
@@ -128,6 +130,8 @@ export const MapProvider = ({ children }: PropsWithChildren): ReactElement => {
         unvisitedGminas,
         visitedGminas,
         hasChanges: Boolean(gminasToAdd.length || gminasToRemove.length),
+        visitDate,
+        setVisitDate,
         isSaving,
         saveChanges,
         toggleVisited,
