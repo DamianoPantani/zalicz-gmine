@@ -1,5 +1,6 @@
 import { GminaCoords, GminasStatus } from "@damianopantani/zaliczgmine-server";
 import { Reducer } from "react";
+
 import { splitBy, diff } from "../../util/array";
 
 export type MapState = {

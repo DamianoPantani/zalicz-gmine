@@ -1,6 +1,8 @@
 import React from "react";
+
 import { GlobalFooter } from "../GlobalFooter";
 import { GlobalNavbar } from "../GlobalNavbar";
+
 import styles from "./PageLayout.module.scss";
 
 type Props = {

@@ -1,7 +1,8 @@
 import React, { PropsWithChildren, useEffect } from "react";
-import { useSessionStore } from "./SessionContext";
+
 import { LoadingSpinner } from "../LoadingSpinner";
 
+import { useSessionStore } from "./SessionContext";
 import styles from "./SessionInitializer.module.scss";
 
 export const SessionInitializer: React.FC<PropsWithChildren> = ({

@@ -9,10 +9,11 @@ import {
   FaSignInAlt,
   FaSignOutAlt,
 } from "react-icons/fa";
+
 import { useSessionStore } from "../components/core/SessionContext";
-import { Paths } from "./core/paths";
 import logo from "../resources/logo.svg";
 
+import { Paths } from "./core/paths";
 // TODO: typescript-plugin-css-modules doesn't work
 import styles from "./GlobalNavbar.module.scss";
 

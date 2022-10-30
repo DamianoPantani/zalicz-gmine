@@ -2,6 +2,7 @@ import React, { PropsWithChildren, ReactElement } from "react";
 import cx from "classnames";
 
 import { LoadingSpinner } from "../LoadingSpinner";
+
 import styles from "./Button.module.scss";
 
 type Props = PropsWithChildren<{

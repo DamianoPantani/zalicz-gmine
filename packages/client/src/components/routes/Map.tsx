@@ -9,16 +9,16 @@ import {
 } from "react-leaflet";
 import { LatLngTuple } from "leaflet";
 import { useTranslation } from "react-i18next";
+
 import { getCapitalCitiesCoords } from "../../api/requests";
-import { MapProvider, useMapContext } from "./MapContext";
-import { Button } from "../forms/Button";
 import { useAsync } from "../../api/useAsync";
+import { Button } from "../forms/Button";
+
+import { MapProvider, useMapContext } from "./MapContext";
 import { DEFAULT_ZOOM_LEVEL, useZoomLevel } from "./useZoomLevel";
 import styles from "./Map.module.scss";
 
 import "leaflet/dist/leaflet.css";
-
-// TODO: import order
 
 const CAPITALS_ZOOM_LEVEL = 9;
 const polandGeoCenter: LatLngTuple = [52.0691, 19.4797];

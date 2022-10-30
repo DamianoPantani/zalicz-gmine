@@ -2,7 +2,9 @@ import React, { PropsWithChildren } from "react";
 import { useTranslation } from "react-i18next";
 import { FaAt, FaBicycle, FaStackOverflow, FaRegCompass } from "react-icons/fa";
 import { IconType } from "react-icons/lib";
+
 import { Container } from "../Container";
+
 import styles from "./Contact.module.scss";
 
 type ContactRowProps = PropsWithChildren<{

@@ -1,4 +1,4 @@
-export default class LocalStorage<T> {
+export class LocalStorage<T> {
   constructor(private key: string) {}
 
   get = (): T | undefined => {
