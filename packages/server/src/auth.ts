@@ -1,8 +1,9 @@
 import cookie from "cookie";
 import { AxiosRequestConfig, AxiosResponseHeaders } from "axios";
+import { IncomingHttpHeaders } from "http";
+
 import { ZGApiError } from "./ZGApiError";
 import { SessionResponse } from "./types/shared";
-import { IncomingHttpHeaders } from "http";
 
 const authCookieKey = "ZALICZGMINEPL";
 

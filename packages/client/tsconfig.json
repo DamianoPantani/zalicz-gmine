@@ -3,7 +3,7 @@
   "include": ["./src/**/*.ts"],
   "noEmit": true,
   "compilerOptions": {
-    "jsx": "react-jsx",
+    "jsx": "react",
     "esModuleInterop": true,
     "composite": true,
     "rootDir": "./src",

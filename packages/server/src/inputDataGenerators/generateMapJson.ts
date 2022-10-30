@@ -1,4 +1,5 @@
 import { existsSync, readFileSync, rmSync, writeFileSync } from "fs";
+
 import { GminaCoords } from "../types/shared";
 
 const OUTPUT_COORDS_PRECISION = 4;

@@ -6,7 +6,7 @@ export type ParsedObject = { [key in string]: ParsedValue };
 export const flatten = (object: ParsedObject, parent?: string): string[] => {
   let results: string[] = [];
 
-  for (let key in object) {
+  for (const key in object) {
     const value = object[key];
     const thisKey = parent ? `${parent}[${key}]` : `${key}`;
 

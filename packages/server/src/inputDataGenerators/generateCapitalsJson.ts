@@ -1,4 +1,5 @@
 import { existsSync, readFileSync, rmSync, writeFileSync } from "fs";
+
 import { Coords } from "../types/shared";
 
 const OUTPUT_COORDS_PRECISION = 3;

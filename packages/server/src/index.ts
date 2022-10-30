@@ -1,6 +1,8 @@
+/* eslint-disable no-console */
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
+
 import {
   loginUser,
   logoutUser,

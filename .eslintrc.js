@@ -1,0 +1,84 @@
+module.exports = {
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+    jest: true,
+  },
+  extends: [
+    "react-app",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+    "plugin:prettier/recommended",
+  ],
+  plugins: ["jsx-a11y"],
+  rules: {
+    "no-unused-vars": ["warn"],
+    "no-console": ["warn"],
+    "no-debugger": ["warn"],
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        extensions: [".tsx"],
+      },
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto",
+      },
+    ],
+    "@typescript-eslint/ban-ts-comment": [
+      "error",
+      { "ts-ignore": "allow-with-description" },
+    ],
+    "import/no-default-export": ["error"],
+    "import/order": [
+      "error",
+      {
+        groups: [
+          ["builtin", "external", "internal"],
+          "parent",
+          ["sibling", "index"],
+        ],
+        "newlines-between": "always",
+      },
+    ],
+    "import/newline-after-import": ["error"],
+    "import/no-absolute-path": ["error"],
+    "consistent-return": ["error"],
+    curly: ["error"],
+    quotes: ["error", "double", { avoidEscape: true }],
+    "object-shorthand": ["error", "always"],
+    "react-hooks/exhaustive-deps": ["error"],
+    "react-hooks/rules-of-hooks": ["error"],
+    "jsx-a11y/click-events-have-key-events": ["off"],
+    "jsx-a11y/no-static-element-interactions": ["off"],
+    "jsx-a11y/no-noninteractive-element-interactions": ["off"],
+    "jsx-a11y/no-noninteractive-tabindex": ["off"],
+    "jsx-a11y/no-autofocus": "off",
+    "@typescript-eslint/no-empty-function": ["off"],
+    "react/prop-types": ["off"],
+    "react/display-name": ["off"],
+  },
+  overrides: [
+    {
+      files: ["**/*.ts?(x)"],
+      parser: "@typescript-eslint/parser",
+      parserOptions: {
+        ecmaVersion: 2020,
+        sourceType: "module",
+        ecmaFeatures: {
+          jsx: true,
+        },
+
+        // typescript-eslint specific options
+        warnOnUnsupportedTypeScriptVersion: true,
+      },
+      plugins: ["@typescript-eslint"],
+      extends: ["plugin:@typescript-eslint/recommended", "prettier"],
+    },
+  ],
+};

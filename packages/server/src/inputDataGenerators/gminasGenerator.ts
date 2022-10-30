@@ -1,4 +1,6 @@
+/* eslint-disable no-console */
 import { existsSync, rmSync, writeFileSync } from "fs";
+
 import { parseVoivodeship } from "../htmlBodyParser";
 import { Voivodeship } from "../types/shared";
 import { isDefined } from "../utils";

@@ -65,9 +65,7 @@ export const logoutUser = async (): Promise<void> => {
   await Api.delete("/session");
 };
 
-export const getCheckedGminaIds = async (
-  userId: number
-): Promise<string[]> => {
+export const getCheckedGminaIds = async (userId: number): Promise<string[]> => {
   const { data } = await Api.get<UserGminasStatus>("/map/" + userId);
   return data.checkedGminaIds;
 };

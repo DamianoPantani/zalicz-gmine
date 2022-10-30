@@ -1,5 +1,6 @@
 import { load } from "cheerio";
 import CSV from "csv-string";
+
 import { Gmina, User, UserGmina, Voivodeship } from "./types/shared";
 
 const LOGOUT_BUTTON = "Wyloguj: ";
