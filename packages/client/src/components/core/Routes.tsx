@@ -6,7 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import { MapPROTOTYPE } from "../routes/Map";
+import { Map } from "../routes/Map";
 import { Login } from "../routes/Login";
 import { Contact } from "../routes/Contact";
 
@@ -35,7 +35,7 @@ export const Routes: React.FC = () => {
 
               {
                 path: Paths.map,
-                element: <PageLayout Component={MapPROTOTYPE} />,
+                element: <PageLayout Component={Map} />,
               },
 
               {
