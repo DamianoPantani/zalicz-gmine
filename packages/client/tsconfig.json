@@ -5,7 +5,6 @@
   "compilerOptions": {
     "jsx": "react",
     "esModuleInterop": true,
-    "composite": true,
     "rootDir": "./src",
     "outDir": "./dist",
     "sourceMap": true,

@@ -2,6 +2,7 @@ import React, { ReactElement, useCallback, useMemo } from "react";
 import { CalendarWithShortcuts } from "@natscale/react-calendar";
 import { useTranslation } from "react-i18next";
 import {
+  MonthIndices,
   ShortcutButtonModel,
   Value,
   WeekdayIndices,
@@ -34,6 +35,12 @@ export const DatePicker = ({ onChange, value }: Props): ReactElement => {
     [t]
   );
 
+  const monthsLabel = useMemo(
+    (): Record<MonthIndices, string> =>
+      t("month.full", { returnObjects: true }),
+    [t]
+  );
+
   return (
     <CalendarWithShortcuts
       noPadRangeCell
@@ -41,6 +48,7 @@ export const DatePicker = ({ onChange, value }: Props): ReactElement => {
       onChange={onRangeChange}
       shortcutButtons={noShortcutButtons}
       weekDaysLabel={weekDaysLabel}
+      monthsLabel={monthsLabel}
     />
   );
 };

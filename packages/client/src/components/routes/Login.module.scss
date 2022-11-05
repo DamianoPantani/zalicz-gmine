@@ -21,7 +21,7 @@
 }
 
 .error {
-  color: var(--color-error);
+  color: var(--color-negative-800);
 }
 
 .disclaimer {
@@ -32,7 +32,7 @@
 
   &:before {
     content: "*";
-    color: red;
+    color: var(--color-negative-800);
     margin-right: var(--space-sm);
   }
 }

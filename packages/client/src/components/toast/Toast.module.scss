@@ -1,0 +1,37 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: var(--zIndex-toast);
+  background: var(--color-blackAlpha-800);
+  cursor: pointer;
+}
+
+.toast {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-width: var(--size-container-sm);
+  max-height: 95%;
+  margin: 0 auto;
+  padding: var(--space-2xl);
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  overflow: hidden; // make border-radius work with background-color
+  box-shadow: 0px 4px 50px var(--color-black);
+  cursor: auto;
+}
+
+.content {
+  text-align: center;
+  font-size: var(--fontSize-2xl);
+}
+
+.footer {
+  display: flex;
+  justify-content: end;
+}

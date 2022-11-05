@@ -14,7 +14,7 @@ type Props = PropsWithChildren<{
   isLoading?: boolean;
 }>;
 
-type ButtonVariants = "main" | "alternative" | "negative" | "positive";
+export type ButtonVariants = "main" | "alternative" | "negative" | "positive";
 
 export const Button = ({
   variant = "main",

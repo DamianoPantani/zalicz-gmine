@@ -16,7 +16,7 @@ import {
   getCheckedGminaIds,
   updateGminas,
 } from "../../api/requests";
-import { useAsync, useRequest } from "../../api/useAsync";
+import { useRequest } from "../../api/useAsync";
 import { useSessionStore } from "../core/SessionContext";
 
 import {
@@ -35,7 +35,7 @@ export type MapContextType = MapState & {
   visitDate: Date;
   toggleVisited(gmina: GminaCoords): void;
   setVisitDate(date: Date): void;
-  saveChanges(): void;
+  saveChanges(): Promise<void>;
 };
 
 export const MapContext = createContext<MapContextType | undefined>(undefined);
@@ -53,6 +53,7 @@ export const MapProvider = ({ children }: PropsWithChildren): ReactElement => {
   const { t } = useTranslation();
   const { run, runWithParams } = useRequest();
   const [initializingError, setInitializingError] = useState<string>();
+  const [isSaving, setSaving] = useState(false);
   const [visitDate, setVisitDate] = useState(() => new Date());
   const user = useSessionStore((s) => s.user);
 
@@ -87,9 +88,6 @@ export const MapProvider = ({ children }: PropsWithChildren): ReactElement => {
     [run, runWithParams, t]
   );
 
-  const { runWithParams: runUpdateGminas, isLoading: isSaving } =
-    useAsync(updateGminas); // TODO: error handling
-
   const toggleVisited = useCallback(
     (gmina: GminaCoords) =>
       dispatch(
@@ -100,20 +98,23 @@ export const MapProvider = ({ children }: PropsWithChildren): ReactElement => {
     [visitedGminas]
   );
 
-  const saveChanges = useCallback(() => {
+  const saveChanges = useCallback(async () => {
     const date: DateForm = {
       day: visitDate.getDate(),
       month: visitDate.getMonth() + 1,
       year: visitDate.getFullYear(),
     };
 
-    runUpdateGminas({ date, status: apiState }, (isSuccess) => {
-      if (isSuccess) {
-        dispatch(commitMapAction());
-      }
-      // TODO: notify user: toast(error ?? successMessage);
-    });
-  }, [runUpdateGminas, apiState, visitDate]);
+    setSaving(true);
+    const res = await runWithParams(updateGminas, { date, status: apiState });
+    setSaving(false);
+
+    if (res.error || res.errorDetails) {
+      return Promise.reject(res);
+    } else {
+      return dispatch(commitMapAction());
+    }
+  }, [apiState, visitDate, runWithParams]);
 
   useEffect(() => {
     user?.userId && initializeGminasStatus(user.userId);
@@ -122,19 +123,19 @@ export const MapProvider = ({ children }: PropsWithChildren): ReactElement => {
   return (
     <MapContext.Provider
       value={{
-        isInitialized,
-        initializingError,
         apiState,
         gminasToAdd,
         gminasToRemove,
-        unvisitedGminas,
-        visitedGminas,
         hasChanges: Boolean(gminasToAdd.length || gminasToRemove.length),
-        visitDate,
-        setVisitDate,
+        initializingError,
+        isInitialized,
         isSaving,
         saveChanges,
+        setVisitDate,
         toggleVisited,
+        unvisitedGminas,
+        visitedGminas,
+        visitDate,
       }}
     >
       {children}

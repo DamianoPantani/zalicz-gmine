@@ -11,6 +11,7 @@ import "./css/main.scss";
 export const App: React.FC = () => {
   return (
     <SessionProvider>
+      <div id="toast-root" />
       <SessionInitializer>
         <Routes />
       </SessionInitializer>
