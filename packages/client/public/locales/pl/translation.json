@@ -9,6 +9,9 @@
     "zaliczgmine": "Profil Zalicz Gminę"
   },
   "error": {
+    "client": {
+      "COULD_NOT_GET_STATUS": "Nie udało się pobrać danych. Spróbuj ponownie, lub skontaktuj się z nami"
+    },
     "INVALID_COOKIE_RETRIEVED": "Otrzymano nieprawidłowe ciasteczko autoryzujące. Prosimy o kontakt",
     "INVALID_CREDENTIALS": "Nieprawidłowe dane logowania",
     "NO_AUTH_TOKEN_PROVIDED": "Brak nagłówka autoryzującego. Prosimy o kontakt",

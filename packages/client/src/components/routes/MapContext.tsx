@@ -79,7 +79,7 @@ export const MapProvider = ({ children }: PropsWithChildren): ReactElement => {
       const { data: checkedGminaIds, error: error2 } = checkedGminasResults;
       const error = error1 || error2;
       if (error || !allGminas || !checkedGminaIds) {
-        setInitializingError(error ?? t("error.UNKNOWN_ERROR"));
+        setInitializingError(error ?? t("error.client.COULD_NOT_GET_STATUS"));
       } else {
         dispatch(initializeUserGminasAction({ allGminas, checkedGminaIds }));
       }
