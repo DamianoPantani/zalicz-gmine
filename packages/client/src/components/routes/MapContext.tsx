@@ -1,76 +1,56 @@
-import { DateForm, GminaCoords } from "@damianopantani/zaliczgmine-server";
-import React, {
-  createContext,
-  PropsWithChildren,
-  ReactElement,
-  useCallback,
-  useContext,
-  useEffect,
-  useReducer,
-  useState,
-} from "react";
+import {
+  DateForm,
+  GminaCoords,
+  GminasStatus,
+} from "@damianopantani/zaliczgmine-server";
+import React, { PropsWithChildren, useCallback } from "react";
 import { useTranslation } from "react-i18next";
+import create, { StoreApi } from "zustand";
+import createContext from "zustand/context";
+import { TFunction } from "i18next";
 
 import {
   getAllGminas,
   getCheckedGminaIds,
   updateGminas,
 } from "../../api/requests";
-import { useRequest } from "../../api/useAsync";
-import { useSessionStore } from "../core/SessionContext";
+import { splitBy, diff } from "../../util/array";
+import { UseRequest, useRequest } from "../../api/useAsync";
 
-import {
-  commitMapAction,
-  gminasStatusReducer,
-  initializeUserGminasAction,
-  MapState,
-  toggleUnvisitedGminaAction,
-  toggleVisitedGminaAction,
-} from "./useGminasStatusReducer";
-
-export type MapContextType = MapState & {
+type MapStore = {
+  isInitialized: boolean;
+  visitedGminas: GminaCoords[];
+  unvisitedGminas: GminaCoords[];
+  gminasToAdd: GminaCoords[];
+  gminasToRemove: GminaCoords[];
+  apiState: GminasStatus;
   initializingError?: string;
   hasChanges: boolean;
   isSaving: boolean;
   visitDate: Date;
+  initializeGminasStatus(userId: number): Promise<void>;
   toggleVisited(gmina: GminaCoords): void;
   setVisitDate(date: Date): void;
   saveChanges(): Promise<void>;
+  commitChanges(): void;
 };
 
-export const MapContext = createContext<MapContextType | undefined>(undefined);
+const { Provider, useStore } = createContext<StoreApi<MapStore>>();
 
-const defaultGminasStatus: MapState = {
-  isInitialized: false,
-  visitedGminas: [],
-  unvisitedGminas: [],
-  gminasToAdd: [],
-  gminasToRemove: [],
-  apiState: {},
-};
+const createMapStore = ({ run, runWithParams }: UseRequest, t: TFunction) =>
+  create<MapStore>((set, get) => ({
+    isInitialized: false,
+    visitedGminas: [],
+    unvisitedGminas: [],
+    gminasToAdd: [],
+    gminasToRemove: [],
+    apiState: {},
+    initializingError: undefined,
+    hasChanges: false,
+    isSaving: false,
+    visitDate: new Date(),
 
-export const MapProvider = ({ children }: PropsWithChildren): ReactElement => {
-  const { t } = useTranslation();
-  const { run, runWithParams } = useRequest();
-  const [initializingError, setInitializingError] = useState<string>();
-  const [isSaving, setSaving] = useState(false);
-  const [visitDate, setVisitDate] = useState(() => new Date());
-  const user = useSessionStore((s) => s.user);
-
-  const [
-    {
-      apiState,
-      gminasToAdd,
-      gminasToRemove,
-      unvisitedGminas,
-      visitedGminas,
-      isInitialized,
-    },
-    dispatch,
-  ] = useReducer(gminasStatusReducer, defaultGminasStatus);
-
-  const initializeGminasStatus = useCallback(
-    async (userId: number) => {
+    initializeGminasStatus: async (userId: number) => {
       const [allGminasResults, checkedGminasResults] = await Promise.all([
         run(getAllGminas),
         runWithParams(getCheckedGminaIds, userId),
@@ -80,75 +60,101 @@ export const MapProvider = ({ children }: PropsWithChildren): ReactElement => {
       const { data: checkedGminaIds, error: error2 } = checkedGminasResults;
       const error = error1 || error2;
       if (error || !allGminas || !checkedGminaIds) {
-        setInitializingError(error ?? t("error.client.COULD_NOT_GET_STATUS"));
+        set({
+          initializingError: error ?? t("error.client.COULD_NOT_GET_STATUS"),
+        });
       } else {
-        dispatch(initializeUserGminasAction({ allGminas, checkedGminaIds }));
+        const [visitedGminas, unvisitedGminas] = checkedGminaIds.length
+          ? splitBy(allGminas, (g) => checkedGminaIds.includes(g.id))
+          : [[], allGminas];
+
+        set({ visitedGminas, unvisitedGminas, isInitialized: true });
       }
     },
-    [run, runWithParams, t]
-  );
 
-  const toggleVisited = useCallback(
-    (gmina: GminaCoords) =>
-      dispatch(
-        visitedGminas.includes(gmina)
-          ? toggleUnvisitedGminaAction(gmina)
-          : toggleVisitedGminaAction(gmina)
-      ),
-    [visitedGminas]
-  );
+    toggleVisited: (gmina: GminaCoords) => {
+      const { visitedGminas, apiState, gminasToAdd, gminasToRemove } = get();
+      const wasAlreadyMarked = !!apiState[gmina.id];
+      const markToVisit = !visitedGminas.includes(gmina);
 
-  const saveChanges = useCallback(async () => {
-    const date: DateForm = {
-      day: visitDate.getDate(),
-      month: visitDate.getMonth() + 1,
-      year: visitDate.getFullYear(),
-    };
+      if (wasAlreadyMarked) {
+        const { [gmina.id]: _unselected, ...newApiState } = apiState;
+        const newGminasToAdd = gminasToAdd.filter((g) => g !== gmina);
+        const newGminasToRemove = gminasToRemove.filter((g) => g !== gmina);
 
-    setSaving(true);
-    const res = await runWithParams(updateGminas, { date, status: apiState });
-    setSaving(false);
+        set({
+          apiState: newApiState,
+          gminasToAdd: newGminasToAdd,
+          gminasToRemove: newGminasToRemove,
+          hasChanges: Boolean(
+            newGminasToAdd.length || newGminasToRemove.length
+          ),
+        });
+      } else {
+        const newApiState: GminasStatus = {
+          ...apiState,
+          [gmina.id]: markToVisit ? "a" : "d",
+        };
+        const newGminasToAdd = markToVisit
+          ? gminasToAdd.concat(gmina)
+          : gminasToAdd;
+        const newGminasToRemove = markToVisit
+          ? gminasToRemove
+          : gminasToRemove.concat(gmina);
 
-    if (res.error || res.errorDetails) {
-      return Promise.reject(res);
-    } else {
-      return dispatch(commitMapAction());
-    }
-  }, [apiState, visitDate, runWithParams]);
+        set({
+          apiState: newApiState,
+          gminasToAdd: newGminasToAdd,
+          gminasToRemove: newGminasToRemove,
+          hasChanges: Boolean(
+            newGminasToAdd.length || newGminasToRemove.length
+          ),
+        });
+      }
+    },
 
-  useEffect(() => {
-    user?.userId && initializeGminasStatus(user.userId);
-  }, [user?.userId, initializeGminasStatus]);
+    setVisitDate: (visitDate: Date) => set({ visitDate }),
 
-  return (
-    <MapContext.Provider
-      value={{
-        apiState,
-        gminasToAdd,
-        gminasToRemove,
-        hasChanges: Boolean(gminasToAdd.length || gminasToRemove.length),
-        initializingError,
-        isInitialized,
-        isSaving,
-        saveChanges,
-        setVisitDate,
-        toggleVisited,
-        unvisitedGminas,
-        visitedGminas,
-        visitDate,
-      }}
-    >
-      {children}
-    </MapContext.Provider>
-  );
+    saveChanges: async () => {
+      const { visitDate, apiState, commitChanges } = get();
+      const date: DateForm = {
+        day: visitDate.getDate(),
+        month: visitDate.getMonth() + 1,
+        year: visitDate.getFullYear(),
+      };
+
+      set({ isSaving: true });
+      const res = await runWithParams(updateGminas, { date, status: apiState });
+      set({ isSaving: false });
+
+      return res.error || res.errorDetails
+        ? Promise.reject(res)
+        : commitChanges();
+    },
+
+    commitChanges: () => {
+      const { unvisitedGminas, gminasToAdd, visitedGminas, gminasToRemove } =
+        get();
+      set({
+        apiState: {},
+        gminasToAdd: [],
+        gminasToRemove: [],
+        unvisitedGminas: diff(unvisitedGminas, gminasToAdd).concat(
+          gminasToRemove
+        ),
+        visitedGminas: diff(visitedGminas, gminasToRemove).concat(gminasToAdd),
+      });
+    },
+  }));
+
+export const MapProvider: React.FC<PropsWithChildren> = ({ children }) => {
+  const { t } = useTranslation();
+  const requestRunner = useRequest();
+  const createStore = useCallback(() => {
+    return createMapStore(requestRunner, t);
+  }, [requestRunner, t]);
+
+  return <Provider createStore={createStore}>{children}</Provider>;
 };
 
-export const useMapContext = (): MapContextType => {
-  const context = useContext(MapContext);
-  if (!context) {
-    throw new Error(
-      `MapContext compound components cannot be rendered outside the MapContext component`
-    );
-  }
-  return context;
-};
+export const useMapStore = useStore;

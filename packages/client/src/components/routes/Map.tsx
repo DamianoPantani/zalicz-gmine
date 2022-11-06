@@ -10,9 +10,16 @@ import { Button } from "../forms/Button";
 import { DatePicker } from "../forms/DatePicker";
 import { LoadingSpinner } from "../LoadingSpinner";
 import { Toast, useToast } from "../toast";
+import { useSessionStore } from "../core/SessionContext";
 
-import { MapProvider, useMapContext } from "./MapContext";
-import { CapitalsLayer, GminasLayer } from "./MapLayers";
+import { MapProvider, useMapStore } from "./MapContext";
+import {
+  CapitalsLayer,
+  GminasToUnvisitLayer,
+  GminasToVisitLayer,
+  UnvisitedGminasLayer,
+  VisitedGminasLayer,
+} from "./MapLayers";
 import { DEFAULT_ZOOM_LEVEL, useZoomLevel } from "./useZoomLevel";
 import styles from "./Map.module.scss";
 import "leaflet/dist/leaflet.css";
@@ -29,11 +36,20 @@ export const Map: React.FC = () => {
 };
 
 const MapConsumer: React.FC = () => {
-  const { hasChanges, saveChanges, isSaving, setVisitDate, visitDate } =
-    useMapContext();
+  const hasChanges = useMapStore((s) => s.hasChanges);
+  const saveChanges = useMapStore((s) => s.saveChanges);
+  const isSaving = useMapStore((s) => s.isSaving);
+  const setVisitDate = useMapStore((s) => s.setVisitDate);
+  const visitDate = useMapStore((s) => s.visitDate);
+  const initializeGminasStatus = useMapStore((s) => s.initializeGminasStatus);
+  const user = useSessionStore((s) => s.user);
   const { t } = useTranslation();
   const toast = useToast();
   const { openError } = toast;
+
+  useEffect(() => {
+    user?.userId && initializeGminasStatus(user.userId);
+  }, [user?.userId, initializeGminasStatus]);
 
   const saveChangesAndNotifyUser = useCallback(async () => {
     try {
@@ -75,15 +91,9 @@ const GminasMap: React.FC = () => {
     isLoading: isLoadingCapitalCitiesCoords,
     error: capitalCitiesError,
   } = useAsync(getCapitalCitiesCoords);
-  const {
-    isInitialized,
-    isSaving,
-    initializingError,
-    visitedGminas,
-    unvisitedGminas,
-    gminasToAdd,
-    gminasToRemove,
-  } = useMapContext();
+  const isInitialized = useMapStore((s) => s.isInitialized);
+  const isSaving = useMapStore((s) => s.isSaving);
+  const initializingError = useMapStore((s) => s.initializingError);
 
   const shouldFetchCapitals =
     zoomLevel > CAPITALS_ZOOM_LEVEL &&
@@ -108,36 +118,10 @@ const GminasMap: React.FC = () => {
       ) : (
         isInitialized && (
           <>
-            <GminasLayer
-              gminas={visitedGminas}
-              stroke="#919102"
-              fill="#bbbb00"
-              strokeWidth={strokeWidth}
-            >
-              ✅
-            </GminasLayer>
-
-            <GminasLayer
-              gminas={unvisitedGminas}
-              stroke="#e88127"
-              fill="#e88127"
-              opacity={0.3}
-              strokeWidth={strokeWidth}
-            />
-
-            <GminasLayer
-              gminas={gminasToAdd}
-              stroke="#7d8822"
-              fill="#dcfc26"
-              strokeWidth={strokeWidth}
-            />
-
-            <GminasLayer
-              gminas={gminasToRemove}
-              stroke="#441212"
-              fill="#771212"
-              strokeWidth={strokeWidth}
-            />
+            <VisitedGminasLayer strokeWidth={strokeWidth} />
+            <UnvisitedGminasLayer strokeWidth={strokeWidth} />
+            <GminasToVisitLayer strokeWidth={strokeWidth} />
+            <GminasToUnvisitLayer strokeWidth={strokeWidth} />
 
             {zoomLevel >= CAPITALS_ZOOM_LEVEL && (
               <CapitalsLayer capitalCitiesCoords={capitalCitiesCoords} />

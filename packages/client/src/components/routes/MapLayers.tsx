@@ -2,30 +2,88 @@ import React, { PropsWithChildren } from "react";
 import { Coords, GminaCoords } from "@damianopantani/zaliczgmine-server";
 import { Tooltip, Polygon, Circle, FeatureGroup } from "react-leaflet";
 
-import { useMapContext } from "./MapContext";
+import { useMapStore } from "./MapContext";
 import styles from "./GminasLayer.module.scss";
 
-type GminasLayerProps = PropsWithChildren<{
-  stroke: string;
-  fill: string;
-  opacity?: number;
-  strokeWidth: number;
-  gminas: GminaCoords[];
-}>;
+type GminasLayerProps = { strokeWidth: number };
+
+type AbstractGminasLayerProps = PropsWithChildren<
+  GminasLayerProps & {
+    stroke: string;
+    fill: string;
+    opacity?: number;
+    gminas: GminaCoords[];
+  }
+>;
 
 type CapitalsLayerCoords = {
   capitalCitiesCoords?: Coords;
 };
 
-export const GminasLayer = ({
+export const VisitedGminasLayer = ({ strokeWidth }: GminasLayerProps) => {
+  const visitedGminas = useMapStore((s) => s.visitedGminas);
+
+  return (
+    <GminasLayer
+      gminas={visitedGminas}
+      stroke="#919102"
+      fill="#bbbb00"
+      strokeWidth={strokeWidth}
+    >
+      ✅
+    </GminasLayer>
+  );
+};
+
+export const UnvisitedGminasLayer = ({ strokeWidth }: GminasLayerProps) => {
+  const unvisitedGminas = useMapStore((s) => s.unvisitedGminas);
+
+  return (
+    <GminasLayer
+      gminas={unvisitedGminas}
+      stroke="#e88127"
+      fill="#e88127"
+      opacity={0.3}
+      strokeWidth={strokeWidth}
+    />
+  );
+};
+
+export const GminasToVisitLayer = ({ strokeWidth }: GminasLayerProps) => {
+  const gminasToAdd = useMapStore((s) => s.gminasToAdd);
+
+  return (
+    <GminasLayer
+      gminas={gminasToAdd}
+      stroke="#7d8822"
+      fill="#dcfc26"
+      strokeWidth={strokeWidth}
+    />
+  );
+};
+
+export const GminasToUnvisitLayer = ({ strokeWidth }: GminasLayerProps) => {
+  const gminasToRemove = useMapStore((s) => s.gminasToRemove);
+
+  return (
+    <GminasLayer
+      gminas={gminasToRemove}
+      stroke="#441212"
+      fill="#771212"
+      strokeWidth={strokeWidth}
+    />
+  );
+};
+
+const GminasLayer = ({
   stroke,
   fill,
   opacity = 0.5,
   strokeWidth,
   gminas,
   children,
-}: GminasLayerProps) => {
-  const { toggleVisited } = useMapContext();
+}: AbstractGminasLayerProps) => {
+  const toggleVisited = useMapStore((s) => s.toggleVisited);
 
   return (
     <FeatureGroup
