@@ -33,7 +33,6 @@
     },
     "map": {
       "save": "Zapisz",
-      "saveSuccess": "Zmiany zapisano pomyślnie",
       "saveError": "Nie udało się zapisać zmian: {{error}}"
     }
   },

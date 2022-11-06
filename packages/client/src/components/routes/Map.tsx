@@ -33,17 +33,16 @@ const MapConsumer: React.FC = () => {
     useMapContext();
   const { t } = useTranslation();
   const toast = useToast();
-  const { openError, openSuccess } = toast;
+  const { openError } = toast;
 
   const saveChangesAndNotifyUser = useCallback(async () => {
     try {
       await saveChanges();
-      openSuccess(t("form.map.saveSuccess"));
     } catch (e) {
       const { error } = e as RequestResults<void>;
       openError(t("form.map.saveError", { error }));
     }
-  }, [saveChanges, openSuccess, openError, t]);
+  }, [saveChanges, openError, t]);
 
   return (
     <div>
@@ -114,7 +113,9 @@ const GminasMap: React.FC = () => {
               stroke="#919102"
               fill="#bbbb00"
               strokeWidth={strokeWidth}
-            />
+            >
+              ✅
+            </GminasLayer>
 
             <GminasLayer
               gminas={unvisitedGminas}

@@ -1,16 +1,17 @@
-import React from "react";
+import React, { PropsWithChildren } from "react";
 import { Coords, GminaCoords } from "@damianopantani/zaliczgmine-server";
 import { Tooltip, Polygon, Circle, FeatureGroup } from "react-leaflet";
 
 import { useMapContext } from "./MapContext";
+import styles from "./GminasLayer.module.scss";
 
-type GminasLayerProps = {
+type GminasLayerProps = PropsWithChildren<{
   stroke: string;
   fill: string;
   opacity?: number;
   strokeWidth: number;
   gminas: GminaCoords[];
-};
+}>;
 
 type CapitalsLayerCoords = {
   capitalCitiesCoords?: Coords;
@@ -22,6 +23,7 @@ export const GminasLayer = ({
   opacity = 0.5,
   strokeWidth,
   gminas,
+  children,
 }: GminasLayerProps) => {
   const { toggleVisited } = useMapContext();
 
@@ -41,8 +43,14 @@ export const GminasLayer = ({
           stroke
           eventHandlers={{ click: () => toggleVisited(gmina) }}
         >
-          <Tooltip sticky opacity={0.8} direction="top">
-            <strong>{gmina.name}</strong>
+          <Tooltip
+            sticky
+            opacity={0.8}
+            direction="right"
+            className={styles.tooltip}
+          >
+            <span>{gmina.name}</span>
+            {children}
           </Tooltip>
         </Polygon>
       ))}

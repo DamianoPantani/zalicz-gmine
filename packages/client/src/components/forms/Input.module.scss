@@ -4,19 +4,19 @@
   padding: 0 var(--space-md);
   height: var(--size-3xl);
   overflow: hidden;
-  color: var(--colors-gray-900);
+  color: var(--color-gray-900);
 
   &::placeholder {
-    color: var(--colors-gray-600);
+    color: var(--color-gray-600);
   }
 
   &:hover {
-    border-color: var(--colors-gray-600);
+    border-color: var(--color-gray-600);
     outline: none;
   }
 
   &:focus {
-    border-color: var(--colors-gray-600);
+    border-color: var(--color-gray-600);
     // outline: none !important; // override dotted outline from _forms.scss
   }
 }

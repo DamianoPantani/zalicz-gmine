@@ -1,0 +1,11 @@
+.tooltip {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-weight: bold;
+  border: 3px solid var(--color-gray-600) !important;
+
+  &:before {
+    border-right-color: var(--color-gray-600) !important;
+  }
+}
