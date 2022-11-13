@@ -21,11 +21,21 @@ export const Toast = ({ toast }: ToastProps): ReactElement | null => {
   }
 
   return ReactDOM.createPortal(
-    <div className={styles.overlay} onClick={close}>
+    <div
+      className={styles.overlay}
+      data-overlay
+      onClick={(e) => {
+        const isOverlayClicked =
+          (e.target as HTMLElement).dataset["overlay"] === "true";
+        isOverlayClicked && close();
+      }}
+    >
       <div className={styles.toast}>
         <div className={styles.content}>{content}</div>
         <div className={styles.footer}>
-          <Button variant={variant}>{t("toast.close")}</Button>
+          <Button variant={variant} onClick={close}>
+            {t("toast.close")}
+          </Button>
         </div>
       </div>
     </div>,

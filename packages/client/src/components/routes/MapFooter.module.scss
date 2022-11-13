@@ -1,0 +1,14 @@
+.mapFooter {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-md);
+}
+
+.dateInput {
+  cursor: pointer;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}

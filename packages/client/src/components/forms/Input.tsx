@@ -1,5 +1,6 @@
 import React, { ReactElement, useCallback } from "react";
 
+import { InputBox } from "./InputBox";
 import styles from "./Input.module.scss";
 
 type Props = {
@@ -21,7 +22,7 @@ export const Input = ({
   );
 
   return (
-    <div className={styles.inputBox}>
+    <InputBox>
       <input
         placeholder={placeholder}
         className={styles.input}
@@ -29,6 +30,6 @@ export const Input = ({
         value={value}
         onChange={onInputChange}
       />
-    </div>
+    </InputBox>
   );
 };
