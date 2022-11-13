@@ -26,7 +26,11 @@ export const GlobalFooter: React.FC = () => {
             <FaEnvelope />
             <span>{t("footer.contact")}</span>
           </Link>
-          <a href="https://TODO_GITHUB" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/DamianoPantani/zalicz-gmine"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaGithub />
             <span>{t("footer.contribute")}</span>
           </a>
