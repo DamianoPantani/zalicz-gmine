@@ -1,0 +1,19 @@
+{
+  "name": "zalicz-gmine-vercel",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "version": 2,
+  "public": true,
+  "builds": [
+    {
+      "src": "src/index.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "src/index.ts"
+    }
+  ]
+}

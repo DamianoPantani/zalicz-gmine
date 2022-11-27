@@ -18,7 +18,9 @@ const isLocalEnv = !!port;
 const authLocalStorage = new LocalStorage<string>("authToken");
 
 const Api = axios.create({
-  baseURL: isLocalEnv ? `http://${hostname}:5000/api` : "/api",
+  baseURL: isLocalEnv
+    ? `http://${hostname}:5000/api`
+    : "https://zalicz-gmine-api.vercel.app/api",
 });
 
 Api.interceptors.request.use((request) => {

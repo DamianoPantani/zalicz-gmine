@@ -6,5 +6,6 @@
 /packages/client/node_modules
 tsconfig.tsbuildinfo
 /packages/client/tsconfig.tsbuildinfo
+/packages/client/build
 /packages/server/tsconfig.tsbuildinfo
 

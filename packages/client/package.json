@@ -4,22 +4,28 @@
   "description": "",
   "main": "index.ts",
   "author": "DamianoPantani",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^16.11.58",
     "@types/react": "^18.0.19",
     "@types/react-dom": "^18.0.6",
     "@types/react-leaflet": "^2.8.2",
-    "@types/react-router-dom": "^5.3.3"
+    "@types/react-router-dom": "^5.3.3",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.0",
+    "sass": "^1.56.1",
+    "typescript": "4.7.4"
   },
   "dependencies": {
-    "@damianopantani/zaliczgmine-server": "*",
     "@natscale/react-calendar": "^0.0.0-beta.26",
+    "autoprefixer": "10.4.5",
     "axios": "^0.27.2",
     "classnames": "^2.3.2",
     "formik": "^2.2.9",
     "i18next": "^21.9.2",
     "i18next-http-backend": "^1.4.1",
+    "leaflet": "^1.9.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^11.18.6",
@@ -31,7 +37,11 @@
     "zustand": "^4.1.1"
   },
   "scripts": {
-    "start": "react-scripts start"
+    "build": "react-scripts build",
+    "start": "react-scripts start",
+
+    "lint": "eslint --ignore-path .gitignore src/**/*.{ts,tsx}",
+    "format": "prettier --write --ignore-path .gitignore src/**/*.{ts,tsx}"
   },
   "eslintConfig": {
     "extends": [

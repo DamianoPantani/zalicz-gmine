@@ -1,5 +1,5 @@
 import { load } from "cheerio";
-import CSV from "csv-string";
+import { parse } from "csv-string";
 
 import { Gmina, User, UserGmina, Voivodeship } from "./types/shared";
 
@@ -58,7 +58,7 @@ export const parseVoivodeship = (
 };
 
 export const parseGminasCSV = (csvString: string): UserGmina[] => {
-  const gminas = CSV.parse(csvString).map<UserGmina>((row) => ({
+  const gminas = parse(csvString).map<UserGmina>((row) => ({
     id: row[0],
     name: row[1],
     date: row[2],

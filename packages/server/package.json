@@ -2,9 +2,14 @@
   "type": "module",
   "name": "@damianopantani/zaliczgmine-server",
   "main": "src/types/shared",
+  "license": "MIT",
   "scripts": {
     "build": "tsc --build --force",
     "start": "nodemon -e ts --exec \"tsc && node --experimental-modules --es-module-specifier-resolution=node dist/index.js || exit 1\"",
+
+    "lint": "eslint --ignore-path ../gitignore src/**/*.{ts,tsx}",
+    "format": "prettier --write --ignore-path ../gitignore src/**/*.{ts,tsx}",
+
     "compileVoivodships": "nodemon -e ts --exec \"tsc && node --experimental-modules --es-module-specifier-resolution=node dist/inputDataGenerators/gminasGenerator.js || exit 1\"",
     "compileMapCoords": "nodemon -e ts --exec \"tsc && node --experimental-modules --es-module-specifier-resolution=node dist/inputDataGenerators/generateMapJson.js || exit 1\"",
     "compileCapitalCoords": "nodemon -e ts --exec \"tsc && node --experimental-modules --es-module-specifier-resolution=node dist/inputDataGenerators/generateCapitalsJson.js || exit 1\""
@@ -14,7 +19,8 @@
     "@types/cookie": "^0.5.1",
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
-    "@types/node": "^18.7.16"
+    "@types/node": "^18.7.16",
+    "typescript": "4.7.4"
   },
   "dependencies": {
     "axios": "^0.27.2",
