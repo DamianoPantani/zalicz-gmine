@@ -6,7 +6,7 @@ const OUTPUT_COORDS_PRECISION = 4;
 
 const serverRootDir = process.cwd();
 const inputFilePath = serverRootDir + "\\data\\rawPolygons.json";
-const saveDir = `${serverRootDir}\\..\\..\\packages\\client\\public\\map\\`;
+const saveDir = `${serverRootDir}\\..\\client\\public\\map\\`;
 const outputFilePath = `${saveDir}\\coords_prec_${OUTPUT_COORDS_PRECISION}.json`;
 const inputGminasFile = readFileSync(inputFilePath, "utf8");
 const inputGminasJson = JSON.parse(inputGminasFile) as GminaCoords[];

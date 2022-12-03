@@ -9,7 +9,7 @@ type Props = PropsWithChildren<{
   onClick?(): void;
   type?: "button" | "submit";
   variant?: ButtonVariants;
-  secondary?: boolean; // not supported by `floating`
+  secondary?: boolean;
   disabled?: boolean;
   isLoading?: boolean;
 }>;

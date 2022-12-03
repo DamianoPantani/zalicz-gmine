@@ -34,7 +34,7 @@ const getVoivodeships = async (): Promise<Voivodeship[]> => {
 const serverRootDir = process.cwd();
 
 getVoivodeships().then((voivodeships) => {
-  const saveDir = `${serverRootDir}\\..\\..\\packages\\client\\public\\map\\`;
+  const saveDir = `${serverRootDir}\\..\\client\\public\\map\\`;
   console.log(`Done, saving to ${saveDir}`);
   voivodeships.forEach((voivodeship) => {
     const outputFilePath = `${saveDir}${voivodeship.name}.json`;
