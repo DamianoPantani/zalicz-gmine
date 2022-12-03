@@ -1,5 +1,5 @@
 import cookie from "cookie";
-import { AxiosRequestConfig, AxiosResponseHeaders } from "axios";
+import { AxiosRequestConfig, AxiosResponse } from "axios";
 import { IncomingHttpHeaders } from "http";
 
 import { ZGApiError } from "./ZGApiError";
@@ -18,7 +18,7 @@ export const getAuthToken = (headers: IncomingHttpHeaders): string => {
 };
 
 export const parseAuthCookie = (
-  headers: AxiosResponseHeaders
+  headers: AxiosResponse["headers"]
 ): SessionResponse => {
   const cookies = headers["set-cookie"];
   const authCookie = cookies?.find((c) => c.includes(authCookieKey));
@@ -41,7 +41,10 @@ export const requestOptions = (cookie = ""): AxiosRequestConfig => {
     headers: {
       cookie: cookie ? `${authCookieKey}=${cookie}` : false,
       "user-agent":
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 OPR/90.0.4480.84",
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 OPR/93.0.0.0",
+      accept:
+        "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+      "accept-encoding": "application/json",
     },
   };
 };
