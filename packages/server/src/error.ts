@@ -23,7 +23,6 @@ const getDetailsString = (details: unknown): string | undefined => {
     return details;
   }
 
-  // TODO: probably can get more details from AxiosError
   if (axios.isAxiosError(details)) {
     return details.message;
   }

@@ -26,8 +26,8 @@ export const VisitedGminasLayer = ({ strokeWidth }: GminasLayerProps) => {
   return (
     <GminasLayer
       gminas={visitedGminas}
-      stroke="#919102"
-      fill="#bbbb00"
+      stroke="#290"
+      fill="#290"
       strokeWidth={strokeWidth}
     >
       ✅
@@ -41,8 +41,8 @@ export const UnvisitedGminasLayer = ({ strokeWidth }: GminasLayerProps) => {
   return (
     <GminasLayer
       gminas={unvisitedGminas}
-      stroke="#e88127"
-      fill="#e88127"
+      stroke="#b70"
+      fill="#d92"
       opacity={0.3}
       strokeWidth={strokeWidth}
     />
@@ -55,8 +55,8 @@ export const GminasToVisitLayer = ({ strokeWidth }: GminasLayerProps) => {
   return (
     <GminasLayer
       gminas={gminasToAdd}
-      stroke="#7d8822"
-      fill="#dcfc26"
+      stroke="#992"
+      fill="#df0"
       strokeWidth={strokeWidth}
     />
   );
