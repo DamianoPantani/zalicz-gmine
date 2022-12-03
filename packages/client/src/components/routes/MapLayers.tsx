@@ -101,12 +101,7 @@ const GminasLayer = ({
           stroke
           eventHandlers={{ click: () => toggleVisited(gmina) }}
         >
-          <Tooltip
-            sticky
-            opacity={0.8}
-            direction="right"
-            className={styles.tooltip}
-          >
+          <Tooltip opacity={0.8} direction="right" className={styles.tooltip}>
             <span>{gmina.name}</span>
             {children}
           </Tooltip>

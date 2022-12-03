@@ -1,56 +1,56 @@
-module.exports = {
-  env: {
-    browser: true,
-    es6: true,
-    node: true,
-    jest: true,
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
   },
-  extends: [
+  "extends": [
     "react-app",
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "prettier",
-    "plugin:prettier/recommended",
+    "plugin:prettier/recommended"
   ],
-  plugins: ["jsx-a11y"],
-  rules: {
+  "plugins": ["jsx-a11y"],
+  "rules": {
     "no-unused-vars": ["warn"],
     "no-console": ["warn"],
     "no-debugger": ["warn"],
     "react/jsx-filename-extension": [
       "warn",
       {
-        extensions: [".tsx"],
-      },
+        "extensions": [".tsx"]
+      }
     ],
     "prettier/prettier": [
       "error",
       {
-        endOfLine: "auto",
-      },
+        "endOfLine": "auto"
+      }
     ],
     "@typescript-eslint/ban-ts-comment": [
       "error",
-      { "ts-ignore": "allow-with-description" },
+      { "ts-ignore": "allow-with-description" }
     ],
     "import/no-default-export": ["error"],
     "import/order": [
       "error",
       {
-        groups: [
+        "groups": [
           ["builtin", "external", "internal"],
           "parent",
-          ["sibling", "index"],
+          ["sibling", "index"]
         ],
-        "newlines-between": "always",
-      },
+        "newlines-between": "always"
+      }
     ],
     "import/newline-after-import": ["error"],
     "import/no-absolute-path": ["error"],
     "consistent-return": ["error"],
-    curly: ["error"],
-    quotes: ["error", "double", { avoidEscape: true }],
+    "curly": ["error"],
+    "quotes": ["error", "double", { "avoidEscape": true }],
     "object-shorthand": ["error", "always"],
     "react-hooks/exhaustive-deps": ["error"],
     "react-hooks/rules-of-hooks": ["error"],
@@ -62,24 +62,24 @@ module.exports = {
     "no-case-declarations": "off",
     "@typescript-eslint/no-empty-function": ["off"],
     "react/prop-types": ["off"],
-    "react/display-name": ["off"],
+    "react/display-name": ["off"]
   },
-  overrides: [
+  "overrides": [
     {
-      files: ["**/*.ts?(x)"],
-      parser: "@typescript-eslint/parser",
-      parserOptions: {
-        ecmaVersion: 2020,
-        sourceType: "module",
-        ecmaFeatures: {
-          jsx: true,
+      "files": ["**/*.ts?(x)"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module",
+        "ecmaFeatures": {
+          "jsx": true
         },
 
         // typescript-eslint specific options
-        warnOnUnsupportedTypeScriptVersion: true,
+        "warnOnUnsupportedTypeScriptVersion": true
       },
-      plugins: ["@typescript-eslint"],
-      extends: ["plugin:@typescript-eslint/recommended", "prettier"],
-    },
-  ],
-};
+      "plugins": ["@typescript-eslint"],
+      "extends": ["plugin:@typescript-eslint/recommended", "prettier"]
+    }
+  ]
+}

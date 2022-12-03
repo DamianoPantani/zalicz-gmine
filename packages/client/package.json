@@ -40,8 +40,8 @@
     "build": "react-scripts build",
     "start": "react-scripts start",
 
-    "lint": "eslint --ignore-path .gitignore src/**/*.{ts,tsx}",
-    "format": "prettier --write --ignore-path .gitignore src/**/*.{ts,tsx}"
+    "lint": "eslint --ignore-path ../../.gitignore src/**/*.{ts,tsx}",
+    "format": "prettier --write --ignore-path ../../.gitignore src/**/*.{ts,tsx}"
   },
   "eslintConfig": {
     "extends": [
