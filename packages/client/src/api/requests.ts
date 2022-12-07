@@ -5,8 +5,6 @@ import type {
   LoggedUserResponse,
   User,
   UserGminasStatus,
-  GminaCoords,
-  Coords,
   UpdateStatusRequest,
 } from "@damianopantani/zaliczgmine-server";
 
@@ -32,17 +30,6 @@ Api.interceptors.request.use((request) => {
 
   return request;
 });
-
-// public api - start
-
-export const getAllGminas = async (): Promise<GminaCoords[]> => {
-  const { data } = await axios.get<GminaCoords[]>("/map/coords_prec_4.json");
-  return data;
-};
-export const getCapitalCitiesCoords = async (): Promise<Coords> => {
-  const { data } = await axios.get<Coords>("/map/capital_coords_prec_3.json");
-  return data;
-};
 
 // public api - end
 

@@ -1,10 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import cx from "classnames";
 import { MapContainer, TileLayer } from "react-leaflet";
 import { LatLngTuple } from "leaflet";
+import { Coords } from "@damianopantani/zaliczgmine-server";
 
-import { getCapitalCitiesCoords } from "../../api/requests";
-import { useAsync } from "../../api/useAsync";
 import { LoadingSpinner } from "../LoadingSpinner";
 import { useSessionStore } from "../core/SessionContext";
 
@@ -21,7 +20,7 @@ import { DEFAULT_ZOOM_LEVEL, useZoomLevel } from "./useZoomLevel";
 import styles from "./Map.module.scss";
 import "leaflet/dist/leaflet.css";
 
-const CAPITALS_ZOOM_LEVEL = 9;
+const CAPITALS_ZOOM_LEVEL = 8;
 const polandGeoCenter: LatLngTuple = [52.0691, 19.4797];
 
 export const Map: React.FC = () => {
@@ -56,27 +55,22 @@ const MapConsumer: React.FC = () => {
 
 const GminasMap: React.FC = () => {
   const zoomLevel = useZoomLevel();
-  const {
-    data: capitalCitiesCoords,
-    run: runGetCapitalCitiesCoords,
-    isLoading: isLoadingCapitalCitiesCoords,
-    error: capitalCitiesError,
-  } = useAsync(getCapitalCitiesCoords);
   const isInitialized = useMapStore((s) => s.isInitialized);
   const isSaving = useMapStore((s) => s.isSaving);
   const initializingError = useMapStore((s) => s.initializingError);
+  const [capitalCitiesCoords, setCapitalCitiesCoords] = useState<Coords>();
 
   const shouldFetchCapitals =
-    zoomLevel > CAPITALS_ZOOM_LEVEL &&
-    !capitalCitiesCoords &&
-    !capitalCitiesError &&
-    !isLoadingCapitalCitiesCoords;
+    zoomLevel > CAPITALS_ZOOM_LEVEL && !capitalCitiesCoords;
 
   const strokeWidth = zoomLevel / 8;
 
   useEffect(() => {
-    shouldFetchCapitals && runGetCapitalCitiesCoords();
-  }, [shouldFetchCapitals, runGetCapitalCitiesCoords]);
+    shouldFetchCapitals &&
+      import("../../resources/capital_coords_prec_3.json").then((json) =>
+        setCapitalCitiesCoords(json.default as Coords)
+      );
+  }, [shouldFetchCapitals]);
 
   return (
     <>
@@ -87,18 +81,16 @@ const GminasMap: React.FC = () => {
           {initializingError}
         </div>
       ) : (
-        isInitialized && (
-          <>
-            <VisitedGminasLayer strokeWidth={strokeWidth} />
-            <UnvisitedGminasLayer strokeWidth={strokeWidth} />
-            <GminasToVisitLayer strokeWidth={strokeWidth} />
-            <GminasToUnvisitLayer strokeWidth={strokeWidth} />
+        <>
+          <VisitedGminasLayer strokeWidth={strokeWidth} />
+          <UnvisitedGminasLayer strokeWidth={strokeWidth} />
+          <GminasToVisitLayer strokeWidth={strokeWidth} />
+          <GminasToUnvisitLayer strokeWidth={strokeWidth} />
 
-            {zoomLevel >= CAPITALS_ZOOM_LEVEL && (
-              <CapitalsLayer capitalCitiesCoords={capitalCitiesCoords} />
-            )}
-          </>
-        )
+          {zoomLevel >= CAPITALS_ZOOM_LEVEL && (
+            <CapitalsLayer capitalCitiesCoords={capitalCitiesCoords} />
+          )}
+        </>
       )}
 
       {(!isInitialized || isSaving) && (

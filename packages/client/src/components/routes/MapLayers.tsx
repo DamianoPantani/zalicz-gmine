@@ -117,7 +117,7 @@ export const CapitalsLayer = ({ capitalCitiesCoords }: CapitalsLayerCoords) => {
       pathOptions={{ fillColor: "#000000", fillOpacity: 0.3, weight: 0 }}
     >
       {capitalCitiesCoords?.map((coords, i) => (
-        <Circle key={i} center={coords} radius={250} />
+        <Circle key={i} center={coords} radius={350} />
       ))}
     </FeatureGroup>
   );

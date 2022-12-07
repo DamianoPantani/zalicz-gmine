@@ -6,7 +6,7 @@ const OUTPUT_COORDS_PRECISION = 3;
 
 const serverRootDir = process.cwd();
 const inputFilePath = serverRootDir + "\\data\\rawCapitalCoords.json";
-const saveDir = `${serverRootDir}\\..\\client\\public\\map\\`;
+const saveDir = `${serverRootDir}\\..\\client\\src\\resources\\`;
 const outputFilePath = `${saveDir}\\capital_coords_prec_${OUTPUT_COORDS_PRECISION}.json`;
 const inputFile = readFileSync(inputFilePath, "utf8");
 const inputJson = JSON.parse(inputFile) as Coords;
