@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import cx from "classnames";
 import { MapContainer, TileLayer } from "react-leaflet";
 import { LatLngTuple } from "leaflet";
-import { Coords } from "@damianopantani/zaliczgmine-server";
 
+import capitalCitiesCoords from "../../resources/capital_coords_prec_3.json";
 import { LoadingSpinner } from "../LoadingSpinner";
 import { useSessionStore } from "../core/SessionContext";
 
@@ -58,19 +58,7 @@ const GminasMap: React.FC = () => {
   const isInitialized = useMapStore((s) => s.isInitialized);
   const isSaving = useMapStore((s) => s.isSaving);
   const initializingError = useMapStore((s) => s.initializingError);
-  const [capitalCitiesCoords, setCapitalCitiesCoords] = useState<Coords>();
-
-  const shouldFetchCapitals =
-    zoomLevel > CAPITALS_ZOOM_LEVEL && !capitalCitiesCoords;
-
   const strokeWidth = zoomLevel / 8;
-
-  useEffect(() => {
-    shouldFetchCapitals &&
-      import("../../resources/capital_coords_prec_3.json").then((json) =>
-        setCapitalCitiesCoords(json.default as Coords)
-      );
-  }, [shouldFetchCapitals]);
 
   return (
     <>
@@ -88,7 +76,9 @@ const GminasMap: React.FC = () => {
           <GminasToUnvisitLayer strokeWidth={strokeWidth} />
 
           {zoomLevel >= CAPITALS_ZOOM_LEVEL && (
-            <CapitalsLayer capitalCitiesCoords={capitalCitiesCoords} />
+            <CapitalsLayer
+              capitalCitiesCoords={capitalCitiesCoords as [number, number][]}
+            />
           )}
         </>
       )}

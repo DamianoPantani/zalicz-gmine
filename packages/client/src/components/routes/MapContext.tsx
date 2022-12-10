@@ -9,6 +9,7 @@ import create, { StoreApi } from "zustand";
 import createContext from "zustand/context";
 import { TFunction } from "i18next";
 
+import allGminasJson from "../../resources/coords_prec_4.json";
 import { getCheckedGminaIds, updateGminas } from "../../api/requests";
 import { splitBy, diff } from "../../util/array";
 import { UseRequest, useRequest } from "../../api/useAsync";
@@ -33,11 +34,13 @@ type MapStore = {
 
 const { Provider, useStore } = createContext<StoreApi<MapStore>>();
 
+const allGminas = allGminasJson as GminaCoords[];
+
 const createMapStore = ({ runWithParams }: UseRequest, t: TFunction) =>
   create<MapStore>((set, get) => ({
     isInitialized: false,
     visitedGminas: [],
-    unvisitedGminas: [],
+    unvisitedGminas: allGminas,
     gminasToAdd: [],
     gminasToRemove: [],
     apiState: {},
@@ -47,16 +50,10 @@ const createMapStore = ({ runWithParams }: UseRequest, t: TFunction) =>
     visitDate: new Date(),
 
     initializeGminasStatus: async (userId: number) => {
-      const [allGminas, { data: checkedGminaIds, error }] = await Promise.all([
-        import("../../resources/coords_prec_4.json").then(
-          (allGminasResults) => {
-            const allGminas = allGminasResults.default as GminaCoords[];
-            set({ unvisitedGminas: allGminas });
-            return allGminas;
-          }
-        ),
-        runWithParams(getCheckedGminaIds, userId),
-      ]);
+      const { data: checkedGminaIds, error } = await runWithParams(
+        getCheckedGminaIds,
+        userId
+      );
 
       if (error || !checkedGminaIds) {
         set({
