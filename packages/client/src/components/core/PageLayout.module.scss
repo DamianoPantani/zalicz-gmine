@@ -1,7 +1,13 @@
 .mainContainer {
   margin: 0 auto;
-  max-width: var(--size-container-xl);
   width: -webkit-fill-available;
-  padding: var(--space-6xl) var(--space-md);
-  z-index: var(--zIndex-base);
+
+  &.minimal {
+    display: contents;
+  }
+
+  &:not(.minimal) {
+    padding: var(--space-6xl) var(--space-md);
+    max-width: var(--size-container-xl);
+  }
 }

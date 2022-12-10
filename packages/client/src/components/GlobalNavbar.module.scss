@@ -15,21 +15,6 @@
   align-items: center;
   margin: 0 auto;
   max-width: var(--size-container-xl);
-
-  @media (max-width: $media-lg) {
-    .navMenu {
-      gap: 0;
-    }
-
-    .logo {
-      width: 47px;
-      overflow: hidden;
-    }
-
-    .navItem span {
-      display: none;
-    }
-  }
 }
 
 .navMenu {
@@ -66,5 +51,24 @@
         color: inherit;
       }
     }
+  }
+}
+
+@media (max-width: $media-lg) {
+  .navbarContainer {
+    padding: 0 var(--space-3xl);
+  }
+
+  .navMenu {
+    gap: 0;
+  }
+
+  .logo {
+    width: 47px;
+    overflow: hidden;
+  }
+
+  .navItem span {
+    display: none;
   }
 }

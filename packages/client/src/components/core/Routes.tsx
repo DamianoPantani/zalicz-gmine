@@ -35,7 +35,7 @@ export const Routes: React.FC = () => {
 
               {
                 path: Paths.map,
-                element: <PageLayout Component={Map} />,
+                element: <PageLayout minimal Component={Map} />,
               },
 
               {

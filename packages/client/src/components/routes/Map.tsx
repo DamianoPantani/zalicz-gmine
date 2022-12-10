@@ -40,16 +40,15 @@ const MapConsumer: React.FC = () => {
   }, [user?.userId, initializeGminasStatus]);
 
   return (
-    <div className={styles.mapContainer}>
-      <MapContainer
-        center={polandGeoCenter}
-        zoom={DEFAULT_ZOOM_LEVEL}
-        className={styles.map}
-      >
-        <GminasMap />
-      </MapContainer>
+    <MapContainer
+      preferCanvas
+      center={polandGeoCenter}
+      zoom={DEFAULT_ZOOM_LEVEL}
+      className={styles.mapContainer}
+    >
+      <GminasMap />
       <MapFooter />
-    </div>
+    </MapContainer>
   );
 };
 

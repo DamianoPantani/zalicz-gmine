@@ -1,7 +1,11 @@
 .mapFooter {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: flex;
-  justify-content: flex-end;
   gap: var(--space-md);
+  z-index: var(--zIndex-overlay);
+  padding: var(--space-md);
 }
 
 .dateInput {
