@@ -10,19 +10,19 @@ import { zgApi } from "../zgBroker";
 
 const getVoivodeships = async (): Promise<Voivodeship[]> => {
   const voivodeshipsCount = 16;
-  const voivodshipHtmls = await Promise.all(
+  const voivodeshipHtmls = await Promise.all(
     Array(voivodeshipsCount)
       .fill(null)
       .map((_, i) => {
         const voi = zgApi.getVoivodeship(i + 1);
-        console.log(`Done fetching voivodship ${i}`);
+        console.log(`Done fetching voivodeship ${i}`);
 
         return voi;
       })
   );
 
   console.log("Parsing all");
-  const voivodeships = voivodshipHtmls.map(parseVoivodeship).filter(isDefined);
+  const voivodeships = voivodeshipHtmls.map(parseVoivodeship).filter(isDefined);
 
   if (voivodeshipsCount !== voivodeships.length) {
     throw new Error("Couldn't parse all voivodeships");

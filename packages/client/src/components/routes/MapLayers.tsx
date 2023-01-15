@@ -17,7 +17,11 @@ type AbstractGminasLayerProps = PropsWithChildren<
 >;
 
 type CapitalsLayerCoords = {
-  capitalCitiesCoords?: Coords;
+  capitalCitiesCoords: Coords;
+};
+
+type VoivodeshipsLayerCoords = {
+  voivodeships: GminaCoords[];
 };
 
 export const VisitedGminasLayer = ({ strokeWidth }: GminasLayerProps) => {
@@ -45,7 +49,7 @@ export const UnvisitedGminasLayer = ({ strokeWidth }: GminasLayerProps) => {
       fill="#d92"
       opacity={0.3}
       strokeWidth={strokeWidth}
-    />
+    ></GminasLayer>
   );
 };
 
@@ -58,7 +62,9 @@ export const GminasToVisitLayer = ({ strokeWidth }: GminasLayerProps) => {
       stroke="#992"
       fill="#df0"
       strokeWidth={strokeWidth}
-    />
+    >
+      ➕
+    </GminasLayer>
   );
 };
 
@@ -71,7 +77,9 @@ export const GminasToUnvisitLayer = ({ strokeWidth }: GminasLayerProps) => {
       stroke="#441212"
       fill="#771212"
       strokeWidth={strokeWidth}
-    />
+    >
+      ❌
+    </GminasLayer>
   );
 };
 
@@ -119,10 +127,31 @@ const GminasLayer = ({
 export const CapitalsLayer = ({ capitalCitiesCoords }: CapitalsLayerCoords) => {
   return (
     <FeatureGroup
+      bubblingMouseEvents
+      interactive={false}
       pathOptions={{ fillColor: "#000000", fillOpacity: 0.3, weight: 0 }}
     >
-      {capitalCitiesCoords?.map((coords, i) => (
+      {capitalCitiesCoords.map((coords, i) => (
         <Circle key={i} center={coords} radius={350} />
+      ))}
+    </FeatureGroup>
+  );
+};
+
+export const VoivodeshipsLayer = ({
+  voivodeships,
+}: VoivodeshipsLayerCoords) => {
+  return (
+    <FeatureGroup
+      bubblingMouseEvents
+      interactive={false}
+      pathOptions={{
+        color: "#000000",
+        weight: 1,
+      }}
+    >
+      {voivodeships.map((voivodeship, i) => (
+        <Polygon key={i} positions={voivodeship.coords} stroke />
       ))}
     </FeatureGroup>
   );

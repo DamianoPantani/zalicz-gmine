@@ -9,7 +9,8 @@
     "start": "nodemon -e ts --exec \"tsc && node --experimental-modules --es-module-specifier-resolution=node dist/index.js || exit 1\"",
     "lint": "eslint --ignore-path ../../.gitignore src/**/*.{ts,tsx}",
     "format": "prettier --write --ignore-path ../../.gitignore src/**/*.{ts,tsx}",
-    "compileVoivodships": "nodemon -e ts --exec \"tsc && node --experimental-modules --es-module-specifier-resolution=node dist/inputDataGenerators/gminasGenerator.js || exit 1\"",
+    "compileVoivodeships": "nodemon -e ts --exec \"tsc && node --experimental-modules --es-module-specifier-resolution=node dist/inputDataGenerators/voivodeshipGenerator.js || exit 1\"",
+    "compileVoivodeshipCoords": "nodemon -e ts --exec \"tsc && node --experimental-modules --es-module-specifier-resolution=node dist/inputDataGenerators/generateVoivodeshipCoords.js || exit 1\"",
     "compileMapCoords": "nodemon -e ts --exec \"tsc && node --experimental-modules --es-module-specifier-resolution=node dist/inputDataGenerators/generateMapJson.js || exit 1\"",
     "compileCapitalCoords": "nodemon -e ts --exec \"tsc && node --experimental-modules --es-module-specifier-resolution=node dist/inputDataGenerators/generateCapitalsJson.js || exit 1\""
   },

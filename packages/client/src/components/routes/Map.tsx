@@ -2,8 +2,10 @@ import React, { useEffect } from "react";
 import cx from "classnames";
 import { MapContainer, TileLayer } from "react-leaflet";
 import { LatLngTuple } from "leaflet";
+import { Coords, GminaCoords } from "@damianopantani/zaliczgmine-server";
 
 import capitalCitiesCoords from "../../resources/capital_coords_prec_3.json";
+import voivodeshipCoords from "../../resources/voivodeships_prec_4.json";
 import { LoadingSpinner } from "../LoadingSpinner";
 import { useSessionStore } from "../core/SessionContext";
 
@@ -15,6 +17,7 @@ import {
   GminasToVisitLayer,
   UnvisitedGminasLayer,
   VisitedGminasLayer,
+  VoivodeshipsLayer,
 } from "./MapLayers";
 import { DEFAULT_ZOOM_LEVEL, useZoomLevel } from "./useZoomLevel";
 import styles from "./Map.module.scss";
@@ -69,6 +72,9 @@ const GminasMap: React.FC = () => {
         </div>
       ) : (
         <>
+          <VoivodeshipsLayer
+            voivodeships={voivodeshipCoords as GminaCoords[]}
+          />
           <VisitedGminasLayer strokeWidth={strokeWidth} />
           <UnvisitedGminasLayer strokeWidth={strokeWidth} />
           <GminasToVisitLayer strokeWidth={strokeWidth} />
@@ -76,7 +82,7 @@ const GminasMap: React.FC = () => {
 
           {zoomLevel >= CAPITALS_ZOOM_LEVEL && (
             <CapitalsLayer
-              capitalCitiesCoords={capitalCitiesCoords as [number, number][]}
+              capitalCitiesCoords={capitalCitiesCoords as Coords}
             />
           )}
         </>
