@@ -22,6 +22,7 @@
     "isolatedModules": true,
     "incremental": true,
     "module": "ESNext",
-    "sourceMap": true
+    "sourceMap": true,
+    "types": ["jest", "node"]
   }
 }

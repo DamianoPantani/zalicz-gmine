@@ -3,12 +3,7 @@ import cx from "classnames";
 import { useTranslation } from "react-i18next";
 import { IconType } from "react-icons";
 import { useLocation, Link } from "react-router-dom";
-import {
-  FaRegMap,
-  FaRegUserCircle,
-  FaSignInAlt,
-  FaSignOutAlt,
-} from "react-icons/fa";
+import { FaRegMap, FaSignInAlt, FaSignOutAlt } from "react-icons/fa";
 
 import { useSessionStore } from "../components/core/SessionContext";
 import logo from "../resources/logo.svg";
@@ -38,7 +33,6 @@ export const GlobalNavbar: React.FC = () => {
         <div className={styles.navMenu}>
           {isLoggedIn ? (
             <>
-              <NavItem Icon={FaRegUserCircle}>{user?.username}</NavItem>
               <NavItem Icon={FaRegMap} goTo={Paths.map}>
                 {t("nav.map")}
               </NavItem>

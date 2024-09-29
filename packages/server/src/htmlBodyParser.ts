@@ -3,21 +3,18 @@ import { parse } from "csv-string";
 
 import { Gmina, User, UserGmina, Voivodeship } from "./types/shared";
 
-const LOGOUT_BUTTON = "Wyloguj: ";
-const PROFILE_BUTTON = "Mój profil";
-
 export const parseUser = (htmlString: string): User | undefined => {
   const $ = load(htmlString);
-  const logoutLinkText = $(`#menu a:contains('${LOGOUT_BUTTON}')`).text();
-  const userIdLink = $(`#menu a:contains('${PROFILE_BUTTON}')`).attr("href");
-
-  const username = logoutLinkText.split(LOGOUT_BUTTON)[1];
+  const userIdLink = $("li a[href*='users/view']").attr("href");
   const userId = userIdLink?.split("/users/view/")[1];
 
-  if (userId && username) {
+  // TODO: ZG no longer shows user name anywhere on the landing page
+  // const headerText = $(".users h1").text();
+  // const username = headerText.split("Profil: ")[1];
+
+  if (userId) {
     return {
       userId: +userId,
-      username,
     };
   }
 

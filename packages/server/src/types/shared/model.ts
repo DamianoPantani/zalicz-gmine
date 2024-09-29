@@ -1,6 +1,5 @@
 export type User = {
   userId: number;
-  username: string;
 };
 
 export type GminaStatusChange = "d" | "a";

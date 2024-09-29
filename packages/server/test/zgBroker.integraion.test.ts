@@ -111,7 +111,7 @@ describe("zgBroker", () => {
 
     // then
     expect(user).toEqual(res);
-    expect(user).toEqual({ userId: +userId, username });
+    expect(user).toEqual({ userId: +userId });
   });
 
   it("should update gminas status", async () => {
@@ -164,7 +164,7 @@ describe("zgBroker", () => {
       // then
       expect(e).toBeInstanceOf(ZGApiError);
       const error = e as ZGApiError;
-      expect(user).toEqual({ userId: +userId, username });
+      expect(user).toEqual({ userId: +userId });
       expect(error.details).toEqual({
         detailsString: undefined,
         type: "SESSION_EXPIRED",
@@ -182,6 +182,6 @@ describe("zgBroker", () => {
     const { user } = await zgApi.setToken(fakeAuthToken).getUserFromSession();
 
     // then
-    expect(user).toEqual({ userId: +userId, username });
+    expect(user).toEqual({ userId: +userId });
   });
 });
