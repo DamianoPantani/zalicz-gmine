@@ -1,5 +1,9 @@
 import React, { PropsWithChildren } from "react";
-import { Coords, GminaCoords } from "@damianopantani/zaliczgmine-server";
+import {
+  Coord,
+  GminaCoords,
+  VoivodeshipCoords,
+} from "@damianopantani/zaliczgmine-server";
 import { Tooltip, Polygon, Circle, FeatureGroup } from "react-leaflet";
 
 import { useMapStore } from "./MapContext";
@@ -17,11 +21,11 @@ type AbstractGminasLayerProps = PropsWithChildren<
 >;
 
 type CapitalsLayerCoords = {
-  capitalCitiesCoords: Coords;
+  capitalCitiesCoords: Coord[];
 };
 
 type VoivodeshipsLayerCoords = {
-  voivodeships: GminaCoords[];
+  voivodeships: VoivodeshipCoords[];
 };
 
 export const VisitedGminasLayer = ({ strokeWidth }: GminasLayerProps) => {
@@ -105,7 +109,7 @@ const GminasLayer = ({
       {gminas.map((gmina, i) => (
         <Polygon
           key={i}
-          positions={gmina.coords}
+          positions={gmina.polygons}
           stroke
           eventHandlers={{ click: () => toggleVisited(gmina) }}
         >
@@ -151,7 +155,7 @@ export const VoivodeshipsLayer = ({
       }}
     >
       {voivodeships.map((voivodeship, i) => (
-        <Polygon key={i} positions={voivodeship.coords} stroke />
+        <Polygon key={i} positions={voivodeship.polygon} stroke />
       ))}
     </FeatureGroup>
   );

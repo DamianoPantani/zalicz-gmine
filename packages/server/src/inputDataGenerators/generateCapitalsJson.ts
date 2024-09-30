@@ -1,6 +1,6 @@
 import { existsSync, readFileSync, rmSync, writeFileSync } from "fs";
 
-import { Coords } from "../types/shared";
+import { Coord } from "../types/shared";
 
 const OUTPUT_COORDS_PRECISION = 3;
 
@@ -9,8 +9,8 @@ const inputFilePath = serverRootDir + "\\data\\rawCapitalCoords.json";
 const saveDir = `${serverRootDir}\\..\\client\\src\\resources\\`;
 const outputFilePath = `${saveDir}\\capital_coords_prec_${OUTPUT_COORDS_PRECISION}.json`;
 const inputFile = readFileSync(inputFilePath, "utf8");
-const inputJson = JSON.parse(inputFile) as Coords;
-const transformedCoords: Coords = inputJson.map(([x, y]) => [
+const inputJson = JSON.parse(inputFile) as Coord[];
+const transformedCoords: Coord[] = inputJson.map(([x, y]) => [
   +x.toFixed(OUTPUT_COORDS_PRECISION),
   +y.toFixed(OUTPUT_COORDS_PRECISION),
 ]);

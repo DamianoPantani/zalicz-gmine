@@ -4,6 +4,16 @@ export type User = {
 
 export type GminaStatusChange = "d" | "a";
 
+export type GminaPolygonResponse = {
+  items: {
+    i: string;
+    n: string;
+    c: string;
+    z: string;
+  }[];
+  status: string;
+};
+
 export type Gmina = {
   id: string;
   name: string;
@@ -21,9 +31,15 @@ export type UserGmina = Gmina & {
   date: string;
 };
 
-export type Coords = [number, number][];
+export type Coord = [number, number];
 
-export type GminaCoords = { id: string; name: string; coords: Coords };
+export type GminaCoords = {
+  id: string;
+  name: string;
+  polygons: Coord[][][];
+};
+
+export type VoivodeshipCoords = { id: string; name: string; polygon: Coord[] };
 
 export type GminasStatus = Record<string, GminaStatusChange>;
 

@@ -1,13 +1,13 @@
 import { existsSync, readFileSync, rmSync, writeFileSync } from "fs";
 
-import { Coords, GminaCoords } from "../types/shared";
+import { Coord, VoivodeshipCoords } from "../types/shared";
 
 type RawVoivodeships = {
   features: Feature[];
 };
 
 type Feature = {
-  geometry: { coordinates: [Coords] };
+  geometry: { coordinates: [Coord[]] };
   properties: {
     id: number;
     nazwa: string;
@@ -22,20 +22,20 @@ const saveDir = `${serverRootDir}\\..\\client\\src\\resources\\`;
 const outputFilePath = `${saveDir}\\voivodeships_prec_${OUTPUT_COORDS_PRECISION}.json`;
 const inputString = readFileSync(inputFilePath, "utf8");
 const inputJson = JSON.parse(inputString) as RawVoivodeships;
-const boundaryArray = inputJson.features.map<GminaCoords>((feature) => {
+const boundaryArray = inputJson.features.map<VoivodeshipCoords>((feature) => {
   const { geometry, properties } = feature;
 
   return {
     id: properties.id.toString(),
     name: properties.nazwa,
-    coords: geometry.coordinates[0],
+    polygon: geometry.coordinates[0],
   };
 });
 
-const transformedCoords = boundaryArray.map<GminaCoords>((rawCoords) => ({
+const transformedCoords = boundaryArray.map<VoivodeshipCoords>((rawCoords) => ({
   id: rawCoords.id,
   name: rawCoords.name,
-  coords: rawCoords.coords.map(([y, x]) => [
+  polygon: rawCoords.polygon.map(([y, x]) => [
     +x.toFixed(OUTPUT_COORDS_PRECISION),
     +y.toFixed(OUTPUT_COORDS_PRECISION),
   ]),

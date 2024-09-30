@@ -21,7 +21,6 @@ type NavItemProps = {
 export const GlobalNavbar: React.FC = () => {
   const isLoggedIn = useSessionStore((s) => s.isLoggedIn);
   const logout = useSessionStore((s) => s.logout);
-  const user = useSessionStore((s) => s.user);
   const { t } = useTranslation();
 
   return (

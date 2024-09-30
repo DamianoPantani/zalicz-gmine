@@ -1,10 +1,10 @@
 {
-  "include": ["./src/**/*.ts"],
+  "include": ["**/*.ts", "**/*.tsx"],
   "noEmit": true,
   "compilerOptions": {
     "jsx": "react",
     "esModuleInterop": true,
-    "rootDir": "./src",
+    "rootDir": "../",
     "outDir": "./dist",
     "sourceMap": true,
     "noImplicitAny": true,
@@ -23,11 +23,9 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "incremental": true
-  },
-  "paths": {
-    "@damianopantani/zaliczgmine-server": [
-      "../server/src/types/shared/index.ts"
-    ]
+    "incremental": true,
+    "paths": {
+      "@damianopantani/zaliczgmine-server": ["../server/src/types/shared"]
+    }
   }
 }

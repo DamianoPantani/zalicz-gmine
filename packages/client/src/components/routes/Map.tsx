@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import cx from "classnames";
 import { MapContainer, TileLayer } from "react-leaflet";
 import { LatLngTuple } from "leaflet";
-import { Coords, GminaCoords } from "@damianopantani/zaliczgmine-server";
+import { Coord, VoivodeshipCoords } from "@damianopantani/zaliczgmine-server";
 
 import capitalCitiesCoords from "../../resources/capital_coords_prec_3.json";
 import voivodeshipCoords from "../../resources/voivodeships_prec_4.json";
@@ -73,7 +73,7 @@ const GminasMap: React.FC = () => {
       ) : (
         <>
           <VoivodeshipsLayer
-            voivodeships={voivodeshipCoords as GminaCoords[]}
+            voivodeships={voivodeshipCoords as VoivodeshipCoords[]}
           />
           <VisitedGminasLayer strokeWidth={strokeWidth} />
           <UnvisitedGminasLayer strokeWidth={strokeWidth} />
@@ -82,7 +82,7 @@ const GminasMap: React.FC = () => {
 
           {zoomLevel >= CAPITALS_ZOOM_LEVEL && (
             <CapitalsLayer
-              capitalCitiesCoords={capitalCitiesCoords as Coords}
+              capitalCitiesCoords={capitalCitiesCoords as Coord[]}
             />
           )}
         </>

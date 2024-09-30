@@ -1,11 +1,11 @@
 import axios from "axios";
 
 import {
-  LoggedUserResponse,
+  Coord,
+  GminaCoords,
+  GminaPolygonResponse,
   LoginRequest,
-  SessionResponse,
   UpdateStatusRequest,
-  UserGminasStatus,
 } from "./types/shared";
 import { ZGApiError } from "./ZGApiError";
 import { flatten, ParsedObject } from "./utils";
@@ -19,13 +19,13 @@ const ZGApi = axios.create({
 const tokenlessHeaders = requestOptions();
 
 export const zgApi = {
-  createNewSessionCookie: async (): Promise<SessionResponse> => {
+  createNewSessionCookie: async () => {
     const { headers } = await ZGApi.get("/", tokenlessHeaders);
     return parseAuthCookie(headers);
   },
 
-  getCheckedGminaIds: async (userId: string): Promise<UserGminasStatus> => {
-    const { data: rawCsv } = await ZGApi.get(
+  getCheckedGminaIds: async (userId: string) => {
+    const { data: rawCsv } = await ZGApi.get<string>(
       `/files/users-communes/users-communes-${userId}.csv`,
       tokenlessHeaders
     );
@@ -36,7 +36,23 @@ export const zgApi = {
     return { checkedGminaIds };
   },
 
-  getVoivodeship: async (id: number): Promise<string> => {
+  getGminasCoords: async (precision: number) => {
+    const { data } = await ZGApi.get<GminaPolygonResponse>(
+      "/api/polygons?zoom=8"
+    );
+
+    return data.items.map<GminaCoords>(({ c: coords, i: id, n: name }) => ({
+      id,
+      name,
+      polygons: (JSON.parse(coords) as Coord[][][]).map((a) =>
+        a.map((b) =>
+          b.map(([x, y]) => [+x.toFixed(precision), +y.toFixed(precision)])
+        )
+      ),
+    }));
+  },
+
+  getVoivodeship: async (id: number) => {
     const { data } = await ZGApi.get<string>(
       "/communes/index/" + id,
       tokenlessHeaders
@@ -48,7 +64,7 @@ export const zgApi = {
     const headers = requestOptions(authToken);
 
     return {
-      getUserFromSession: async (): Promise<LoggedUserResponse> => {
+      getUserFromSession: async () => {
         const { data } = await ZGApi.get<string>("/", headers);
         const user = parseUser(data);
 
@@ -59,9 +75,7 @@ export const zgApi = {
         throw new ZGApiError("SESSION_EXPIRED");
       },
 
-      loginToZG: async (
-        loginForm: LoginRequest
-      ): Promise<LoggedUserResponse> => {
+      loginToZG: async (loginForm: LoginRequest) => {
         const { password, username } = loginForm;
         const { data } = await ZGApi.post<string>(
           "/users/login",
@@ -78,14 +92,11 @@ export const zgApi = {
         throw new ZGApiError("INVALID_CREDENTIALS");
       },
 
-      logoutFromZG: async (): Promise<void> => {
+      logoutFromZG: async () => {
         await ZGApi.get("/users/logout", headers);
       },
 
-      updateGminasStatus: async ({
-        date,
-        status,
-      }: UpdateStatusRequest): Promise<void> => {
+      updateGminasStatus: async ({ date, status }: UpdateStatusRequest) => {
         await ZGApi.post(
           "/users_communes/addmulti",
           zgDataString({
